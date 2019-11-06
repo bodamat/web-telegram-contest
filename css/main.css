@@ -118,6 +118,25 @@ body {
 	background: rgb(112, 117, 121, .08);
 }
 
+.btn-img {
+	display: flex;
+	align-items: center;
+	color: #000;
+}
+
+.btn-img span {
+	margin-left: 20px;
+}
+
+.btn-round {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
 @keyframes ripple {
 	100%{
 		transform: scale(2);
