@@ -1,5 +1,107 @@
+:root {
+	--input-border-color-default: #8d8d8d;
+	--input-border-color-hover: #000;
+	--input-border-color-focus: #4ea4f6;
+}
+
 * {
 	padding: 0;
 	margin: 0;
+	font-family: roboto;
 }
 
+body {
+	padding: 20px;
+}
+
+/* Material design input */
+
+.input-group {
+	position: relative;
+}
+
+.input-group .input-area {
+	outline: none;
+	border: 1px solid var(--input-border-color-default);
+	padding: 16px 13px;
+	font-size: 18px;
+	border-radius: 15px;
+}
+
+.input-group .input-area:hover {
+	border: 1px solid var(--input-border-color-hover);
+}
+
+.input-group .input-area:focus {
+	border: 2px solid var(--input-border-color-focus);
+}
+
+.input-group .input-area:focus + .label, .input-group .input-area:valid + .label {
+	top: -8px;
+	padding: 0 3px;
+	font-size: 14px;
+	background: #fff;
+}
+
+.input-group .input-area:valid + .label {
+	color: var(--input-border-color-default);
+}
+
+.input-group .input-area:focus + .label {
+	color: var(--input-border-color-focus);
+}
+
+.input-group .label {
+	color: var(--input-border-color-default);
+	position: absolute;
+	top: 20px;
+	left: 13px;
+	transition: .1s;
+} 
+
+/* End material design input */
+
+.space {
+	height: 20px;
+}
+
+.btn {
+	background: blue;
+	color: #fff;
+	font-size: 25px;
+	padding: 20px 40px;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+}
+
+
+
+/* .ripple {
+	position: relative;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform: scale(10, 10);
+	opacity: 0;
+	transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+	transform: scale(0, 0);
+	opacity: .3;
+	transition: 0s;
+} */
