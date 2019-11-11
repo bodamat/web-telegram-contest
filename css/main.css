@@ -8,11 +8,8 @@
 	padding: 0;
 	margin: 0;
 	font-family: roboto;
-	box-sizing: border-box;
-}
-
-body {
-	padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Material design input */
@@ -122,18 +119,20 @@ body {
 .btn-img {
 	display: flex;
 	align-items: center;
-	color: #000;
+  color: #000;
+  padding: 15px 15px;
 }
 
 .btn-img span {
-	margin-left: 20px;
+  padding-left: 20px;
+  font-size: 19px;
 }
 
-.btn-img .icon {
-	width: 35px;
+.icon {
+	width: 30px;
 }
 
-.btn-add, .btn-more {
+.btn-add, .btn-round {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -146,7 +145,7 @@ body {
 	height: 70px;
 }
 
-.btn-more {
+.btn-round {
 	width: 50px;
 	height: 50px;
 }
