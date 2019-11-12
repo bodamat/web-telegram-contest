@@ -9,64 +9,110 @@
 	<title>LeftSidebar</title>
 </head>
 <body>
-	<div class="settings">
-		<div class="header">
-			<button class="btn ripple btn-white btn-round header-back">
-				<object type="image/svg+xml" data="icons/back_svg.svg" class="icon icon-gray">
-					<img src="icons/back_svg.svg" />
-				</object>
-			</button>
-			<h2 class="header-title">Settings</h2>
-			<button class="btn ripple btn-white btn-round header-more">
-				<object type="image/svg+xml" data="icons/more_svg.svg" class="icon icon-gray">
-					<img src="icons/more_svg.svg" />
-				</object>
-			</button>
+	<div class="left-sidebar">
+		<div class="settings">
+			<div class="header header-settings">
+				<button class="btn ripple btn-white btn-round header-back">
+					<object type="image/svg+xml" data="icons/back_svg.svg" class="icon icon-gray">
+						<img src="icons/back_svg.svg" />
+					</object>
+				</button>
+				<h2 class="header-title">Settings</h2>
+				<button class="btn ripple btn-white btn-round header-more">
+					<object type="image/svg+xml" data="icons/more_svg.svg" class="icon icon-gray">
+						<img src="icons/more_svg.svg" />
+					</object>
+				</button>
+			</div>
+			<div class="account">
+					<div class="img-container">
+						<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
+					</div>
+				<h3 class="account-name">Doge Dogenson</h3>
+				<p class="account-number">+33 1 23 45 67 89</p>
+			</div>
+			<div class="menu-btns">
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/edit_svg.svg" class="icon icon-gray">
+						<img src="icons/edit_svg.svg" /> <!-- For search engine -->
+					</object>
+					<span>Edit profile</span>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/settings_svg.svg" class="icon icon-gray">
+						<img src="icons/settings_svg.svg" />
+					</object>
+					<span>General Settings</span>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/unmute_svg.svg" class="icon icon-gray">
+						<img src="icons/unmute_svg.svg" />
+					</object>
+					<span>Notifications</span>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/lock_svg.svg" class="icon icon-gray">
+						<img src="icons/lock_svg.svg" />
+					</object>
+					<span>Privacy and Security</span>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/language_svg.svg" class="icon icon-gray">
+						<img src="icons/language_svg.svg" />
+					</object>
+					<span>Language</span>
+				</button>
+			</div>
 		</div>
-		<div class="account">
-			<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
-			<h3 class="account-name">Doge Dogenson</h3>
-			<p class="account-number">+33 1 23 45 67 89</p>
+		<div class="edit-profile">
+			<div class="header header-edit-profile">
+				<button class="btn ripple btn-white btn-round header-back">
+					<object type="image/svg+xml" data="icons/back_svg.svg" class="icon icon-gray">
+						<img src="icons/back_svg.svg" />
+					</object>
+				</button>
+				<h2 class="header-title">Edit profile</h2>
+			</div>
+			<div class="account">
+				<div class="img-container darkened">
+					<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
+					<div class="img-content">
+						<object type="image/svg+xml" data="icons/cameraadd_svg.svg" class="icon icon-white">
+							<img src="icons/cameraadd_svg.svg" /> <!-- For search engine -->
+						</object>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-input-group">
+				<div class="input-group">
+					<input type="name" id="name" required class="input-area">
+					<label for="name" class="label">Name</label>
+				</div>
+				<div class="input-group">
+					<input type="lastName" id="lastName" required class="input-area">
+					<label for="lastName" class="label">Last name</label>
+				</div>
+				<div class="input-group">
+					<input type="bio" id="bio" required class="input-area">
+					<label for="bio" class="label">Bio (optional)</label>
+					<p class="tooltip">Any details such as age? occupation or city. Example: 23 y.o. designer from San Francisco.</p>
+				</div>
+			</div>
+			<hr>
+			<div class="username">
+				<h3 class="title">Username</h3>
+				<div class="input-group"> <!-- class input-error and input-valid -->
+					<input type="username" id="username" required class="input-area">
+					<label for="username" class="label">Username</label>
+					<p class="tooltip">You can choose a username on Telegram. If you do, other people will be able to find you by this username and contact you without knowing your phone number.</p>
+					<p class="tooltip">You can use a-z, 0-9 and underscores. Minimum length is 5 characters</p>
+				</div>
+			</div>
 		</div>
-		<div class="menu-btns">
-			<button class="btn ripple btn-white btn-img">
-				<object type="image/svg+xml" data="icons/edit_svg.svg" class="icon icon-gray">
-					<img src="icons/edit_svg.svg" /> <!-- For search engine -->
-				</object>
-				<span>Edit profile</span>
-			</button>
-
-			<button class="btn ripple btn-white btn-img">
-				<object type="image/svg+xml" data="icons/settings_svg.svg" class="icon icon-gray">
-					<img src="icons/settings_svg.svg" />
-				</object>
-				<span>General Settings</span>
-			</button>
-
-			<button class="btn ripple btn-white btn-img">
-				<object type="image/svg+xml" data="icons/unmute_svg.svg" class="icon icon-gray">
-					<img src="icons/unmute_svg.svg" />
-				</object>
-				<span>Notifications</span>
-			</button>
-
-			<button class="btn ripple btn-white btn-img">
-				<object type="image/svg+xml" data="icons/lock_svg.svg" class="icon icon-gray">
-					<img src="icons/lock_svg.svg" />
-				</object>
-				<span>Privacy and Security</span>
-			</button>
-
-			<button class="btn ripple btn-white btn-img">
-				<object type="image/svg+xml" data="icons/language_svg.svg" class="icon icon-gray">
-					<img src="icons/language_svg.svg" />
-				</object>
-				<span>Language</span>
-			</button>
-		</div>
-	</div>
-	<div class="edit-profile">
-
 	</div>
 
 

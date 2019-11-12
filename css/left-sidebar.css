@@ -1,16 +1,26 @@
-.settings {
+.left-sidebar {
 	padding: 15px;
 	width: 350px;
 	height: 100vh;
+}
+
+.settings {
 	display: none;
 }
 
 .header {
 	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
 	grid-column-gap: 20px;
 	align-items: center;
 	justify-content: center;
+}
+
+.header-title {
+	font-size: 20px;
+}
+
+.header-settings {
+	grid-template-columns: 35px 1fr 35px;
 }
 
 .header-back, .header-more {
@@ -21,17 +31,47 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 20px 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .account-img {
-	width: 30%;
+	width: 100%;
 	border-radius: 50%;
-	margin-bottom: 35px;
+}
+
+.img-container {
+	position: relative;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-content {
+	position: absolute;
+	z-index: 2;
+}
+
+.img-content .icon {
+	width: 40px;
+}
+
+.darkened::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);  
+	z-index: 1;
+	border-radius: 50%;
 }
 
 .account-name {
 	font-size: 24px;
+	margin-top: 35px;
 	margin-bottom: 10px;
 }
 
@@ -42,4 +82,26 @@
 .menu-btns {
 	display: flex;
 	flex-direction: column;
+}
+
+.edit-profile {
+	/* display: none; */
+}
+
+.header-edit-profile {
+	grid-template-columns: 35px 1fr;
+}
+
+.vertical-input-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.vertical-input-group .input-group {
+	margin-bottom: 20px;
+}
+
+.username .title {
+	color: #565a5e;
+	padding: 20px 0;
 }

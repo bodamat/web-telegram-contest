@@ -2,6 +2,8 @@
 	--input-border-color-default: #8d8d8d;
 	--input-border-color-hover: #000;
 	--input-border-color-focus: #4ea4f6;
+	--input-border-color-error: #dd302a;
+	--input-border-color-valid: #11b634;
 }
 
 *, :after, :before {
@@ -10,6 +12,14 @@
 	font-family: roboto;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+span, label, input {
+  font-size: 14px;
+}
+
+.space {
+	height: 20px;
 }
 
 /* Material design input */
@@ -21,9 +31,16 @@
 .input-group .input-area {
 	outline: none;
 	border: 1px solid var(--input-border-color-default);
-	padding: 16px 13px;
-	font-size: 18px;
-	border-radius: 15px;
+	padding: 15px 13px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.input-group .tooltip {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #707579;
 }
 
 .input-group .input-area:hover {
@@ -52,16 +69,29 @@
 .input-group .label {
 	color: var(--input-border-color-default);
 	position: absolute;
-	top: 20px;
+	top: 18px;
 	left: 13px;
-	transition: .1s;
-} 
+  transition: .1s;
+  cursor: text;
+}
+
+.input-error .input-area, .input-error .input-area:hover, .input-error .input-area:focus, .input-error .input-area:valid {
+  border: 2px solid var(--input-border-color-error);
+}
+
+.input-error .input-area:focus + .label, .input-error .input-area:valid + .label {
+  color: var(--input-border-color-error)
+}
+
+.input-valid .input-area, .input-valid .input-area:hover, .input-valid .input-area:focus, .input-valid .input-area:valid {
+  border: 2px solid var(--input-border-color-valid);
+}
+
+.input-valid .input-area:focus + .label, .input-valid .input-area:valid + .label {
+  color: var(--input-border-color-valid)
+}
 
 /* End material design input */
-
-.space {
-	height: 20px;
-}
 
 .btn{
 	font-size: 18px;
@@ -129,7 +159,7 @@
 }
 
 .icon {
-	width: 30px;
+	width: 25px;
 }
 
 .btn-add, .btn-round {
@@ -137,17 +167,14 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	padding: 0;
+  padding: 0;
+  width: 35px;
+	height: 35px;
 }
 
 .btn-add {
 	width: 70px;
 	height: 70px;
-}
-
-.btn-round {
-	width: 50px;
-	height: 50px;
 }
 
 .btn-add .icon {
