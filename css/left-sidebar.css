@@ -1,7 +1,32 @@
+.container {
+	padding: 0 20px;
+}
+
+.hr {
+	margin: 20px 0;
+}
+
+.m-t-5 {
+	margin-top: 5px;
+}
+
+.p-l-20 {
+	padding-left: 20px;
+}
+
+.hr-small-top {
+	margin-top: 10px;
+}
+
 .left-sidebar {
-	padding: 15px;
 	width: 350px;
 	height: 100vh;
+}
+
+.h3-title {
+	color: #565a5e;
+	margin-bottom: 20px;
+	font-size: 16px;
 }
 
 .settings {
@@ -13,14 +38,19 @@
 	grid-column-gap: 20px;
 	align-items: center;
 	justify-content: center;
+	padding: 5px 10px;
+}
+
+.header-2-column {
+	grid-template-columns: 35px 1fr;
+}
+
+.header-3-column {
+	grid-template-columns: 35px 1fr 35px;
 }
 
 .header-title {
 	font-size: 20px;
-}
-
-.header-settings {
-	grid-template-columns: 35px 1fr 35px;
 }
 
 .header-back, .header-more {
@@ -86,11 +116,7 @@
 }
 
 .edit-profile {
-	/* display: none; */
-}
-
-.header-edit-profile {
-	grid-template-columns: 35px 1fr;
+	display: none;
 }
 
 .vertical-input-group {
@@ -102,7 +128,42 @@
 	margin-bottom: 20px;
 }
 
-.username .title {
-	color: #565a5e;
-	padding: 20px 0;
+.security {
+	display: none;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.radio-group {
+	margin: 20px 0;
+}
+
+.radio-content {
+	display: flex;
+	align-items: center;
+}
+
+.radio-text {
+	font-weight: 500;
+	padding-left: 20px;
+}
+
+.radio-content {
+	cursor: pointer;
+}
+
+.radio-img {
+	filter: invert(66%) sepia(3%) saturate(19%) hue-rotate(4deg) brightness(85%) contrast(86%);
+}
+
+input[type="radio"]:checked + .radio-content .radio-img {
+	filter: invert(73%) sepia(57%) saturate(6003%) hue-rotate(191deg) brightness(108%) contrast(93%);
+}
+
+.text-tooltip {
+  font-size: 13px;
+	color: #707579;
+	line-height: 1.5;
 }

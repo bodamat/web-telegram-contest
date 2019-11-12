@@ -21,4 +21,21 @@ rippleBtns.forEach(function(rippleBtn){
 		var rippleEl = e.target
 		rippleEl.parentNode.removeChild(rippleEl);
 	})
-});
+})
+
+var radioInputs = document.querySelectorAll('input[type=radio]')
+imgRadio()
+radioInputs.forEach(input => {
+	input.addEventListener('click', function() {
+		imgRadio()
+	})
+})
+
+function imgRadio() {
+	var radioImgs = document.querySelectorAll('.radio-img')
+	var checkedRadioImgs = document.querySelectorAll('input[type=radio]:checked + .radio-content .radio-img')
+
+	radioImgs.forEach(item => item.src = "icons/radiooff_svg.svg")
+	checkedRadioImgs.forEach(item => item.src = "icons/radioon_svg.svg")
+}
+

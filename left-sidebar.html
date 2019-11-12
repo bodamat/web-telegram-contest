@@ -11,7 +11,7 @@
 <body>
 	<div class="left-sidebar">
 		<div class="settings">
-			<div class="header header-settings">
+			<div class="header header-3-column">
 				<button class="btn ripple btn-white btn-round header-back">
 					<object type="image/svg+xml" data="icons/back_svg.svg" class="icon icon-gray">
 						<img src="icons/back_svg.svg" />
@@ -36,40 +36,50 @@
 					<object type="image/svg+xml" data="icons/edit_svg.svg" class="icon icon-gray">
 						<img src="icons/edit_svg.svg" /> <!-- For search engine -->
 					</object>
-					<span>Edit profile</span>
+					<div class="content">
+						<span class="name">Edit profile</span>
+					</div>
 				</button>
 	
 				<button class="btn ripple btn-white btn-img">
 					<object type="image/svg+xml" data="icons/settings_svg.svg" class="icon icon-gray">
 						<img src="icons/settings_svg.svg" />
 					</object>
-					<span>General Settings</span>
+					<div class="content">
+						<span class="name">General Settings</span>
+					</div>
 				</button>
 	
 				<button class="btn ripple btn-white btn-img">
 					<object type="image/svg+xml" data="icons/unmute_svg.svg" class="icon icon-gray">
 						<img src="icons/unmute_svg.svg" />
 					</object>
-					<span>Notifications</span>
+					<div class="content">
+						<span class="name">Notifications</span>
+					</div>
 				</button>
 	
 				<button class="btn ripple btn-white btn-img">
 					<object type="image/svg+xml" data="icons/lock_svg.svg" class="icon icon-gray">
 						<img src="icons/lock_svg.svg" />
 					</object>
-					<span>Privacy and Security</span>
+					<div class="content">
+						<span class="name">Privacy and Security</span>
+					</div>
 				</button>
 	
 				<button class="btn ripple btn-white btn-img">
 					<object type="image/svg+xml" data="icons/language_svg.svg" class="icon icon-gray">
 						<img src="icons/language_svg.svg" />
 					</object>
-					<span>Language</span>
+					<div class="content">
+						<span class="name">Language</span>
+					</div>
 				</button>
 			</div>
 		</div>
 		<div class="edit-profile">
-			<div class="header header-edit-profile">
+			<div class="header header-2-column">
 				<button class="btn ripple btn-white btn-round header-back">
 					<object type="image/svg+xml" data="icons/back_svg.svg" class="icon icon-gray">
 						<img src="icons/back_svg.svg" />
@@ -87,7 +97,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="vertical-input-group">
+			<div class="vertical-input-group container">
 				<div class="input-group">
 					<input type="name" id="name" required class="input-area">
 					<label for="name" class="label">Name</label>
@@ -99,18 +109,151 @@
 				<div class="input-group">
 					<input type="bio" id="bio" required class="input-area">
 					<label for="bio" class="label">Bio (optional)</label>
-					<p class="tooltip">Any details such as age? occupation or city. Example: 23 y.o. designer from San Francisco.</p>
 				</div>
+				<p class="text-tooltip">Any details such as age? occupation or city. Example: 23 y.o. designer from San Francisco.</p>
 			</div>
-			<hr>
-			<div class="username">
-				<h3 class="title">Username</h3>
+			<hr class="hr m-t-5">
+			<div class="username container">
+				<h3 class="h3-title">Username</h3>
 				<div class="input-group"> <!-- class input-error and input-valid -->
 					<input type="username" id="username" required class="input-area">
 					<label for="username" class="label">Username</label>
-					<p class="tooltip">You can choose a username on Telegram. If you do, other people will be able to find you by this username and contact you without knowing your phone number.</p>
-					<p class="tooltip">You can use a-z, 0-9 and underscores. Minimum length is 5 characters</p>
 				</div>
+				<p class="text-tooltip">You can choose a username on Telegram. If you do, other people will be able to find you by this username and contact you without knowing your phone number.</p>
+				<p class="text-tooltip">You can use a-z, 0-9 and underscores. Minimum length is 5 characters</p>
+			</div>
+		</div>
+		<div class="security">
+			<div class="header header-2-column">
+				<button class="btn ripple btn-white btn-round header-back">
+					<object type="image/svg+xml" data="icons/back_svg.svg" class="icon icon-gray">
+						<img src="icons/back_svg.svg" />
+					</object>
+				</button>
+				<h2 class="header-title">Privacy and Security</h2>
+			</div>
+			<hr class="hr hr-small-top">
+			<div class="menu-btns">
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/deleteuser_svg.svg" class="icon icon-gray">
+						<img src="icons/deleteuser_svg.svg" /> <!-- For search engine -->
+					</object>
+					<div class="content">
+						<span class="name title">Blocked Users</span>
+						<span class="info">6 users</span>
+					</div>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img">
+					<object type="image/svg+xml" data="icons/activesessions_svg.svg" class="icon icon-gray">
+						<img src="icons/activesessions_svg.svg" />
+					</object>
+					<div class="content">
+						<span class="name title">Active Sessions</span>
+						<span class="info">3 devices</span>
+					</div>
+				</button>
+			</div>
+			<hr class="hr hr-small-top">
+			<h3 class="h3-title p-l-20">Privacy</h3>
+			<div class="menu-btns">
+				<button class="btn ripple btn-white btn-img btn-faq">
+					<div class="content">
+						<span class="name title">Who can see my phone number?</span>
+						<span class="info">My Contacts</span>
+					</div>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img btn-faq">
+					<div class="content">
+						<span class="name title">Who can see your Last Seen time?</span>
+						<span class="info">Everybody</span>
+					</div>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img btn-faq">
+					<div class="content">
+						<span class="name title">Who can see my profile photo?</span>
+						<span class="info">Everybody</span>
+					</div>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img btn-faq">
+					<div class="content">
+						<span class="name title">Who can add a link to my account when forwarding my messages?</span>
+						<span class="info">Everybody</span>
+					</div>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img btn-faq">
+					<div class="content">
+						<span class="name title">Who can add me to group chats?</span>
+						<span class="info">Everybody</span>
+					</div>
+				</button>
+	
+			</div>
+		</div>
+		<div class="last-seen">
+			<div class="header header-2-column">
+				<button class="btn ripple btn-white btn-round header-back">
+					<img src="icons/back_svg.svg" />
+				</button>
+				<h2 class="header-title">Last Seen & Online</h2>
+			</div>
+			<hr class="hr hr-small-top">
+			<h3 class="h3-title p-l-20">Who can see your Last Seen time?</h3>
+			<div class="container">
+				<div class="last-seen-radio">
+					<div class="radio-group">
+						<input type="radio" id="email"
+							name="contact" value="email">
+						<label for="email" class="radio-content">
+							<img alt="" class="icon radio-img">
+							<span class="radio-text">Everybody</span>
+						</label>
+					</div>
+			
+					<div class="radio-group">
+						<input type="radio" id="phone"
+							name="contact" value="phone" checked>
+						<label for="phone" class="radio-content">
+							<img alt="" class="icon radio-img">
+							<span class="radio-text">My Contacts</span>
+						</label>
+					</div>
+			
+					<div class="radio-group">
+						<input type="radio" id="contact"
+							name="contact" value="email">
+						<label for="contact" class="radio-content">
+							<img alt="" class="icon radio-img">
+							<span class="radio-text">No body</span>
+						</label>
+					</div>
+				</div>
+				<p class="text-tooltip">
+					You won't see Last Seen and online statuses for people with whom you don't share yours. Approximate last seen will be shown instead (recently, within a week, within a month)
+				</p>
+			</div>		
+			<hr class="hr">
+			<h3 class="h3-title p-l-20">Exceptions</h3>
+			<div class="menu-btns">
+				<button class="btn ripple btn-white btn-img">
+					<img src="icons/deleteuser_svg.svg" class="icon icon-gray"/>
+					<div class="content">
+						<span class="name title">Never Share With</span>
+						<span class="info">Add Users</span>
+					</div>
+				</button>
+	
+				<button class="btn ripple btn-white btn-img">
+					<img src="icons/adduser_svg.svg" class="icon icon-gray"/>
+					<div class="content">
+						<span class="name title">Always Share With</span>
+						<span class="info">Add Users</span>
+					</div>
+				</button>
 			</div>
 		</div>
 	</div>
