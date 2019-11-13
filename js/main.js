@@ -50,7 +50,14 @@ checkboxInputs.forEach(input => {
 function imgCheckbox() {
   var checkboxImgs = document.querySelectorAll('.checkbox-img')
   var checkedCheckboxImgs = document.querySelectorAll('input[type=checkbox]:checked + .checkbox-content .checkbox-img')
+  var indeterminateCheckboxImgs = document.querySelectorAll('input[type=checkbox]:indeterminate + .checkbox-content .checkbox-img')
   
-  checkboxImgs.forEach(item => item.src = "icons/radiooff_svg.svg")
-  checkedCheckboxImgs.forEach(item => item.src = "icons/radioon_svg.svg")
+  checkboxImgs.forEach(item => item.src = "icons/checkboxempty_svg.svg")
+  checkedCheckboxImgs.forEach(item => item.src = "icons/checkboxon_svg.svg")
+  indeterminateCheckboxImgs.forEach(item => item.src = "icons/checkboxblock_svg.svg")
+}
+
+function indeterminateInput(input) {
+  if (input.readOnly) input.checked=input.readOnly=false;
+  else if (!input.checked) input.readOnly=input.indeterminate=true;
 }

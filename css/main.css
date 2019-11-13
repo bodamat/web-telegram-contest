@@ -16,6 +16,10 @@
 
 body {
   overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 span, label, input {
@@ -158,12 +162,12 @@ span, label, input {
   text-align: left;
 }
 
-.btn .content .name {
+.btn .name, .input-name {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.btn .content .title {
+.btn .title, .checkbox-content .title {
   font-weight: bold;
 }
 

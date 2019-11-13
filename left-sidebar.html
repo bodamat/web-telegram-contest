@@ -210,7 +210,9 @@
 							name="contact" value="email">
 						<label for="email" class="radio-content">
 							<img alt="" class="icon radio-img">
-							<span class="radio-text">Everybody</span>
+							<div class="input-text-content">
+								<span class="input-name">Everybody</span>
+							</div>
 						</label>
 					</div>
 			
@@ -219,7 +221,9 @@
 							name="contact" value="phone" checked>
 						<label for="phone" class="radio-content">
 							<img alt="" class="icon radio-img">
-							<span class="radio-text">My Contacts</span>
+							<div class="input-text-content">
+								<span class="input-name">My Contacts</span>
+							</div>
 						</label>
 					</div>
 			
@@ -228,7 +232,9 @@
 							name="contact" value="email">
 						<label for="contact" class="radio-content">
 							<img alt="" class="icon radio-img">
-							<span class="radio-text">No body</span>
+							<div class="input-text-content">
+								<span class="input-name">No body</span>
+							</div>
 						</label>
 					</div>
 				</div>
@@ -256,32 +262,121 @@
 				</button>
 			</div>
 		</div>
-		<div class="checkboxes container">
-		  <div class="checkbox-group">
-		    <input type="checkbox" id="checkbox1">
-		    <label for="checkbox1" class="checkbox-content">
-		      <img src="icons/radioon_svg.svg" alt="" class="icon checkbox-img">
-		      <span class="name">Checkbox1</span>
-		    </label>
-		  </div>
-		  
-		  <div class="checkbox-group">
-		    <input type="checkbox" id="checkbox2">
-		    <label for="checkbox2" class="checkbox-content">
-		      <img src="icons/radioon_svg.svg" alt="" class="icon checkbox-img">
-		      <span class="name">Checkbox2</span>
-		    </label>
-		  </div>
-		  
-		  <div class="checkbox-group">
-		    <input type="checkbox" id="checkbox3">
-		    <label for="checkbox3" class="checkbox-content">
-		      <img src="icons/radioon_svg.svg" alt="" class="icon checkbox-img">
-		      <span class="name">Checkbox3</span>
-		    </label>
-		  </div>
-		  
+		<div id="notifications">
+			<div class="header header-2-column">
+				<button class="btn ripple btn-white btn-round header-back">
+					<img src="icons/back_svg.svg" />
+				</button>
+				<h2 class="header-title">Notifications</h2>
+			</div>
+			<hr class="hr hr-small-top">
+			<div class="container" id="private-chat">
+				<h3 class="h3-title">Private Chats</h3>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="chatsNotify" checked>
+					<label for="chatsNotify" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Notifications for private chats</span>
+							<span class="text-tooltip">Enabled</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="chatsMessage" checked>
+					<label for="chatsMessage" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Message preview</span>
+							<span class="text-tooltip">Enabled</span>
+						</div>
+					</label>
+				</div>
+			</div>
+			<hr class="hr hr-small-top">
+			<div class="container" id="groups">
+				<h3 class="h3-title">Groups</h3>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="groupNotify" checked>
+					<label for="groupNotify" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Notifications for groups</span>
+							<span class="text-tooltip">Enabled</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="groupMessage">
+					<label for="groupMessage" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Message preview</span>
+							<span class="text-tooltip">Disabled</span>
+						</div>
+					</label>
+				</div>
+			</div>
+			<hr class="hr hr-small-top">
+			<div class="container" id="channels">
+				<h3 class="h3-title">Channels</h3>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="channelsChat" checked>
+					<label for="channelsChat" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Notifications for private chats</span>
+							<span class="text-tooltip">Enabled</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="channelsMessage" checked>
+					<label for="channelsMessage" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Message preview</span>
+							<span class="text-tooltip">Enabled</span>
+						</div>
+					</label>
+				</div>
+			</div>
+			<hr class="hr hr-small-top">
+			<div id="other" class="container">
+				<h3 class="h3-title">Other</h3>
+
+				<div class="checkbox-group">
+					<input type="checkbox" id="contactTelegram" checked>
+					<label for="contactTelegram" class="checkbox-content">
+						<img alt="" class="icon checkbox-img">
+						<div class="input-text-content">
+							<span class="input-name">Contacts joined Telegram</span>
+						</div>
+					</label>
+				</div>
+			</div>
+
 		</div>
+
+		<div class="container">
+			<div class="checkbox-group">
+		    <input type="checkbox" id="cb1" onclick="indeterminateInput(this)">
+		    <label for="cb1" class="checkbox-content">
+					<img alt="" class="icon checkbox-img">
+					<div class="input-text-content">
+						<span class="input-name">Rotate input</span>
+					</div>
+		    </label>
+			</div>	
+		</div>
+
+
 	</div>
 
 
