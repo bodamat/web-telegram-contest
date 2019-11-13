@@ -167,3 +167,7 @@ input[type="radio"]:checked + .radio-content .radio-img {
 	color: #707579;
 	line-height: 1.5;
 }
+
+.last-seen {
+  display: none;
+}
