@@ -171,3 +171,29 @@ input[type="radio"]:checked + .radio-content .radio-img {
 .last-seen {
   display: none;
 }
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-group, .checkbox-group .checkbox-content {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group {
+  margin: 20px 0;
+}
+
+.checkbox-group .checkbox-content .name{
+  padding-left: 20px;
+}
+
+input[type="checkbox"]:checked + .checkbox-content .checkbox-img {
+  filter: invert(73%) sepia(57%) saturate(6003%) hue-rotate(191deg) brightness(108%) contrast(93%);
+}

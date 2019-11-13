@@ -39,3 +39,18 @@ function imgRadio() {
 	checkedRadioImgs.forEach(item => item.src = "icons/radioon_svg.svg")
 }
 
+var checkboxInputs = document.querySelectorAll('input[type=checkbox]')
+imgCheckbox()
+checkboxInputs.forEach(input => {
+  input.addEventListener('click', function() {
+    imgCheckbox()
+  })
+})
+
+function imgCheckbox() {
+  var checkboxImgs = document.querySelectorAll('.checkbox-img')
+  var checkedCheckboxImgs = document.querySelectorAll('input[type=checkbox]:checked + .checkbox-content .checkbox-img')
+  
+  checkboxImgs.forEach(item => item.src = "icons/radiooff_svg.svg")
+  checkedCheckboxImgs.forEach(item => item.src = "icons/radioon_svg.svg")
+}
