@@ -194,7 +194,7 @@
 	
 			</div>
 		</div>
-		<div class="last-seen">
+		<div id="last-seen">
 			<div class="header header-2-column">
 				<button class="btn ripple btn-white btn-round header-back">
 					<img src="icons/back_svg.svg" />
@@ -203,40 +203,38 @@
 			</div>
 			<hr class="hr hr-small-top">
 			<h3 class="h3-title p-l-20">Who can see your Last Seen time?</h3>
-			<div class="container">
-				<div class="last-seen-radio">
-					<div class="radio-group">
-						<input type="radio" id="email"
-							name="contact" value="email">
-						<label for="email" class="radio-content">
-							<img alt="" class="icon radio-img">
-							<div class="input-text-content">
-								<span class="input-name">Everybody</span>
-							</div>
-						</label>
-					</div>
-			
-					<div class="radio-group">
-						<input type="radio" id="phone"
-							name="contact" value="phone" checked>
-						<label for="phone" class="radio-content">
-							<img alt="" class="icon radio-img">
-							<div class="input-text-content">
-								<span class="input-name">My Contacts</span>
-							</div>
-						</label>
-					</div>
-			
-					<div class="radio-group">
-						<input type="radio" id="contact"
-							name="contact" value="email">
-						<label for="contact" class="radio-content">
-							<img alt="" class="icon radio-img">
-							<div class="input-text-content">
-								<span class="input-name">No body</span>
-							</div>
-						</label>
-					</div>
+			<div class="container" id="last-seen-radio">
+				<div class="radio-group">
+					<input type="radio" id="email"
+						name="contact" value="email">
+					<label for="email" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Everybody</span>
+						</div>
+					</label>
+				</div>
+		
+				<div class="radio-group">
+					<input type="radio" id="phone"
+						name="contact" value="phone" checked>
+					<label for="phone" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">My Contacts</span>
+						</div>
+					</label>
+				</div>
+		
+				<div class="radio-group">
+					<input type="radio" id="contact"
+						name="contact" value="email">
+					<label for="contact" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">No body</span>
+						</div>
+					</label>
 				</div>
 				<p class="text-tooltip">
 					You won't see Last Seen and online statuses for people with whom you don't share yours. Approximate last seen will be shown instead (recently, within a week, within a month)
@@ -363,22 +361,129 @@
 			</div>
 
 		</div>
+		<div id="language">
+			<div class="header header-2-column">
+				<button class="btn ripple btn-white btn-round header-back">
+					<img src="icons/back_svg.svg" />
+				</button>
+				<h2 class="header-title">Language</h2>
+			</div>
+			<hr class="hr hr-small-top">
 
-		<div class="container">
-			<div class="checkbox-group">
-		    <input type="checkbox" id="cb1" onclick="indeterminateInput(this)">
-		    <label for="cb1" class="checkbox-content">
-					<img alt="" class="icon checkbox-img">
-					<div class="input-text-content">
-						<span class="input-name">Rotate input</span>
-					</div>
-		    </label>
+			<div class="container">
+		
+				<div class="radio-group">
+					<input type="radio" id="english"
+						name="language" value="email" checked>
+					<label for="english" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">English</span>
+							<span class="text-tooltip">English</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="french"
+						name="language" value="email">
+					<label for="french" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Francais</span>
+							<span class="text-tooltip">French</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="german"
+						name="language" value="email">
+					<label for="german" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Deutsch</span>
+							<span class="text-tooltip">German</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="italian"
+						name="language" value="email">
+					<label for="italian" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Italiano</span>
+							<span class="text-tooltip">Italian</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="portuguese"
+						name="language" value="email">
+					<label for="portuguese" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Portugues</span>
+							<span class="text-tooltip">Portuguese</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="russian"
+						name="language" value="email">
+					<label for="russian" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Русский</span>
+							<span class="text-tooltip">Russian</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="spanish"
+						name="language" value="email">
+					<label for="spanish" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Espanol</span>
+							<span class="text-tooltip">Spanish</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="radio-group">
+					<input type="radio" id="ukrainian"
+						name="language" value="email">
+					<label for="ukrainian" class="radio-content">
+						<img alt="" class="icon radio-img">
+						<div class="input-text-content">
+							<span class="input-name">Українська</span>
+							<span class="text-tooltip">Ukrainian</span>
+						</div>
+					</label>
+				</div>
+
 			</div>	
-		</div>
-
-
+		</div>	
+		
 	</div>
-
+	
+	<!-- <div class="container">
+		<div class="checkbox-group">
+			<input type="checkbox" id="cb1" onclick="indeterminateInput(this)">
+			<label for="cb1" class="checkbox-content">
+				<img alt="" class="icon checkbox-img">
+				<div class="input-text-content">
+					<span class="input-name">Rotate input</span>
+				</div>
+			</label>
+		</div>	
+	</div> -->
 
 	<script src="js/allFunctions.js"></script>
 	<script src="js/main.js" charset="utf-8"></script>
