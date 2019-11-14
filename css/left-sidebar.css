@@ -1,5 +1,26 @@
+:root {
+	--border-color-gray: #8d8d8d;
+}
+
 .container {
 	padding: 0 20px;
+}
+
+.content {
+	min-height: 100%;
+}
+
+.section {
+	padding: 20px;
+	border-bottom: 1px solid var(--border-color-gray);
+}
+
+.section:last-child {
+	border: none;
+}
+
+.color-list-section {
+	padding: 10px 0;
 }
 
 #notifications {
@@ -14,20 +35,20 @@
 	display: none;
 }
 
-.hr {
-	margin: 20px 0;
+#chat-background {
+	display: none;
 }
 
-.m-t-5 {
-	margin-top: 5px;
+#blocked-users {
+	/* display: none; */
 }
 
-.p-l-20 {
-	padding-left: 20px;
+.p-l-d {
+	padding-left: 20px !important;
 }
 
-.hr-small-top {
-	margin-top: 10px;
+.p-l-0 {
+	padding-left: 0 !important;
 }
 
 .left-sidebar {
@@ -51,7 +72,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid var(--border-color-gray);
 }
 
 .header-2-column {
@@ -123,9 +144,14 @@
 	color: #707579;
 }
 
-.menu-btns {
+.subsection {
 	display: flex;
 	flex-direction: column;
+	padding: 10px 0;
+}
+
+.subsection:first-child {
+	padding: 0;
 }
 
 .edit-profile {
@@ -181,16 +207,6 @@ input[type="checkbox"]:indeterminate + .checkbox-content .checkbox-img {
 	padding-left: 20px;
 	display: flex;
 	flex-direction: column;
-}
-
-#chat-background {
-	height: 100%;
-	border: 1px solid #000;
-}
-
-.content {
-	padding: 10px;
-	min-height: 100%;
 }
 
 .color-list {
