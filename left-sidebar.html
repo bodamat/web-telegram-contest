@@ -9,7 +9,7 @@
 	<title>LeftSidebar</title>
 </head>
 <body>
-	<div class="left-sidebar">
+	<div id="left-sidebar">
 		<div class="settings">
 			<div class="header header-3-column">
 				<button class="btn ripple btn-white btn-round header-back">
@@ -368,7 +368,6 @@
 				</button>
 				<h2 class="header-title">Language</h2>
 			</div>
-			<hr class="hr hr-small-top">
 
 			<div class="container">
 		
@@ -498,27 +497,232 @@
 				<h2 class="header-title">Blocked Users</h2>
 			</div>
 			<div class="content">
-				<div class="section p-l-0">
+				<div class="section">
 					<div class="subsection">
-						<p class="text-tooltip p-l-d">
+						<p class="text-tooltip p-l-smd">
 							Blocked users will not be able to contact you and will not see your Last Seen time
 						</p>
 					</div>
 
 					<div class="subsection">
-						<button class="btn ripple btn-white btn-img">
-							<img src="icons/deleteuser_svg.svg" class="icon icon-gray"/>
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
 							<div class="content">
-								<span class="name title">Never Share With</span>
-								<span class="info">Add Users</span>
+								<span class="name">Raaid El Syed</span>
+								<span class="info">+1 234 567891</span>
 							</div>
 						</button>
 			
-						<button class="btn ripple btn-white btn-img">
-							<img src="icons/adduser_svg.svg" class="icon icon-gray"/>
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account2.jpg" class="account-img"/>
 							<div class="content">
-								<span class="name title">Always Share With</span>
-								<span class="info">Add Users</span>
+								<span class="name">Chinaza Akachi</span>
+								<span class="info">+1 234 567892</span>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+			<button class="btn ripple btn-blue btn-add">
+				<img src="icons/add_svg.svg" class="icon icon-white"/> 
+			</button>
+		</div>
+		<div id="active-session">
+			<div class="header header-2-column">
+				<button class="btn ripple btn-white btn-round">
+					<img src="icons/back_svg.svg" class="icon"/>
+				</button>
+				<h2 class="header-title">Active Session</h2>
+			</div>
+			<div class="content">
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">Current Session</h3>
+					</div>
+	
+					<div class="subsection btns-list">
+						<button class="btn btn-text ripple btn-white">
+							<div class="content">
+								<span class="name">Telegram Web 1.0</span>
+								<span class="device">Safari, macOS</span>
+								<span class="info">216.3.128.12 - Paris, France</span>
+							</div>
+						</button>
+
+						<button class="btn ripple btn-white color-red">
+							<img src="icons/stop_svg.svg" class="icon icon-red"/>
+							<div class="content">
+								<span class="name">Terminate all other sessions</span>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">Other Sessions</h3>
+					</div>
+					<div class="subsection btns-list">
+						<button class="btn ripple btn-white btn-text">
+							<div class="content">
+								<span class="name">Telegram IOS 5.12</span>
+								<span class="device">Iphone X, IOS 13.2</span>
+								<span class="info">216.3.128.12 - Paris, France</span>
+							</div>
+							<span class="date info">19:25</span>
+						</button>
+						
+						<button class="btn ripple btn-white btn-text">
+							<div class="content">
+								<span class="name">Telegram Android 5.11</span>
+								<span class="device">Samsung Galaxy S9, Android 9P</span>
+								<span class="info">216.3.128.12 - Paris, France</span>
+							</div>
+							<span class="date info">16:34</span>
+						</button>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="search">
+			<div class="header header-2-column header-search">
+				<button class="btn ripple btn-white btn-round">
+					<img src="icons/back_svg.svg" class="icon"/>
+				</button>
+				<div class="search-input-group test"> <!-- class input-error and input-valid -->
+					<input type="searcher" id="sarch" class="input-area" placeholder="Search" onfocus="styleSearch(this, 'add')" onblur="styleSearch(this, 'remove')">
+					<label for="search">
+						<img src="icons/search_svg.svg" alt="" class="icon icon-light-gray">
+					</label>
+				</div>
+			</div>
+			<div class="content">
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">Contacts and Chats</h3>
+					</div>
+					<div class="subsection">
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Campus Party</span>
+								<span class="info">2,500 members</span>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">Global Search</h3>
+					</div>
+					<div class="subsection">
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Super Party</span>
+								<span class="info">@party</span>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">Global Search</h3>
+					</div>
+					<div class="subsection">
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Little Sister</span>
+								<span class="info">Party in the Park will now be an action !(...)!</span>
+							</div>
+							<span class="date">Feb 8</span>
+						</button>
+			
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account2.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Monika Parker</span>
+								<span class="info">Party!</span>
+							</div>
+							<span class="date">Jan 24</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="calls">
+			<div class="header header-2-column header-search">
+				<button class="btn ripple btn-white btn-round">
+					<img src="icons/back_svg.svg" class="icon"/>
+				</button>
+				<div class="search-input-group test"> <!-- class input-error and input-valid -->
+					<input type="searcher" id="sarch" class="input-area" placeholder="Search" onfocus="styleSearch(this, 'add')" onblur="styleSearch(this, 'remove')">
+					<label for="search">
+						<img src="icons/search_svg.svg" alt="" class="icon icon-light-gray">
+					</label>
+				</div>
+			</div>
+			<div class="content">
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">People</h3>
+					</div>
+					<div class="subsection btns-vertical-list">
+						<button class="btn btn-vertical ripple btn-white">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Campus</span>
+							</div>
+						</button>
+						
+						<button class="btn btn-vertical ripple btn-white">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Campus</span>
+							</div>
+						</button>
+
+						<button class="btn btn-vertical ripple btn-white">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Campus</span>
+							</div>
+						</button>
+
+						<button class="btn btn-vertical ripple btn-white">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Campus</span>
+							</div>
+						</button>
+
+						<button class="btn btn-vertical ripple btn-white">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Campus</span>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="section">
+					<div class="subsection">
+						<h3 class="h3-title">Recent</h3>
+					</div>
+					<div class="subsection">
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account1.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Raaid El Syed</span>
+								<span class="info">last seen just now</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-account">
+							<img src="assets/imgs/account2.jpg" class="account-img"/>
+							<div class="content">
+								<span class="name">Chinaza Akachi</span>
+								<span class="info">last seen just now</span>
 							</div>
 						</button>
 					</div>

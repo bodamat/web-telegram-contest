@@ -1,5 +1,15 @@
 :root {
-	--border-color-gray: #8d8d8d;
+	--border-color-gray: #d1d0d0;
+}
+
+#left-sidebar {
+	width: 400px;
+	height: 100vh;
+}
+
+.left-sidebar > div {
+	min-height: 100%;
+	position: relative;
 }
 
 .container {
@@ -11,12 +21,34 @@
 }
 
 .section {
-	padding: 20px;
+	padding: 20px 10px 10px 10px;
 	border-bottom: 1px solid var(--border-color-gray);
 }
 
 .section:last-child {
 	border: none;
+}
+
+.big-section {
+	padding: 20px;
+}
+
+.subsection {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+}
+
+.subsection:first-child {
+	padding-top: 5px;
+}
+
+.btns-list > button:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.btns-vertical-list {
+	flex-direction: row;
 }
 
 .color-list-section {
@@ -40,25 +72,24 @@
 }
 
 #blocked-users {
-	/* display: none; */
+	display: none;
 }
 
-.p-l-d {
-	padding-left: 20px !important;
+#active-session {
+	display: none;
 }
 
-.p-l-0 {
-	padding-left: 0 !important;
+#search {
+	display: none;
 }
 
-.left-sidebar {
-	width: 365px;
-	height: 100vh;
+.p-l-smd {
+	padding-left: 10px !important;
 }
 
 .h3-title {
 	color: #565a5e;
-	margin-bottom: 20px;
+	padding-left: 10px;
 	font-size: 16px;
 }
 
@@ -87,8 +118,9 @@
 	font-size: 20px;
 }
 
-.header-back, .header-more {
-	align-content: center;
+.header-search {
+	border: none;
+	padding-bottom: 0;
 }
 
 .account {
@@ -100,7 +132,7 @@
 }
 
 .account-img {
-	width: 100%;
+	height: 100%;
 	border-radius: 50%;
 }
 
@@ -111,6 +143,8 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* Контент "поміняти зображення" в Edit Profile */
 
 .img-content {
 	position: absolute;
@@ -142,16 +176,6 @@
 
 .account-number {
 	color: #707579;
-}
-
-.subsection {
-	display: flex;
-	flex-direction: column;
-	padding: 10px 0;
-}
-
-.subsection:first-child {
-	padding: 0;
 }
 
 .edit-profile {

@@ -61,3 +61,17 @@ function indeterminateInput(input) {
   if (input.readOnly) input.checked=input.readOnly=false;
   else if (!input.checked) input.readOnly=input.indeterminate=true;
 }
+
+function styleSearch(input, action) {
+	let parentDiv = input.parentElement
+	let classes = parentDiv.classList
+	if( classes.contains("search-input-group") ) {
+		if (action === 'add') parentDiv.classList.add("focusSearch")
+		else {
+			if (!input.value) parentDiv.classList.remove("focusSearch");
+		}	
+	}
+	else {
+		styleSearch(parentDiv, action)
+	}
+}

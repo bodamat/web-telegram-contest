@@ -2,7 +2,7 @@
 	--input-border-color-default: #8d8d8d;
 	--input-border-color-hover: #000;
 	--input-border-color-focus: #4ea4f6;
-	--input-border-color-error: #dd302a;
+	--input-border-color-error: #e6322c;
 	--input-border-color-valid: #11b634;
 }
 
@@ -15,7 +15,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -95,15 +95,55 @@ span, label, input {
 
 /* End material design input */
 
+.search-input-group {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1.5px solid #dadada00;
+  background: #dadada54;
+}
+
+.search-input-group label {
+  height: 23px;
+  order: 1;
+}
+
+.search-input-group .input-area {
+  padding: 2px;
+  margin-left: 5px;
+  border: none;
+  width: 98%;
+  outline: none;
+  order: 2;
+  background: transparent;
+}
+
+.search-input-group .input-area::placeholder {
+  color: #9e9e9e;
+}
+
+.focusSearch {
+  border: 1.5px solid var(--input-border-color-focus);
+  background: transparent;
+}
+
+.focusSearch img {
+  filter: invert(76%) sepia(44%) saturate(5761%) hue-rotate(184deg) brightness(97%) contrast(99%);
+}
+
 .btn{
 	font-size: 18px;
 	position: relative;
-	padding: 15px 20px;
+	padding: 10px;
 	border: none;
 	border-radius: 15px;
 	outline: none;
 	overflow: hidden;
-	cursor: pointer;
+  cursor: pointer;
+  display: flex;
+	align-items: center;
+  color: #000;
 }
 
 .btn:hover:after{
@@ -122,36 +162,29 @@ span, label, input {
 	transform: scale(0);
 }
 
+.btn-blue:hover:after, .btn-blue .btn-ripple{
+  background: rgba(0, 0, 0, 0.08);
+}
+
 .btn-blue {
-	background: #4ea4f6;
-	color: #fff;
-}
-
-.btn-blue:hover:after{
-	background: rgba(0, 0, 0, 0.08);
-}
-
-.btn-blue .btn-ripple{
-	background: rgba(0, 0, 0, 0.08);
+  background: var(--input-border-color-focus);
+  color: #fff;
 }
 
 .btn-white {
 	background: #fff;
-	color: #4ea4f6;
 }
 
-.btn-white:hover:after{
+.color-blue {
+  color: #4ea4f6;
+}
+
+.color-red {
+  color: var(--input-border-color-error);
+}
+
+.btn-white:hover:after, .btn-white .btn-ripple{
 	background: rgb(112, 117, 121, .08);
-}
-
-.btn-white .btn-ripple{
-	background: rgb(112, 117, 121, .08);
-}
-
-.btn-img {
-	display: flex;
-	align-items: center;
-  color: #000;
 }
 
 .btn .content {
@@ -162,8 +195,17 @@ span, label, input {
   text-align: left;
 }
 
+.btn-account .content{
+  padding-left: 10px;
+}
+
+.btn .account-img{
+  height: 45px;
+  width: 45px;
+}
+
 .btn .name, .input-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -171,17 +213,27 @@ span, label, input {
   font-weight: bold;
 }
 
-.btn .content .info {
+.btn .info, .btn .date {
   color: #707579;
-  font-size: 13px;
+  font-size: 14px;
+  padding-top: 5px;
 }
 
-.btn-faq .content {
+.btn .date {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn-text .content {
   padding: 0;
 }
 
-.icon {
-	width: 25px;
+.btn-text .device {
+  padding-top: 5px;
+  font-weight: 600;
 }
 
 .btn-add, .btn-round {
@@ -195,12 +247,53 @@ span, label, input {
 }
 
 .btn-add {
-	width: 70px;
-	height: 70px;
+	width: 55px;
+  height: 55px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
-.btn-add .icon {
-	width: 40px;
+.btn-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+  padding: 10px 15px;
+}
+
+.btn-vertical img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.btn-vertical .content{
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.btn-vertical .name {
+  font-size: 14px;
+}
+
+.icon {
+	width: 23px;
+}
+
+.icon-gray {
+  filter: invert(52%) sepia(0%) saturate(459%) hue-rotate(191deg) brightness(89%) contrast(91%);
+}
+
+.icon-light-gray {
+	filter: invert(65%) sepia(2%) saturate(12%) hue-rotate(314deg) brightness(100%) contrast(78%);
+}
+
+.icon-white {
+	filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(80deg) brightness(106%) contrast(105%);
+}
+
+.icon-red {
+	filter: invert(23%) sepia(42%) saturate(4796%) hue-rotate(350deg) brightness(113%) contrast(82%);
 }
 
 @keyframes ripple {
@@ -208,14 +301,6 @@ span, label, input {
 		transform: scale(2);
 		opacity: 0;
 	}
-}
-
-.icon-gray {
-	filter: invert(37%) sepia(10%) saturate(4%) hue-rotate(60deg) brightness(105%) contrast(83%);
-}
-
-.icon-white {
-	filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(80deg) brightness(106%) contrast(105%);
 }
 
 .chat__body {
@@ -226,6 +311,7 @@ span, label, input {
   background-position-y: -54px;
   background-attachment: fixed;
 }
+
 .messages {
   display: flex;
   flex-direction: column;
