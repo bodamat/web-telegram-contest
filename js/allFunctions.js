@@ -13,3 +13,13 @@ function spawnRipple(width, height, posX, posY, rippleBtn){
 	rippleEl.style.left = calcLeft + "px"
 	rippleBtn.appendChild(rippleEl)
 }
+
+function getEls(text) {
+	var els = document.querySelectorAll(text)
+	return els
+}
+
+function getEl(text) {
+	var el = document.querySelector(text)
+	return el
+}

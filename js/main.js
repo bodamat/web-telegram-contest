@@ -35,14 +35,16 @@ function imgRadio() {
 	var radioImgs = document.querySelectorAll('.radio-img')
 	var checkedRadioImgs = document.querySelectorAll('input[type=radio]:checked + .radio-content .radio-img')
 
-	radioImgs.forEach(item => item.src = "icons/radiooff_svg.svg")
-	checkedRadioImgs.forEach(item => item.src = "icons/radioon_svg.svg")
+	radioImgs.forEach(item => item.src = "assets/icons/radiooff_svg.svg")
+	checkedRadioImgs.forEach(item => item.src = "assets/icons/radioon_svg.svg")
 }
 
-var checkboxInputs = document.querySelectorAll('input[type=checkbox]')
+var checkboxInputs = document.querySelectorAll('input[type="checkbox"]')
 imgCheckbox()
+console.log(checkboxInputs)
 checkboxInputs.forEach(input => {
   input.addEventListener('click', function() {
+		console.log(input)
     imgCheckbox()
   })
 })
@@ -51,10 +53,10 @@ function imgCheckbox() {
   var checkboxImgs = document.querySelectorAll('.checkbox-img')
   var checkedCheckboxImgs = document.querySelectorAll('input[type=checkbox]:checked + .checkbox-content .checkbox-img')
   var indeterminateCheckboxImgs = document.querySelectorAll('input[type=checkbox]:indeterminate + .checkbox-content .checkbox-img')
-  
-  checkboxImgs.forEach(item => item.src = "icons/checkboxempty_svg.svg")
-  checkedCheckboxImgs.forEach(item => item.src = "icons/checkboxon_svg.svg")
-  indeterminateCheckboxImgs.forEach(item => item.src = "icons/checkboxblock_svg.svg")
+	
+  checkboxImgs.forEach(item => item.src = "assets/icons/checkboxempty_svg.svg")
+  checkedCheckboxImgs.forEach(item => item.src = "assets/icons/checkboxon_svg.svg")
+  indeterminateCheckboxImgs.forEach(item => item.src = "assets/icons/checkboxblock_svg.svg")
 }
 
 function indeterminateInput(input) {
@@ -75,3 +77,15 @@ function styleSearch(input, action) {
 		styleSearch(parentDiv, action)
 	}
 }
+
+var checkboxBtns = getEls('.btn.btn-checkbox')
+checkboxBtns.forEach(el => {
+	el.addEventListener('click', function() {
+		var input = this.querySelector('input')
+		input.checked = !input.checked
+		imgCheckbox()
+		if (input.checked) el.classList.add('btn-checked')
+		else el.classList.remove('btn-checked')
+		console.log('input: ', input.checked)
+	})
+})
