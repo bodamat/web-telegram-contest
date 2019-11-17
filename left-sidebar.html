@@ -1148,7 +1148,7 @@
 							<section class="section-messages">
 								<div class="subsection">
 									<button class="btn ripple btn-white btn-account">
-										<div class="account-icon">
+										<div class="account-icon saved">
 											<img src="assets/icons/avatar_savedmessages_svg.svg" class="icon icon-white"/>
 										</div>
 										<div class="content">
@@ -1259,12 +1259,383 @@
 					</div>
 				</div>
 		</div>
+		<div id="chat">
+			<div class="header header-create">
+				<div class="header-content">
+					<button class="btn ripple btn-white btn-round header-back">
+						<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
+					</button>
+					<h2 class="header-title">Settings</h2>
+					<button class="btn ripple btn-white btn-round header-more">
+						<img src="assets/icons/more_svg.svg" class="icon icon-gray"/>
+					</button>
+				</div>
+			</div>
+			<div class="content">
+				
+			</div>
+		</div>
 		<div id="right-sidebar">
 			<div id="info">
-				<div class="header">
+				<div class="header header-create">
 					<div class="header-content">
-						
+						<button class="btn ripple btn-white btn-round header-back">
+							<img src="assets/icons/close_svg.svg" class="icon icon-gray"/>
+						</button>
+						<h2 class="header-title">Info</h2>
+						<button class="btn ripple btn-white btn-round header-more">
+							<img src="assets/icons/more_svg.svg" class="icon icon-gray"/>
+						</button>
 					</div>
+				</div>
+				<div class="content">
+					<section class="info">
+						<div class="subsection account">
+							<div class="img-container">
+								<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
+							</div>
+							<h3 class="account-name">Doge Dogenson</h3>
+							<p class="status online">online</p>
+						</div>
+						<div class="subsection btns-list">
+							<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/info_svg.svg" class="icon icon-gray"/>
+								<div class="content">
+									<span class="name title">25 y.o. traveler</span>
+									<span class="info">Bio</span>
+								</div>
+							</button>
+				
+							<button class="btn ripple btn-white btn-img">
+								<img src="assets/icons/username_svg.svg" class="icon icon-gray"/>
+								<div class="content">
+									<span class="name title">kare</span>
+									<span class="info">Username</span>
+								</div>
+							</button>
+
+							<button class="btn ripple btn-white btn-img">
+								<img src="assets/icons/phone_svg.svg" class="icon icon-gray"/>
+								<div class="content">
+									<span class="name title">+1 38594 38853</span>
+									<span class="info">Phone</span>
+								</div>
+							</button>
+
+							<div class="btn btn-white ripple btn-checkbox">
+								<input type="checkbox" id="chatsNotify" checked>
+								<label for="chatsNotify" class="checkbox-content">
+									<img alt="" class="icon checkbox-img">
+									<div class="input-text-content">
+										<span class="input-name">Notifications</span>
+										<span class="text-tooltip status">Enabled</span>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="subsection tabs-section">
+							<div class="tabs">
+								<div id="menu" class="tab-menu">
+									<div data-click-switch="#media" class="tab-index">media</div>
+									<div data-click-switch="#docs" class="tab-index">docs</div>
+									<div data-click-switch="#links" class="tab-index">links</div>
+									<div data-click-switch="#audio" class="tab-index">audio</div>
+								</div>
+								<div class="tab-content">
+									<div id="media">
+										<div id="color-list">
+											<div>
+												<img src="assets/imgs/accounts/account1.jpg" alt="photo">
+											</div>
+											<div>
+												<img src="assets/imgs/accounts/account2.jpg" alt="video">
+												<span class="time">0:25</span>
+											</div>
+											<div>
+												<img src="assets/imgs/accounts/account3.jpg" alt="video">
+											</div>
+											<div>
+												<img src="assets/imgs/accounts/account4.jpg" alt="video">
+												<span class="time">1:30</span>
+											</div>
+											<div>
+												<img src="assets/imgs/accounts/account5.jpg" alt="video">
+											</div>
+											<div>
+												<img src="assets/imgs/accounts/account6.jpg" alt="video">
+											</div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+									<div id="docs">
+										<div class="subsection btns-list">
+											<button class="btn ripple btn-white btn-account">
+												<div class="docs-img-container account-icon docs-icon">
+													<img src="assets/icons/pdf.svg" class=""/>
+													<div class="download-content bg-red hide">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white"/>
+														<div class="load-content hide">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<span class="name">Super_Cool_Presentation.pdf</span>
+													<span class="info">3.1 MB Oct 24, 2019 at 19:20</span>
+												</div>
+											</button>
+											
+											<button class="btn ripple btn-white btn-account">
+												<div class="docs-img-container account-icon docs-icon">
+													<img src="assets/icons/pdf.svg" class="hide"/>
+													<div class="download-content bg-green">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white"/>
+														<div class="load-content hide">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<span class="name">BestApp.apk</span>
+													<span class="info">10.5 MB Oct 25, 2019 at 19:30</span>
+												</div>
+											</button>
+											
+											<button class="btn ripple btn-white btn-account">
+												<div class="docs-img-container account-icon docs-icon">
+													<img src="assets/icons/doc.jpg" class=""/>
+													<div class="download-content bg-blue hide">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white hide"/>
+														<div class="load-content">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<span class="name">Last_School_Essay.doc</span>
+													<span class="info">1.9 MB Oct 27, 2019 at 20:20</span>
+												</div>
+											</button>
+
+											<button class="btn ripple btn-white btn-account">
+												<div class="docs-img-container account-icon docs-icon">
+													<img src="assets/icons/pdf.svg" class="hide"/>
+													<div class="download-content bg-orange">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white hide"/>
+														<div class="load-content">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<span class="name">Very_Important_Files.zip</span>
+													<span class="info">5.5 MB Oct 28, 2019 at 20:00</span>
+												</div>
+											</button>
+											
+											<button class="btn ripple btn-white btn-account">
+												<div class="docs-img-container account-icon docs-icon">
+													<img src="assets/imgs/accounts/account6.jpg" class=""/>
+													<div class="download-content bg-red hide">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white"/>
+														<div class="load-content hide">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<span class="name">Favourite_Photo.png</span>
+													<span class="info">3.1 MB Oct 29, 2019 at 21:20</span>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div id="links">
+										<div class="subsection btns-list">
+											<button class="btn ripple btn-white btn-account btn-link" onclick="openLink(this)">
+												<img src="assets/imgs/accounts/account1.jpg" class="account-icon link-img"/>
+												<div class="content">
+													<span class="name">The New Campus Deplorables</span>
+													<span class="info">Academic traditionalists at the National Association of Scholars and else where...</span>
+													<a href="https://www.forbes.com/4dfe050c1e62" class="info link">https://www.forbes.com/4dfe050c1e62</a>
+												</div>
+											</button>
+											<button class="btn ripple btn-white btn-account btn-link" onclick="openLink(this)">
+												<img src="assets/imgs/accounts/account6.jpg" class="account-icon link-img"/>
+												<div class="content">
+													<span class="name">Henolulu</span>
+													<span class="info">Academic traditionalists at the National Association of Scholars and else where...</span>
+													<a href="https://www.expedia.com/Honolulu" class="info link">https://www.expedia.com/Honolulu</a>
+												</div>
+											</button>
+											<button class="btn ripple btn-white btn-account btn-link" onclick="openLink(this)">
+												<img src="assets/imgs/accounts/account4.jpg" class="account-icon link-img"/>
+												<div class="content">
+													<span class="name">Lyft replaces pricey All-Access monthly plan with Lyft Pink</span>
+													<span class="info">Academic traditionalists at the National Association of Scholars and else where...</span>
+													<a href="https://www.techcrunch.com/lyft" class="info link">https://www.techcrunch.com/lyft</a>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div id="audio">
+										<div class="subsection">
+											<div class="audio-group">
+												<audio src="assets/audios/audio1.mp3"></audio>
+												<div class="btn-play">
+													<img src="assets/icons/play_svg.svg" alt="" class="icon icon-white hide">
+													<div class="download-content">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white hide"/>
+														<div class="load-content">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<div class="name">Million Telegrams</div>
+													<div class="info">Best Artist Oct 24, 2019 at 19:20</div>
+													<div class="range hide">
+														<input type="range" min="0" max="30" step="1" value="0">
+														<style></style>
+													</div>
+													<div class="info">1:35</div>
+												</div>
+											</div>
+
+											<div class="audio-group">
+												<audio src="assets/audios/audio1.mp3"></audio>
+												<div class="btn-play">
+													<img src="assets/icons/play_svg.svg" alt="" class="icon icon-white">
+													<div class="download-content hide">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white hide"/>
+														<div class="load-content hide">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<div class="name">Million Telegrams</div>
+													<div class="info">Best Artist Oct 24, 2019 at 19:30</div>
+													<div class="range hide">
+														<input type="range" min="0" max="30" step="1" value="0">
+														<style></style>
+													</div>
+													<div class="info">1:35</div>
+												</div>
+											</div>
+
+											<div class="audio-group">
+												<audio src="assets/audios/audio1.mp3"></audio>
+												<div class="btn-play">
+													<img src="assets/icons/play_svg.svg" alt="" class="icon icon-white hide">
+													<div class="download-content">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white"/>
+														<div class="load-content hide">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<div class="name">Million Telegrams</div>
+													<div class="info">Best Artist Oct 24, 2019 at 19:40</div>
+													<div class="range hide">
+														<input type="range" min="0" max="30" step="1" value="0">
+														<style></style>
+													</div>
+													<div class="info">1:35</div>
+												</div>
+											</div>
+
+											<div class="audio-group">
+												<audio src="assets/audios/audio1.mp3"></audio>
+												<div class="btn-play">
+													<img src="assets/icons/play_svg.svg" alt="" class="icon icon-white">
+													<div class="download-content hide">
+														<img src="assets/icons/download_svg.svg" class="icon icon-white hide"/>
+														<div class="load-content hide">
+															<img src="assets/icons/close_svg.svg" class="icon icon-white"/>
+															<div class="loader">
+																<svg class="circular-loader"viewBox="25 25 50 50">
+																	<circle class="loader-path" cx="50" cy="50" r="18" fill="none" stroke="#fff" stroke-width="3" />
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content">
+													<div class="name">Million Telegrams</div>
+													<div class="info hide">Best Artist Oct 24, 2019 at 19:50</div>
+													<div class="range">
+														<input type="range" min="0" max="30" step="1" value="0">
+														<style></style>
+													</div>
+													<div class="info">1:35</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>

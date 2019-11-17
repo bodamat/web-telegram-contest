@@ -191,7 +191,7 @@ var dialog = {
 		doms.dialog.style.display = command === "show" ? "" : "none";
 		vars.openDialog = !vars.openDialog
 	},
-	setPosition: ({ top, left }, menuItems) => {
+	setPosition: function({ top, left }, menuItems) {
 		doms.dialog.style.left = `${left}px`;
 		doms.dialog.style.top = `${top}px`;
 		
@@ -206,8 +206,7 @@ var dialog = {
 				left: e.pageX,
 				top: e.pageY
 			}
-			this.setPosition(origin, menuItems);
-			return false;
+			dialog.setPosition(origin, menuItems);
 		})
 	},
 	leftClickDialog: function (el, menuItems) {
@@ -222,8 +221,7 @@ var dialog = {
 				left: target.offsetLeft
 			}
 			
-			this.setPosition(origin, menuItems);
-			return false;
+			dialog.setPosition(origin, menuItems);
 		})
 	}
 }

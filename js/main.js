@@ -46,11 +46,12 @@ function inputsInit() {
 	// input[type="range"] change value
 
 	let ranges = getEls('.range')
-		ranges.forEach(function(range, key) {
+	ranges.forEach(function(range, key) {
 		range.id = "range" + key
 		let input = getEl('input', range)
 		let styleEl = getEl('style', range)
-		let valueEl = getEl('.value', range)
+		let valueEl = getEl('#general-settings .range .value')
+
 		let value = input.value
 		let n = (value / input.max) * 100
 
@@ -113,3 +114,30 @@ function init() {
 
 init()
 generate.generateCheckedMembers(doms.memberList, vars.memberList)
+
+// Tabs
+let tabMenu = getEl('.tabs .tab-menu')
+let tabContent = getEl('.tabs .tab-content')
+let tabMenusItems = getEls('.tab-index', tabMenu)
+
+tabMenusItems.forEach(tabMenuItem => {
+	tabMenuItem.addEventListener('click', e => {
+		let tabMenuItemSelect = getEl('.tab-index.selected', tabMenu)
+		tabMenuItemSelect.classList.remove('selected')
+		tabMenuItem.classList.add('selected')
+
+		getEl(tabMenuItemSelect.dataset.clickSwitch, tabContent).classList.remove('selected')
+		getEl(tabMenuItem.dataset.clickSwitch, tabContent).classList.add('selected')
+	})
+})
+
+function openTab(tabMenuItemId) {
+	getEl('[data-click-switch="' + tabMenuItemId + '"]').classList.add('selected')
+	getEl(tabMenuItemId, tabContent).classList.add('selected')
+}
+
+openTab('#audio')
+
+function openLink(btn) {
+	window.open(getEl('.link', btn).href, '_blank')
+}

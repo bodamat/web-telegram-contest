@@ -8,7 +8,7 @@
 	height: 100vh;
 }
 
-#left-sidebar > div {
+#left-sidebar > div, #right-sidebar > div {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -104,6 +104,7 @@ section:last-child {
 	justify-content: center;
 	padding: 10px 20px;
 	border-bottom: 1px solid var(--border-color-gray);
+	background: #fff;
 }
 
 .header-create {
@@ -119,10 +120,8 @@ section:last-child {
 .header-content .header-title {
 	margin-left: 20px;
 	width: 100%;
-}
-
-.header-title {
 	font-size: 20px;
+	font-weight: 500;
 }
 
 .header-search {
@@ -131,10 +130,7 @@ section:last-child {
 }
 
 .account {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
-	margin: 5px;
 }
 
 .account-img {
@@ -195,7 +191,7 @@ section:last-child {
 	font-weight: 500;
 }
 
-.account-number {
+.account-number, .account .status {
 	font-size: 14px;
 	color: #707579;
 }
@@ -279,14 +275,37 @@ input[type="checkbox"]:indeterminate + .checkbox-content .checkbox-img {
 #color-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	padding: 5px;
 }
 
 #color-list div {
-	background: #000;
-	width: 110px;
-	height: 110px;
+	background: var(--border-color-gray);
+	min-width: 123px;
+	min-height: 123px;
 	margin: 2px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	flex: 1;
+}
+
+#color-list img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#color-list .time {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: #0000005d;
+	color: #fff;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: 10px;
 }
 
 /* Chips */

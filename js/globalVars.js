@@ -25,12 +25,12 @@ vars = {
 		{
 			img: "assets/icons/group_svg.svg",
 			text: "New Group",
-			do: "openSidebar('#search-sidebar', '#new-group')"
+			do: "sidebar.openSidebar('#search-sidebar', '#new-group')"
 		},
 		{
 			img: "assets/icons/user_svg.svg",
 			text: "Contacts",
-			do: "openSidebar('#messages', '#contacts')"
+			do: "sidebar.openSidebar('#messages', '#contacts')"
 		},
 		{
 			img: "assets/icons/archive_svg.svg",
@@ -47,7 +47,7 @@ vars = {
 		{
 			img: "assets/icons/settings_svg.svg",
 			text: "Settings",
-			do: "openSidebar('#search-sidebar', '#settings')"
+			do: "sidebar.openSidebar('#search-sidebar', '#settings')"
 		},
 		{
 			img: "assets/icons/help_svg.svg",
@@ -59,17 +59,17 @@ vars = {
 		{
 			img: "assets/icons/channel_svg.svg",
 			text: "New Channel",
-			do: "openSidebar('#search-sidebar', '#new-channel')"
+			do: "sidebar.openSidebar('#search-sidebar', '#new-channel')"
 		},
 		{
 			img: "assets/icons/group_svg.svg",
 			text: "New Group",
-			do: "openSidebar('#search-sidebar', '#new-group')"
+			do: "sidebar.openSidebar('#search-sidebar', '#new-group')"
 		},
 		{
 			img: "assets/icons/newprivate_svg.svg",
 			text: "New Private Chat",
-			do: "openSidebar('#search-sidebar', '#new-group')"
+			do: "sidebar.openSidebar('#search-sidebar', '#new-group')"
 		}
 	]
 }
