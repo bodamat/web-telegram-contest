@@ -8,7 +8,6 @@
 }
 
 .app {
-  position: relative;
   display: flex;
 }
 
@@ -30,16 +29,6 @@ body {
 
 span, label, input {
   font-size: 14px;
-}
-
-a {
-  color: var(--input-border-color-focus);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .space {
@@ -109,7 +98,7 @@ a:hover {
 .input-group .label {
 	color: var(--input-border-color-default);
 	position: absolute;
-	top: 17px;
+	top: 18px;
 	left: 13px;
   transition: .1s;
   cursor: text;
@@ -184,7 +173,7 @@ a:hover {
   color: #000;
 }
 
-.btn:hover:after, .header-search .btn.active:after{
+.btn:hover:after{
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -200,12 +189,8 @@ a:hover {
 	transform: scale(0);
 }
 
-.btn-blue:hover:after, .btn-blue .btn-ripple, .header-search .btn.btn-blue.active:after{
+.btn-blue:hover:after, .btn-blue .btn-ripple{
   background: var(--btn-background-hover);
-}
-
-.btn-white:hover:after, .btn-white .btn-ripple, .header-search .btn.btn-white.active:after{
-  background: rgb(112, 117, 121, .08);
 }
 
 .btn-blue {
@@ -223,6 +208,10 @@ a:hover {
 
 .color-red {
   color: var(--input-border-color-error);
+}
+
+.btn-white:hover:after, .btn-white .btn-ripple{
+	background: rgb(112, 117, 121, .08);
 }
 
 .btn .content {
@@ -707,18 +696,17 @@ input[type="range"]::-ms-fill-upper {
   height: max-content;
   border-radius: 10px;
   overflow: hidden;
-  width: 210px;
-  position: absolute;
+  width: 200px;
   z-index: 9;
 }
 
 .dialog .item {
   border-radius: 0;
-  padding: 15px 15px;
+  padding: 10px 15px;
 }
 
 .dialog .item .text{
-  padding-left: 30px;
+  padding-left: 20px;
   font-weight: 500;
   flex: 1;
 }

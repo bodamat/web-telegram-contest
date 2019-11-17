@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/left-sidebar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	
+	<title>LeftSidebar</title>
+<link rel="stylesheet" href="./LeftSidebar_files/main.css"><link rel="stylesheet" href="./LeftSidebar_files/left-sidebar.css"></head>
+<body>
+	<div class="app">
+		<div id="left-sidebar">
+				<div id="settings" style="display: none;">
+					<div class="header header-3-column">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="./LeftSidebar_files/back_svg.svg" class="icon icon-gray">
+							</button>
+							<h2 class="header-title">Settings</h2>
+							<button class="btn ripple btn-white btn-round header-more">
+								<img src="./LeftSidebar_files/more_svg.svg" class="icon icon-gray">
+							</button>
+						</div>
+					</div>
+					<div class="account">
+							<div class="img-container">
+								<img class="account-img" src="./LeftSidebar_files/doge.jpg" alt="Account image">
+							</div>
+						<h3 class="account-name">Doge Dogenson</h3>
+						<p class="account-number">+33 1 23 45 67 89</p>
+					</div>
+					<div class="menu-btns">
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/edit_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/edit_svg.svg"> <!-- For search engine -->
+							</object>
+							<div class="content">
+								<span class="name">Edit profile</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/settings_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/settings_svg.svg">
+							</object>
+							<div class="content">
+								<span class="name">General Settings</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/unmute_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/unmute_svg.svg">
+							</object>
+							<div class="content">
+								<span class="name">Notifications</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/lock_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/lock_svg.svg">
+							</object>
+							<div class="content">
+								<span class="name">Privacy and Security</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/language_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/language_svg.svg">
+							</object>
+							<div class="content">
+								<span class="name">Language</span>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div id="edit-profile" style="display: none;">
+					<div class="header header-2-column">
+						<button class="btn ripple btn-white btn-round header-back">
+							<object type="image/svg+xml" data="./LeftSidebar_files/back_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/back_svg.svg">
+							</object>
+						</button>
+						<h2 class="header-title">Edit profile</h2>
+					</div>
+					<div class="account">
+						<div class="img-container darkened">
+							<img class="account-img" src="./LeftSidebar_files/doge.jpg" alt="Account image">
+							<div class="img-content">
+								<object type="image/svg+xml" data="./LeftSidebar_files/cameraadd_svg.svg" class="icon icon-white">
+									<img src="./LeftSidebar_files/cameraadd_svg.svg"> <!-- For search engine -->
+								</object>
+							</div>
+						</div>
+					</div>
+					<div class="vertical-input-group container">
+						<div class="input-group">
+							<input type="name" id="name" required="" class="input-area">
+							<label for="name" class="label">Name</label>
+						</div>
+						<div class="input-group">
+							<input type="lastName" id="lastName" required="" class="input-area">
+							<label for="lastName" class="label">Last name</label>
+						</div>
+						<div class="input-group">
+							<input type="bio" id="bio" required="" class="input-area">
+							<label for="bio" class="label">Bio (optional)</label>
+						</div>
+						<p class="text-tooltip">Any details such as age? occupation or city. Example: 23 y.o. designer from San Francisco.</p>
+					</div>
+					<hr class="hr m-t-5">
+					<div class="username container">
+						<h3 class="h3-title">Username</h3>
+						<div class="input-group"> <!-- class input-error and input-valid -->
+							<input type="username" id="username" required="" class="input-area">
+							<label for="username" class="label">Username</label>
+						</div>
+						<p class="text-tooltip">You can choose a username on Telegram. If you do, other people will be able to find you by this username and contact you without knowing your phone number.</p>
+						<p class="text-tooltip">You can use a-z, 0-9 and underscores. Minimum length is 5 characters</p>
+					</div>
+				</div>
+				<div id="security" style="display: none;">
+					<div class="header header-2-column">
+						<button class="btn ripple btn-white btn-round header-back">
+							<object type="image/svg+xml" data="./LeftSidebar_files/back_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/back_svg.svg">
+							</object>
+						</button>
+						<h2 class="header-title">Privacy and Security</h2>
+					</div>
+					<hr class="hr hr-small-top">
+					<div class="menu-btns">
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/deleteuser_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/deleteuser_svg.svg"> <!-- For search engine -->
+							</object>
+							<div class="content">
+								<span class="name title">Blocked Users</span>
+								<span class="info">6 users</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img">
+							<object type="image/svg+xml" data="./LeftSidebar_files/activesessions_svg.svg" class="icon icon-gray">
+								<img src="./LeftSidebar_files/activesessions_svg.svg">
+							</object>
+							<div class="content">
+								<span class="name title">Active Sessions</span>
+								<span class="info">3 devices</span>
+							</div>
+						</button>
+					</div>
+					<hr class="hr hr-small-top">
+					<h3 class="h3-title p-l-20">Privacy</h3>
+					<div class="menu-btns">
+						<button class="btn ripple btn-white btn-img btn-faq">
+							<div class="content">
+								<span class="name title">Who can see my phone number?</span>
+								<span class="info">My Contacts</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img btn-faq">
+							<div class="content">
+								<span class="name title">Who can see your Last Seen time?</span>
+								<span class="info">Everybody</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img btn-faq">
+							<div class="content">
+								<span class="name title">Who can see my profile photo?</span>
+								<span class="info">Everybody</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img btn-faq">
+							<div class="content">
+								<span class="name title">Who can add a link to my account when forwarding my messages?</span>
+								<span class="info">Everybody</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img btn-faq">
+							<div class="content">
+								<span class="name title">Who can add me to group chats?</span>
+								<span class="info">Everybody</span>
+							</div>
+						</button>
+			
+					</div>
+				</div>
+				<div id="last-seen" style="display: none;">
+					<div class="header header-2-column">
+						<button class="btn ripple btn-white btn-round header-back">
+							<img src="./LeftSidebar_files/back_svg.svg">
+						</button>
+						<h2 class="header-title">Last Seen &amp; Online</h2>
+					</div>
+					<hr class="hr hr-small-top">
+					<h3 class="h3-title p-l-20">Who can see your Last Seen time?</h3>
+					<div class="container" id="last-seen-radio">
+						<div class="radio-group">
+							<input type="radio" id="email" name="contact" value="email">
+							<label for="email" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Everybody</span>
+								</div>
+							</label>
+						</div>
+				
+						<div class="radio-group">
+							<input type="radio" id="phone" name="contact" value="phone" checked="">
+							<label for="phone" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radioon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">My Contacts</span>
+								</div>
+							</label>
+						</div>
+				
+						<div class="radio-group">
+							<input type="radio" id="contact" name="contact" value="email">
+							<label for="contact" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">No body</span>
+								</div>
+							</label>
+						</div>
+						<p class="text-tooltip">
+							You won't see Last Seen and online statuses for people with whom you don't share yours. Approximate last seen will be shown instead (recently, within a week, within a month)
+						</p>
+					</div>		
+					<hr class="hr">
+					<h3 class="h3-title p-l-20">Exceptions</h3>
+					<div class="menu-btns">
+						<button class="btn ripple btn-white btn-img">
+							<img src="./LeftSidebar_files/deleteuser_svg.svg" class="icon icon-gray">
+							<div class="content">
+								<span class="name title">Never Share With</span>
+								<span class="info">Add Users</span>
+							</div>
+						</button>
+			
+						<button class="btn ripple btn-white btn-img">
+							<img src="./LeftSidebar_files/adduser_svg.svg" class="icon icon-gray">
+							<div class="content">
+								<span class="name title">Always Share With</span>
+								<span class="info">Add Users</span>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div id="notifications" style="display: none;">
+					<div class="header header-2-column">
+						<button class="btn ripple btn-white btn-round header-back">
+							<img src="./LeftSidebar_files/back_svg.svg">
+						</button>
+						<h2 class="header-title">Notifications</h2>
+					</div>
+					<hr class="hr hr-small-top">
+					<div class="container" id="private-chat">
+						<h3 class="h3-title">Private Chats</h3>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="chatsNotify" checked="">
+							<label for="chatsNotify" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Notifications for private chats</span>
+									<span class="text-tooltip">Enabled</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="chatsMessage" checked="">
+							<label for="chatsMessage" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Message preview</span>
+									<span class="text-tooltip">Enabled</span>
+								</div>
+							</label>
+						</div>
+					</div>
+					<hr class="hr hr-small-top">
+					<div class="container" id="groups">
+						<h3 class="h3-title">Groups</h3>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="groupNotify" checked="">
+							<label for="groupNotify" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Notifications for groups</span>
+									<span class="text-tooltip">Enabled</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="groupMessage">
+							<label for="groupMessage" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxempty_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Message preview</span>
+									<span class="text-tooltip">Disabled</span>
+								</div>
+							</label>
+						</div>
+					</div>
+					<hr class="hr hr-small-top">
+					<div class="container" id="channels">
+						<h3 class="h3-title">Channels</h3>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="channelsChat" checked="">
+							<label for="channelsChat" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Notifications for private chats</span>
+									<span class="text-tooltip">Enabled</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="channelsMessage" checked="">
+							<label for="channelsMessage" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Message preview</span>
+									<span class="text-tooltip">Enabled</span>
+								</div>
+							</label>
+						</div>
+					</div>
+					<hr class="hr hr-small-top">
+					<div id="other" class="container">
+						<h3 class="h3-title">Other</h3>
+		
+						<div class="checkbox-group">
+							<input type="checkbox" id="contactTelegram" checked="">
+							<label for="contactTelegram" class="checkbox-content">
+								<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Contacts joined Telegram</span>
+								</div>
+							</label>
+						</div>
+					</div>
+		
+				</div>
+				<div id="language" style="display: none;">
+					<div class="header header-2-column">
+						<button class="btn ripple btn-white btn-round header-back">
+							<img src="./LeftSidebar_files/back_svg.svg">
+						</button>
+						<h2 class="header-title">Language</h2>
+					</div>
+		
+					<div class="container">
+				
+						<div class="radio-group">
+							<input type="radio" id="english" name="language" value="email" checked="">
+							<label for="english" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radioon_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">English</span>
+									<span class="text-tooltip">English</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="french" name="language" value="email">
+							<label for="french" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Francais</span>
+									<span class="text-tooltip">French</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="german" name="language" value="email">
+							<label for="german" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Deutsch</span>
+									<span class="text-tooltip">German</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="italian" name="language" value="email">
+							<label for="italian" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Italiano</span>
+									<span class="text-tooltip">Italian</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="portuguese" name="language" value="email">
+							<label for="portuguese" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Portugues</span>
+									<span class="text-tooltip">Portuguese</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="russian" name="language" value="email">
+							<label for="russian" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Русский</span>
+									<span class="text-tooltip">Russian</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="spanish" name="language" value="email">
+							<label for="spanish" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Espanol</span>
+									<span class="text-tooltip">Spanish</span>
+								</div>
+							</label>
+						</div>
+		
+						<div class="radio-group">
+							<input type="radio" id="ukrainian" name="language" value="email">
+							<label for="ukrainian" class="radio-content">
+								<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+								<div class="input-text-content">
+									<span class="input-name">Українська</span>
+									<span class="text-tooltip">Ukrainian</span>
+								</div>
+							</label>
+						</div>
+		
+					</div>	
+				</div>
+				<div id="chat-background" style="display: none;">
+					<div class="header header-2-column">
+						<button class="btn ripple btn-white btn-round header-back">
+							<img src="./LeftSidebar_files/back_svg.svg">
+						</button>
+						<h2 class="header-title">Chat Background</h2>
+					</div>
+					<div class="content">
+						<div class="section color-list-section">
+							<div class="color-list">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="blocked-users" style="display: none;">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="./LeftSidebar_files/back_svg.svg">
+							</button>
+							<h2 class="header-title">Blocked Users</h2>
+						</div>
+					</div>
+					<div class="content">
+						<div class="section">
+							<div class="subsection">
+								<p class="text-tooltip p-l-smd">
+									Blocked users will not be able to contact you and will not see your Last Seen time
+								</p>
+							</div>
+		
+							<div class="subsection">
+								<button class="btn ripple btn-white btn-account">
+									<img src="./LeftSidebar_files/account1.jpg" class="account-img">
+									<div class="content">
+										<span class="name">Raaid El Syed</span>
+										<span class="info">+1 234 567891</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-account">
+									<img src="./LeftSidebar_files/account2.jpg" class="account-img">
+									<div class="content">
+										<span class="name">Chinaza Akachi</span>
+										<span class="info">+1 234 567892</span>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<button class="btn ripple btn-blue btn-add">
+						<img src="./LeftSidebar_files/add_svg.svg" class="icon icon-white"> 
+					</button>
+				</div>
+				<div id="active-session" style="display: none;">
+					<div class="header">
+						<button class="btn ripple btn-white btn-round">
+							<img src="./LeftSidebar_files/back_svg.svg" class="icon">
+						</button>
+						<h2 class="header-title">Active Session</h2>
+					</div>
+					<div class="content">
+						<div class="section">
+							<div class="subsection">
+								<h3 class="h3-title">Current Session</h3>
+							</div>
+			
+							<div class="subsection btns-list">
+								<button class="btn btn-text ripple btn-white">
+									<div class="content">
+										<span class="name">Telegram Web 1.0</span>
+										<span class="device">Safari, macOS</span>
+										<span class="info">216.3.128.12 - Paris, France</span>
+									</div>
+								</button>
+		
+								<button class="btn ripple btn-white color-red">
+									<img src="./LeftSidebar_files/stop_svg.svg" class="icon icon-red">
+									<div class="content">
+										<span class="name">Terminate all other sessions</span>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="section">
+							<div class="subsection">
+								<h3 class="h3-title">Other Sessions</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name">Telegram IOS 5.12</span>
+										<span class="device">Iphone X, IOS 13.2</span>
+										<span class="info">216.3.128.12 - Paris, France</span>
+									</div>
+									<span class="date info">19:25</span>
+								</button>
+								
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name">Telegram Android 5.11</span>
+										<span class="device">Samsung Galaxy S9, Android 9P</span>
+										<span class="info">216.3.128.12 - Paris, France</span>
+									</div>
+									<span class="date info">16:34</span>
+								</button>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="add-member" style="display: none;">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round">
+								<img src="./LeftSidebar_files/back_svg.svg" class="icon">
+							</button>
+							<h2 class="header-title">Add Member</h2>
+						</div>
+						<div class="chips">
+		
+							<div class="autocomplete">
+								<input id="memberInput" type="person" class="input" placeholder="Add People...">
+							</div>
+		
+						</div>
+					</div>
+					<div class="content">
+						<section class="section-messages">
+							<div class="subsection btns-list" id="member-list"><button class="btn ripple btn-white btn-account btn-checkbox" data-id="1"><input type="checkbox" id="contact1"><label for="contact1" class="checkbox-content"><img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxempty_svg.svg"><div class="btn-input-content"><img src="./LeftSidebar_files/account1.jpg" class="account-img"><div class="content"><span class="name">Raaid El Syed</span><span class="info">last seen jus now</span></div></div></label></button><button class="btn ripple btn-white btn-account btn-checkbox" data-id="2"><input type="checkbox" id="contact2"><label for="contact2" class="checkbox-content"><img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxempty_svg.svg"><div class="btn-input-content"><img src="./LeftSidebar_files/account2.jpg" class="account-img"><div class="content"><span class="name">John Smitt</span><span class="info">last seen just now</span></div></div></label></button></div>
+						</section>
+					</div>
+				</div>
+				<div id="new-group" style="display: none;">
+					<div class="header header-create">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="./LeftSidebar_files/back_svg.svg" class="icon icon-gray">
+							</button>
+							<h2 class="header-title">New Group</h2>
+						</div>
+					</div>
+					<section class="section-messages">
+						<div class="subsection account-section">
+							<div class="img-container darkened create">
+								<img class="account-img" src="./LeftSidebar_files/doge.jpg" alt="Group image">
+								<div class="img-content">
+									<img src="./LeftSidebar_files/cameraadd_svg.svg" class="icon icon-white">
+								</div>
+							</div>
+						</div>
+						<div class="subsection input-section">
+							<div class="input-group">
+								<input type="name" id="groupName" class="input-area" required="">
+								<label for="groupName" class="label">Group Name</label>
+							</div>
+						</div>
+						<div class="subsection h3-title-section">
+							<h3 class="h3-title">6 Members</h3>
+						</div>
+						<div class="subsection">
+							<button class="btn ripple btn-white btn-account">
+								<img src="./LeftSidebar_files/account1.jpg" class="account-icon">
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info online">Online</span>
+								</div>
+							</button>
+				
+							<button class="btn ripple btn-white btn-account">
+								<img src="./LeftSidebar_files/account2.jpg" class="account-icon">
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info online">Online</span>
+								</div>
+							</button>
+		
+							<button class="btn ripple btn-white btn-account">
+								<img src="./LeftSidebar_files/account3.jpg" class="account-icon">
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info">last seen just now</span>
+								</div>
+							</button>
+		
+							<button class="btn ripple btn-white btn-account">
+								<img src="./LeftSidebar_files/account4.jpg" class="account-icon">
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info">last seen just now</span>
+								</div>
+							</button>
+						</div>
+						<button class="btn ripple btn-blue btn-add">
+							<img src="./LeftSidebar_files/next_svg.svg" class="icon icon-white"> 
+						</button>
+					</section>
+				</div>
+				<div id="new-channel" style="display: none;">
+					<div class="header header-create">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="./LeftSidebar_files/back_svg.svg" class="icon icon-gray">
+							</button>
+							<h2 class="header-title">New Channel</h2>
+						</div>
+					</div>
+					<section class="section-messages">
+						<div class="subsection account-section">
+							<div class="img-container darkened create">
+								<img class="account-img" src="./LeftSidebar_files/doge.jpg" alt="Channel image">
+								<div class="img-content">
+									<img src="./LeftSidebar_files/cameraadd_svg.svg" class="icon icon-white">
+								</div>
+							</div>
+						</div>
+						<div class="subsection input-section">
+							<div class="input-group">
+								<input type="name" id="groupName" class="input-area" required="">
+								<label for="groupName" class="label">Channel Name</label>
+							</div>
+						</div>
+						<div class="subsection input-section">
+							<div class="input-group">
+								<input type="name" id="groupName" class="input-area" required="">
+								<label for="groupName" class="label">Description (optional)</label>
+							</div>
+							<p class="text-tooltip">You can provide an optional description for your channel.</p>
+						</div>
+						<button class="btn ripple btn-blue btn-add">
+							<img src="./LeftSidebar_files/next_svg.svg" class="icon icon-white"> 
+						</button>
+					</section>
+				</div>
+				<div id="general-settings" style="display: none;">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="./LeftSidebar_files/back_svg.svg" class="icon icon-gray">
+							</button>
+							<h2 class="header-title">General</h2>
+						</div>
+					</div>
+					<div class="content horizontal-scroll">
+						<section>
+							<div class="subsection h3-title-section m-b-md">
+								<h3 class="h3-title">Settings</h3>
+							</div>
+							<div class="subsection">
+								<div class="range" id="range0">
+									<div class="content">
+										<span class="text">Message Text Size</span>
+										<span class="value">16</span>
+									</div>
+									<input type="range" min="1" max="30" step="1" value="16">
+									<style>#range0 input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, var(--input-border-color-focus) 0%, var(--input-border-color-focus) 53.333333333333336%, #eee 53.333333333333336%)}</style>
+								</div>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white">
+									<img src="./LeftSidebar_files/photo_svg.svg" class="icon icon-gray">
+									<div class="content">
+										<span class="name">Chat Background</span>
+									</div>
+								</button>
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="enableAnimation" checked="">
+									<label for="enableAnimation" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Enable Animation</span>
+										</div>
+									</label>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Keyboard</h3>
+							</div>
+							<div class="subsection">
+								<div class="radio-group">
+									<input type="radio" id="enter" name="sendBy" value="email" checked="">
+									<label for="enter" class="radio-content">
+										<img alt="" class="icon radio-img" src="./LeftSidebar_files/radioon_svg.svg">
+										<div class="input-text-content">
+											<span class="input-name">Send by Enter</span>
+											<span class="text-tooltip">New line by Shift + Enter</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="ctrlEnter" name="sendBy" value="email">
+									<label for="ctrlEnter" class="radio-content">
+										<img alt="" class="icon radio-img" src="./LeftSidebar_files/radiooff_svg.svg">
+										<div class="input-text-content">
+											<span class="input-name">Send by Ctrl + Enter</span>
+											<span class="text-tooltip">New line by Enter</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Auto-Download Media</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="contacts" checked="">
+									<label for="contacts" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Contacts</span>
+										</div>
+									</label>
+								</button>
+								
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="privateChats" checked="">
+									<label for="privateChats" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Private Chats</span>
+										</div>
+									</label>
+								</button>
+		
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="groupChats" checked="">
+									<label for="groupChats" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Group Chats</span>
+										</div>
+									</label>
+								</button>
+		
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="channels" checked="">
+									<label for="channels" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Channels</span>
+										</div>
+									</label>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Auto-Play Media</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="gifs" checked="">
+									<label for="gifs" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">GIFs</span>
+										</div>
+									</label>
+								</button>
+								
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="videos" checked="">
+									<label for="videos" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Videos</span>
+										</div>
+									</label>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Stickers</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="suggestStickers" checked="">
+									<label for="suggestStickers" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Suggest Stickers by Emoji</span>
+										</div>
+									</label>
+								</button>
+								
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="loopAnimated" checked="">
+									<label for="loopAnimated" class="checkbox-content">
+										<img alt="" class="icon checkbox-img" src="./LeftSidebar_files/checkboxon_svg.svg">
+										<div class="content">
+											<span class="name">Loop Animated Stickers</span>
+										</div>
+									</label>
+								</button>
+								<div class="stickers">
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/sheep.png" class="account-icon sticker">
+											<div class="content">
+												<span class="name">Sheep</span>
+												<span class="info">16 Stickers</span>
+											</div>
+										</button>
+							
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/kangaroo.png" class="account-icon sticker">
+											<div class="content">
+												<span class="name">Kangaroo Fighter</span>
+												<span class="info">25 Stickers</span>
+											</div>
+										</button>
+					
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/tiger.png" class="account-icon sticker">
+											<div class="content">
+												<span class="name">Amur Tiger</span>
+												<span class="info">25 Stickers</span>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					
+				</div>
+				
+				<div id="search-sidebar">
+					<div class="header header-search">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round">
+								<img src="./LeftSidebar_files/menu_svg.svg" class="icon">
+							</button>
+							<div class="search-input-group header-title">
+								<input type="searcher" id="sarch" class="input-area" placeholder="Search" onfocus="styleSearch(this, &#39;add&#39;)" onblur="styleSearch(this, &#39;remove&#39;)">
+								<label for="search">
+									<img src="./LeftSidebar_files/search_svg.svg" alt="" class="icon icon-light-gray">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="search-sidebar-content">
+						<div id="search" style="display: none;">
+							<div class="content">
+								<div class="section">
+									<div class="subsection">
+										<h3 class="h3-title">Contacts and Chats</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/account1.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Campus Party</span>
+												<span class="info">2,500 members</span>
+											</div>
+										</button>
+									</div>
+								</div>
+								<section>
+									<div class="subsection">
+										<h3 class="h3-title">Global Search</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/account1.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Super Party</span>
+												<span class="info">@party</span>
+											</div>
+										</button>
+									</div>
+								</section>
+								<section>
+									<div class="subsection">
+										<h3 class="h3-title">Global Search</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/account1.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Little Sister</span>
+												<span class="info">Party in the Park will now be an action !(...)!</span>
+											</div>
+											<span class="date">Feb 8</span>
+										</button>
+							
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/account2.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Monika Parker</span>
+												<span class="info">Party!</span>
+											</div>
+											<span class="date">Jan 24</span>
+										</button>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div id="calls" style="display: none;">
+							<div class="content">
+								<div class="section">
+									<div class="subsection">
+										<h3 class="h3-title">People</h3>
+									</div>
+									<div class="subsection btns-vertical-list vertical-scroll">
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="./LeftSidebar_files/account1.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Abayo</span>
+											</div>
+										</button>
+										
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="./LeftSidebar_files/account2.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Shen</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="./LeftSidebar_files/account3.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Masood</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="./LeftSidebar_files/account4.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Rutherford</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="./LeftSidebar_files/account5.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Gabriel</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="./LeftSidebar_files/account6.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Campus</span>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="section">
+									<div class="subsection">
+										<h3 class="h3-title">Recent</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/account1.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Raaid El Syed</span>
+												<span class="info">last seen just now</span>
+											</div>
+										</button>
+							
+										<button class="btn ripple btn-white btn-account">
+											<img src="./LeftSidebar_files/account2.jpg" class="account-img">
+											<div class="content">
+												<span class="name">Chinaza Akachi</span>
+												<span class="info">last seen just now</span>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="contacts" style="display: none;">
+							<section class="section-messages">
+								<div class="subsection">
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account1.jpg" class="account-icon">
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info online">Online</span>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account2.jpg" class="account-icon">
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info online">Online</span>
+										</div>
+									</button>
+		
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account3.jpg" class="account-icon">
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">last seen just now</span>
+										</div>
+									</button>
+		
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account4.jpg" class="account-icon">
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">last seen just now</span>
+										</div>
+									</button>
+								</div>
+							</section>
+						</div>
+						<div id="messages" style="">
+							<section class="section-messages">
+								<div class="subsection">
+									<button class="btn ripple btn-white btn-account">
+										<div class="account-icon">
+											<img src="./LeftSidebar_files/avatar_savedmessages_svg.svg" class="icon icon-white">
+										</div>
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">Eat something!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="./LeftSidebar_files/2checks_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message img bg-muteoff">
+												<img src="./LeftSidebar_files/pinnedchat_svg.svg" alt="" class="icon icon-white">
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account2.jpg" class="account-img">
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info">Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="./LeftSidebar_files/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteon">
+												<span>12</span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</section>
+							<section class="section-messages">
+								<div class="subsection">
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account1.jpg" class="account-icon">
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">Eat something!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="./LeftSidebar_files/2checks_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message img bg-muteoff">
+												<span>1</span>
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account2.jpg" class="account-img">
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info">Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="./LeftSidebar_files/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteon">
+												<span>99+</span>
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account3.jpg" class="account-img">
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info">Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="./LeftSidebar_files/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteoff">
+												<span></span>
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="./LeftSidebar_files/account4.jpg" class="account-img">
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info"><span class="text-bold">Danny:</span> Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="./LeftSidebar_files/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteon">
+												<span></span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="dialog">
+			<div class="item btn btn-white ripple" onclick="openSidebar(&#39;#search-sidebar&#39;, &#39;#new-group&#39;)">
+				<img src="./LeftSidebar_files/group_svg.svg" alt="" class="icon icon-gray">
+				<span class="text">New Group</span>
+			</div>
+			<div class="item btn btn-white ripple">
+				<img src="./LeftSidebar_files/group_svg.svg" alt="" class="icon icon-gray">
+				<span class="text">Archive</span>
+				<div class="number-message bg-muteoff">
+					<span>2</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div class="container">
+		<div class="checkbox-group">
+			<input type="checkbox" id="cb1" onclick="indeterminateInput(this)">
+			<label for="cb1" class="checkbox-content">
+				<img alt="" class="icon checkbox-img">
+				<div class="input-text-content">
+					<span class="input-name">Rotate input</span>
+				</div>
+			</label>
+		</div>	
+	</div> -->
+
+	<script src="./LeftSidebar_files/mainFunctions.js.завантаження"></script>
+	<script src="./LeftSidebar_files/globalVars.js.завантаження"></script>
+	<script src="./LeftSidebar_files/DOMs.js.завантаження"></script>
+	<script src="./LeftSidebar_files/allFunctions.js.завантаження"></script>
+	<script src="./LeftSidebar_files/main.js.завантаження"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<style class="sf-download-bar-styles">
+.sf-download-bar__circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sf-download-bar__circle .sf-download-bar__circle-slice,
+.sf-download-bar__circle .sf-download-bar__circle-fill {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.sf-download-bar__circle .sf-download-bar__circle-slice {
+    clip: rect(0px, 40px, 40px, 20px);
+}
+
+.sf-download-bar__circle .sf-download-bar__circle-slice .sf-download-bar__circle-fill {
+    clip: rect(0px, 20px, 40px, 0px);
+    background-color: #fff;
+}
+
+.sf-download-bar__circle .sf-download-bar__circle-overlay {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 1px;
+    background-color: #5181B8;
+    border-radius: 50%;
+}
+
+.sf-download-bar__circle[data-progress='0'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='0'] .sf-download-bar__circle-fill {
+    transform: rotate(0deg);
+}
+
+.sf-download-bar__circle[data-progress='0'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(0deg);
+}
+
+.sf-download-bar__circle[data-progress='1'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='1'] .sf-download-bar__circle-fill {
+    transform: rotate(1.8deg);
+}
+
+.sf-download-bar__circle[data-progress='1'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(3.6deg);
+}
+
+.sf-download-bar__circle[data-progress='2'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='2'] .sf-download-bar__circle-fill {
+    transform: rotate(3.6deg);
+}
+
+.sf-download-bar__circle[data-progress='2'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(7.2deg);
+}
+
+.sf-download-bar__circle[data-progress='3'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='3'] .sf-download-bar__circle-fill {
+    transform: rotate(5.4deg);
+}
+
+.sf-download-bar__circle[data-progress='3'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(10.8deg);
+}
+
+.sf-download-bar__circle[data-progress='4'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='4'] .sf-download-bar__circle-fill {
+    transform: rotate(7.2deg);
+}
+
+.sf-download-bar__circle[data-progress='4'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(14.4deg);
+}
+
+.sf-download-bar__circle[data-progress='5'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='5'] .sf-download-bar__circle-fill {
+    transform: rotate(9deg);
+}
+
+.sf-download-bar__circle[data-progress='5'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(18deg);
+}
+
+.sf-download-bar__circle[data-progress='6'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='6'] .sf-download-bar__circle-fill {
+    transform: rotate(10.8deg);
+}
+
+.sf-download-bar__circle[data-progress='6'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(21.6deg);
+}
+
+.sf-download-bar__circle[data-progress='7'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='7'] .sf-download-bar__circle-fill {
+    transform: rotate(12.6deg);
+}
+
+.sf-download-bar__circle[data-progress='7'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(25.2deg);
+}
+
+.sf-download-bar__circle[data-progress='8'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='8'] .sf-download-bar__circle-fill {
+    transform: rotate(14.4deg);
+}
+
+.sf-download-bar__circle[data-progress='8'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(28.8deg);
+}
+
+.sf-download-bar__circle[data-progress='9'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='9'] .sf-download-bar__circle-fill {
+    transform: rotate(16.2deg);
+}
+
+.sf-download-bar__circle[data-progress='9'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(32.4deg);
+}
+
+.sf-download-bar__circle[data-progress='10'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='10'] .sf-download-bar__circle-fill {
+    transform: rotate(18deg);
+}
+
+.sf-download-bar__circle[data-progress='10'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(36deg);
+}
+
+.sf-download-bar__circle[data-progress='11'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='11'] .sf-download-bar__circle-fill {
+    transform: rotate(19.8deg);
+}
+
+.sf-download-bar__circle[data-progress='11'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(39.6deg);
+}
+
+.sf-download-bar__circle[data-progress='12'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='12'] .sf-download-bar__circle-fill {
+    transform: rotate(21.6deg);
+}
+
+.sf-download-bar__circle[data-progress='12'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(43.2deg);
+}
+
+.sf-download-bar__circle[data-progress='13'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='13'] .sf-download-bar__circle-fill {
+    transform: rotate(23.4deg);
+}
+
+.sf-download-bar__circle[data-progress='13'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(46.8deg);
+}
+
+.sf-download-bar__circle[data-progress='14'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='14'] .sf-download-bar__circle-fill {
+    transform: rotate(25.2deg);
+}
+
+.sf-download-bar__circle[data-progress='14'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(50.4deg);
+}
+
+.sf-download-bar__circle[data-progress='15'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='15'] .sf-download-bar__circle-fill {
+    transform: rotate(27deg);
+}
+
+.sf-download-bar__circle[data-progress='15'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(54deg);
+}
+
+.sf-download-bar__circle[data-progress='16'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='16'] .sf-download-bar__circle-fill {
+    transform: rotate(28.8deg);
+}
+
+.sf-download-bar__circle[data-progress='16'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(57.6deg);
+}
+
+.sf-download-bar__circle[data-progress='17'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='17'] .sf-download-bar__circle-fill {
+    transform: rotate(30.6deg);
+}
+
+.sf-download-bar__circle[data-progress='17'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(61.2deg);
+}
+
+.sf-download-bar__circle[data-progress='18'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='18'] .sf-download-bar__circle-fill {
+    transform: rotate(32.4deg);
+}
+
+.sf-download-bar__circle[data-progress='18'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(64.8deg);
+}
+
+.sf-download-bar__circle[data-progress='19'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='19'] .sf-download-bar__circle-fill {
+    transform: rotate(34.2deg);
+}
+
+.sf-download-bar__circle[data-progress='19'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(68.4deg);
+}
+
+.sf-download-bar__circle[data-progress='20'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='20'] .sf-download-bar__circle-fill {
+    transform: rotate(36deg);
+}
+
+.sf-download-bar__circle[data-progress='20'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(72deg);
+}
+
+.sf-download-bar__circle[data-progress='21'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='21'] .sf-download-bar__circle-fill {
+    transform: rotate(37.8deg);
+}
+
+.sf-download-bar__circle[data-progress='21'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(75.6deg);
+}
+
+.sf-download-bar__circle[data-progress='22'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='22'] .sf-download-bar__circle-fill {
+    transform: rotate(39.6deg);
+}
+
+.sf-download-bar__circle[data-progress='22'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(79.2deg);
+}
+
+.sf-download-bar__circle[data-progress='23'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='23'] .sf-download-bar__circle-fill {
+    transform: rotate(41.4deg);
+}
+
+.sf-download-bar__circle[data-progress='23'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(82.8deg);
+}
+
+.sf-download-bar__circle[data-progress='24'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='24'] .sf-download-bar__circle-fill {
+    transform: rotate(43.2deg);
+}
+
+.sf-download-bar__circle[data-progress='24'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(86.4deg);
+}
+
+.sf-download-bar__circle[data-progress='25'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='25'] .sf-download-bar__circle-fill {
+    transform: rotate(45deg);
+}
+
+.sf-download-bar__circle[data-progress='25'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(90deg);
+}
+
+.sf-download-bar__circle[data-progress='26'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='26'] .sf-download-bar__circle-fill {
+    transform: rotate(46.8deg);
+}
+
+.sf-download-bar__circle[data-progress='26'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(93.6deg);
+}
+
+.sf-download-bar__circle[data-progress='27'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='27'] .sf-download-bar__circle-fill {
+    transform: rotate(48.6deg);
+}
+
+.sf-download-bar__circle[data-progress='27'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(97.2deg);
+}
+
+.sf-download-bar__circle[data-progress='28'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='28'] .sf-download-bar__circle-fill {
+    transform: rotate(50.4deg);
+}
+
+.sf-download-bar__circle[data-progress='28'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(100.8deg);
+}
+
+.sf-download-bar__circle[data-progress='29'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='29'] .sf-download-bar__circle-fill {
+    transform: rotate(52.2deg);
+}
+
+.sf-download-bar__circle[data-progress='29'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(104.4deg);
+}
+
+.sf-download-bar__circle[data-progress='30'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='30'] .sf-download-bar__circle-fill {
+    transform: rotate(54deg);
+}
+
+.sf-download-bar__circle[data-progress='30'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(108deg);
+}
+
+.sf-download-bar__circle[data-progress='31'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='31'] .sf-download-bar__circle-fill {
+    transform: rotate(55.8deg);
+}
+
+.sf-download-bar__circle[data-progress='31'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(111.6deg);
+}
+
+.sf-download-bar__circle[data-progress='32'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='32'] .sf-download-bar__circle-fill {
+    transform: rotate(57.6deg);
+}
+
+.sf-download-bar__circle[data-progress='32'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(115.2deg);
+}
+
+.sf-download-bar__circle[data-progress='33'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='33'] .sf-download-bar__circle-fill {
+    transform: rotate(59.4deg);
+}
+
+.sf-download-bar__circle[data-progress='33'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(118.8deg);
+}
+
+.sf-download-bar__circle[data-progress='34'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='34'] .sf-download-bar__circle-fill {
+    transform: rotate(61.2deg);
+}
+
+.sf-download-bar__circle[data-progress='34'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(122.4deg);
+}
+
+.sf-download-bar__circle[data-progress='35'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='35'] .sf-download-bar__circle-fill {
+    transform: rotate(63deg);
+}
+
+.sf-download-bar__circle[data-progress='35'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(126deg);
+}
+
+.sf-download-bar__circle[data-progress='36'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='36'] .sf-download-bar__circle-fill {
+    transform: rotate(64.8deg);
+}
+
+.sf-download-bar__circle[data-progress='36'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(129.6deg);
+}
+
+.sf-download-bar__circle[data-progress='37'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='37'] .sf-download-bar__circle-fill {
+    transform: rotate(66.6deg);
+}
+
+.sf-download-bar__circle[data-progress='37'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(133.2deg);
+}
+
+.sf-download-bar__circle[data-progress='38'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='38'] .sf-download-bar__circle-fill {
+    transform: rotate(68.4deg);
+}
+
+.sf-download-bar__circle[data-progress='38'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(136.8deg);
+}
+
+.sf-download-bar__circle[data-progress='39'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='39'] .sf-download-bar__circle-fill {
+    transform: rotate(70.2deg);
+}
+
+.sf-download-bar__circle[data-progress='39'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(140.4deg);
+}
+
+.sf-download-bar__circle[data-progress='40'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='40'] .sf-download-bar__circle-fill {
+    transform: rotate(72deg);
+}
+
+.sf-download-bar__circle[data-progress='40'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(144deg);
+}
+
+.sf-download-bar__circle[data-progress='41'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='41'] .sf-download-bar__circle-fill {
+    transform: rotate(73.8deg);
+}
+
+.sf-download-bar__circle[data-progress='41'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(147.6deg);
+}
+
+.sf-download-bar__circle[data-progress='42'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='42'] .sf-download-bar__circle-fill {
+    transform: rotate(75.6deg);
+}
+
+.sf-download-bar__circle[data-progress='42'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(151.2deg);
+}
+
+.sf-download-bar__circle[data-progress='43'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='43'] .sf-download-bar__circle-fill {
+    transform: rotate(77.4deg);
+}
+
+.sf-download-bar__circle[data-progress='43'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(154.8deg);
+}
+
+.sf-download-bar__circle[data-progress='44'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='44'] .sf-download-bar__circle-fill {
+    transform: rotate(79.2deg);
+}
+
+.sf-download-bar__circle[data-progress='44'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(158.4deg);
+}
+
+.sf-download-bar__circle[data-progress='45'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='45'] .sf-download-bar__circle-fill {
+    transform: rotate(81deg);
+}
+
+.sf-download-bar__circle[data-progress='45'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(162deg);
+}
+
+.sf-download-bar__circle[data-progress='46'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='46'] .sf-download-bar__circle-fill {
+    transform: rotate(82.8deg);
+}
+
+.sf-download-bar__circle[data-progress='46'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(165.6deg);
+}
+
+.sf-download-bar__circle[data-progress='47'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='47'] .sf-download-bar__circle-fill {
+    transform: rotate(84.6deg);
+}
+
+.sf-download-bar__circle[data-progress='47'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(169.2deg);
+}
+
+.sf-download-bar__circle[data-progress='48'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='48'] .sf-download-bar__circle-fill {
+    transform: rotate(86.4deg);
+}
+
+.sf-download-bar__circle[data-progress='48'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(172.8deg);
+}
+
+.sf-download-bar__circle[data-progress='49'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='49'] .sf-download-bar__circle-fill {
+    transform: rotate(88.2deg);
+}
+
+.sf-download-bar__circle[data-progress='49'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(176.4deg);
+}
+
+.sf-download-bar__circle[data-progress='50'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='50'] .sf-download-bar__circle-fill {
+    transform: rotate(90deg);
+}
+
+.sf-download-bar__circle[data-progress='50'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(180deg);
+}
+
+.sf-download-bar__circle[data-progress='51'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='51'] .sf-download-bar__circle-fill {
+    transform: rotate(91.8deg);
+}
+
+.sf-download-bar__circle[data-progress='51'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(183.6deg);
+}
+
+.sf-download-bar__circle[data-progress='52'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='52'] .sf-download-bar__circle-fill {
+    transform: rotate(93.6deg);
+}
+
+.sf-download-bar__circle[data-progress='52'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(187.2deg);
+}
+
+.sf-download-bar__circle[data-progress='53'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='53'] .sf-download-bar__circle-fill {
+    transform: rotate(95.4deg);
+}
+
+.sf-download-bar__circle[data-progress='53'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(190.8deg);
+}
+
+.sf-download-bar__circle[data-progress='54'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='54'] .sf-download-bar__circle-fill {
+    transform: rotate(97.2deg);
+}
+
+.sf-download-bar__circle[data-progress='54'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(194.4deg);
+}
+
+.sf-download-bar__circle[data-progress='55'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='55'] .sf-download-bar__circle-fill {
+    transform: rotate(99deg);
+}
+
+.sf-download-bar__circle[data-progress='55'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(198deg);
+}
+
+.sf-download-bar__circle[data-progress='56'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='56'] .sf-download-bar__circle-fill {
+    transform: rotate(100.8deg);
+}
+
+.sf-download-bar__circle[data-progress='56'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(201.6deg);
+}
+
+.sf-download-bar__circle[data-progress='57'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='57'] .sf-download-bar__circle-fill {
+    transform: rotate(102.6deg);
+}
+
+.sf-download-bar__circle[data-progress='57'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(205.2deg);
+}
+
+.sf-download-bar__circle[data-progress='58'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='58'] .sf-download-bar__circle-fill {
+    transform: rotate(104.4deg);
+}
+
+.sf-download-bar__circle[data-progress='58'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(208.8deg);
+}
+
+.sf-download-bar__circle[data-progress='59'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='59'] .sf-download-bar__circle-fill {
+    transform: rotate(106.2deg);
+}
+
+.sf-download-bar__circle[data-progress='59'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(212.4deg);
+}
+
+.sf-download-bar__circle[data-progress='60'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='60'] .sf-download-bar__circle-fill {
+    transform: rotate(108deg);
+}
+
+.sf-download-bar__circle[data-progress='60'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(216deg);
+}
+
+.sf-download-bar__circle[data-progress='61'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='61'] .sf-download-bar__circle-fill {
+    transform: rotate(109.8deg);
+}
+
+.sf-download-bar__circle[data-progress='61'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(219.6deg);
+}
+
+.sf-download-bar__circle[data-progress='62'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='62'] .sf-download-bar__circle-fill {
+    transform: rotate(111.6deg);
+}
+
+.sf-download-bar__circle[data-progress='62'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(223.2deg);
+}
+
+.sf-download-bar__circle[data-progress='63'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='63'] .sf-download-bar__circle-fill {
+    transform: rotate(113.4deg);
+}
+
+.sf-download-bar__circle[data-progress='63'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(226.8deg);
+}
+
+.sf-download-bar__circle[data-progress='64'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='64'] .sf-download-bar__circle-fill {
+    transform: rotate(115.2deg);
+}
+
+.sf-download-bar__circle[data-progress='64'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(230.4deg);
+}
+
+.sf-download-bar__circle[data-progress='65'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='65'] .sf-download-bar__circle-fill {
+    transform: rotate(117deg);
+}
+
+.sf-download-bar__circle[data-progress='65'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(234deg);
+}
+
+.sf-download-bar__circle[data-progress='66'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='66'] .sf-download-bar__circle-fill {
+    transform: rotate(118.8deg);
+}
+
+.sf-download-bar__circle[data-progress='66'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(237.6deg);
+}
+
+.sf-download-bar__circle[data-progress='67'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='67'] .sf-download-bar__circle-fill {
+    transform: rotate(120.6deg);
+}
+
+.sf-download-bar__circle[data-progress='67'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(241.2deg);
+}
+
+.sf-download-bar__circle[data-progress='68'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='68'] .sf-download-bar__circle-fill {
+    transform: rotate(122.4deg);
+}
+
+.sf-download-bar__circle[data-progress='68'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(244.8deg);
+}
+
+.sf-download-bar__circle[data-progress='69'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='69'] .sf-download-bar__circle-fill {
+    transform: rotate(124.2deg);
+}
+
+.sf-download-bar__circle[data-progress='69'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(248.4deg);
+}
+
+.sf-download-bar__circle[data-progress='70'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='70'] .sf-download-bar__circle-fill {
+    transform: rotate(126deg);
+}
+
+.sf-download-bar__circle[data-progress='70'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(252deg);
+}
+
+.sf-download-bar__circle[data-progress='71'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='71'] .sf-download-bar__circle-fill {
+    transform: rotate(127.8deg);
+}
+
+.sf-download-bar__circle[data-progress='71'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(255.6deg);
+}
+
+.sf-download-bar__circle[data-progress='72'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='72'] .sf-download-bar__circle-fill {
+    transform: rotate(129.6deg);
+}
+
+.sf-download-bar__circle[data-progress='72'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(259.2deg);
+}
+
+.sf-download-bar__circle[data-progress='73'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='73'] .sf-download-bar__circle-fill {
+    transform: rotate(131.4deg);
+}
+
+.sf-download-bar__circle[data-progress='73'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(262.8deg);
+}
+
+.sf-download-bar__circle[data-progress='74'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='74'] .sf-download-bar__circle-fill {
+    transform: rotate(133.2deg);
+}
+
+.sf-download-bar__circle[data-progress='74'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(266.4deg);
+}
+
+.sf-download-bar__circle[data-progress='75'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='75'] .sf-download-bar__circle-fill {
+    transform: rotate(135deg);
+}
+
+.sf-download-bar__circle[data-progress='75'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(270deg);
+}
+
+.sf-download-bar__circle[data-progress='76'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='76'] .sf-download-bar__circle-fill {
+    transform: rotate(136.8deg);
+}
+
+.sf-download-bar__circle[data-progress='76'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(273.6deg);
+}
+
+.sf-download-bar__circle[data-progress='77'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='77'] .sf-download-bar__circle-fill {
+    transform: rotate(138.6deg);
+}
+
+.sf-download-bar__circle[data-progress='77'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(277.2deg);
+}
+
+.sf-download-bar__circle[data-progress='78'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='78'] .sf-download-bar__circle-fill {
+    transform: rotate(140.4deg);
+}
+
+.sf-download-bar__circle[data-progress='78'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(280.8deg);
+}
+
+.sf-download-bar__circle[data-progress='79'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='79'] .sf-download-bar__circle-fill {
+    transform: rotate(142.2deg);
+}
+
+.sf-download-bar__circle[data-progress='79'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(284.4deg);
+}
+
+.sf-download-bar__circle[data-progress='80'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='80'] .sf-download-bar__circle-fill {
+    transform: rotate(144deg);
+}
+
+.sf-download-bar__circle[data-progress='80'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(288deg);
+}
+
+.sf-download-bar__circle[data-progress='81'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='81'] .sf-download-bar__circle-fill {
+    transform: rotate(145.8deg);
+}
+
+.sf-download-bar__circle[data-progress='81'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(291.6deg);
+}
+
+.sf-download-bar__circle[data-progress='82'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='82'] .sf-download-bar__circle-fill {
+    transform: rotate(147.6deg);
+}
+
+.sf-download-bar__circle[data-progress='82'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(295.2deg);
+}
+
+.sf-download-bar__circle[data-progress='83'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='83'] .sf-download-bar__circle-fill {
+    transform: rotate(149.4deg);
+}
+
+.sf-download-bar__circle[data-progress='83'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(298.8deg);
+}
+
+.sf-download-bar__circle[data-progress='84'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='84'] .sf-download-bar__circle-fill {
+    transform: rotate(151.2deg);
+}
+
+.sf-download-bar__circle[data-progress='84'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(302.4deg);
+}
+
+.sf-download-bar__circle[data-progress='85'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='85'] .sf-download-bar__circle-fill {
+    transform: rotate(153deg);
+}
+
+.sf-download-bar__circle[data-progress='85'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(306deg);
+}
+
+.sf-download-bar__circle[data-progress='86'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='86'] .sf-download-bar__circle-fill {
+    transform: rotate(154.8deg);
+}
+
+.sf-download-bar__circle[data-progress='86'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(309.6deg);
+}
+
+.sf-download-bar__circle[data-progress='87'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='87'] .sf-download-bar__circle-fill {
+    transform: rotate(156.6deg);
+}
+
+.sf-download-bar__circle[data-progress='87'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(313.2deg);
+}
+
+.sf-download-bar__circle[data-progress='88'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='88'] .sf-download-bar__circle-fill {
+    transform: rotate(158.4deg);
+}
+
+.sf-download-bar__circle[data-progress='88'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(316.8deg);
+}
+
+.sf-download-bar__circle[data-progress='89'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='89'] .sf-download-bar__circle-fill {
+    transform: rotate(160.2deg);
+}
+
+.sf-download-bar__circle[data-progress='89'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(320.4deg);
+}
+
+.sf-download-bar__circle[data-progress='90'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='90'] .sf-download-bar__circle-fill {
+    transform: rotate(162deg);
+}
+
+.sf-download-bar__circle[data-progress='90'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(324deg);
+}
+
+.sf-download-bar__circle[data-progress='91'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='91'] .sf-download-bar__circle-fill {
+    transform: rotate(163.8deg);
+}
+
+.sf-download-bar__circle[data-progress='91'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(327.6deg);
+}
+
+.sf-download-bar__circle[data-progress='92'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='92'] .sf-download-bar__circle-fill {
+    transform: rotate(165.6deg);
+}
+
+.sf-download-bar__circle[data-progress='92'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(331.2deg);
+}
+
+.sf-download-bar__circle[data-progress='93'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='93'] .sf-download-bar__circle-fill {
+    transform: rotate(167.4deg);
+}
+
+.sf-download-bar__circle[data-progress='93'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(334.8deg);
+}
+
+.sf-download-bar__circle[data-progress='94'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='94'] .sf-download-bar__circle-fill {
+    transform: rotate(169.2deg);
+}
+
+.sf-download-bar__circle[data-progress='94'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(338.4deg);
+}
+
+.sf-download-bar__circle[data-progress='95'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='95'] .sf-download-bar__circle-fill {
+    transform: rotate(171deg);
+}
+
+.sf-download-bar__circle[data-progress='95'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(342deg);
+}
+
+.sf-download-bar__circle[data-progress='96'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='96'] .sf-download-bar__circle-fill {
+    transform: rotate(172.8deg);
+}
+
+.sf-download-bar__circle[data-progress='96'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(345.6deg);
+}
+
+.sf-download-bar__circle[data-progress='97'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='97'] .sf-download-bar__circle-fill {
+    transform: rotate(174.6deg);
+}
+
+.sf-download-bar__circle[data-progress='97'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(349.2deg);
+}
+
+.sf-download-bar__circle[data-progress='98'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='98'] .sf-download-bar__circle-fill {
+    transform: rotate(176.4deg);
+}
+
+.sf-download-bar__circle[data-progress='98'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(352.8deg);
+}
+
+.sf-download-bar__circle[data-progress='99'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='99'] .sf-download-bar__circle-fill {
+    transform: rotate(178.2deg);
+}
+
+.sf-download-bar__circle[data-progress='99'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(356.4deg);
+}
+
+.sf-download-bar__circle[data-progress='100'] .sf-download-bar__circle-slice.sf-download-bar__circle-slice_view_full,
+.sf-download-bar__circle[data-progress='100'] .sf-download-bar__circle-fill {
+    transform: rotate(180deg);
+}
+
+.sf-download-bar__circle[data-progress='100'] .sf-download-bar__circle-fill.sf-download-bar__circle-bar {
+    transform: rotate(360deg);
+}
+
+.sf-download-bar {
+    position: fixed;
+    right: 110px;
+    bottom: 100px;
+    z-index: 99999;
+
+    width: 64px;
+    height: 64px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+    transition: width, height, right, 0.2s;
+
+    border-radius: 50%;
+}
+
+.sf-download-bar_opened_yes {
+    width: 184px;
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    box-shadow: 0px 0px 18px rgba(49, 51, 106, 0.15);
+}
+
+.sf-download-bar_hide_yes {
+    right: -64px;
+}
+
+.sf-download-bar__head {
+    position: relative;
+    z-index: 10;
+
+    display: block;
+    white-space: nowrap;
+
+    width: 100%;
+    height: 64px;
+
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+
+    background: #5181B8;
+    border-radius: 100px;
+    box-shadow: none;
+}
+
+/* .sf-download-bar:not(.sf-download-bar_opened_yes) .sf-download-bar__head {
+    box-shadow: 0px 0px 18px rgba(49, 51, 106, 0.15);
+} */
+
+.sf-download-bar__head:after {
+    content: '';
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #5181B8;
+    border-radius: 100px;
+    transition: width, height, left, top, 0.2s;
+}
+
+.sf-download-bar:not(.sf-download-bar_opened_yes):hover .sf-download-bar__head:after {
+    width: 68px;
+    height: 68px;
+    top: -2px;
+    left: -2px;
+    box-shadow: 0px 0px 18px rgba(49, 51, 106, 0.15);
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__head:after {
+    opacity: 0;
+    display: none;
+}
+
+.sf-download-bar__ticker {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 17px;
+    height: 17px;
+
+    background: #FF734C;
+    border-radius: 100px;
+
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    font-size: 10px;
+    font-weight: bold;
+
+    transition: opacity 0.2s;
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__ticker {
+    opacity: 0;
+}
+
+.sf-download-bar__ticker-big {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 40px;
+    height: 40px;
+    ;
+
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+
+    transition: opacity 0.2s;
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__ticker-big {
+    opacity: 1;
+}
+
+.sf-download-bar__circle svg {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: -7px 0 0 -5px;
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__circle svg {
+    opacity: 0;
+}
+
+.sf-download-bar__content {
+    overflow: hidden;
+}
+
+.sf-download-bar__text {
+    opacity: 0.6;
+
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 64px;
+
+    overflow: hidden;
+
+    margin-left: -90px;
+    margin-right: 26px;
+
+    width: 64px;
+    height: 64px;
+
+    vertical-align: middle;
+    display: inline-block;
+    transition: margin-left 0.2s;
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__text {
+    margin-left: 30px;
+}
+
+.sf-download-bar__footer {
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__footer {
+    padding-top: 32px;
+    margin-top: -32px;
+}
+
+.sf-download-bar__stop {
+    opacity: 0.5;
+    width: 8px;
+    height: 8px;
+    visibility: hidden;
+    margin-right: 7px;
+    margin-left: 15px;
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sf-download-bar__stop:hover {
+    opacity: 1;
+}
+
+.sf-download-bar__item {
+    overflow: hidden;
+    height: 48px;
+    line-height: 40px;
+    transition: background-color 0.1s;
+}
+
+.sf-download-bar__item:first-child {
+    margin-top: 5px;
+}
+
+.sf-download-bar__item:hover {
+    background-color: #E9EDF1;
+}
+
+.sf-download-bar__item:hover .sf-download-bar__stop {
+    visibility: visible;
+}
+
+.sf-download-bar__item-info {
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    width: 135px;
+}
+
+.sf-download-bar__item-name {
+    line-height: 1em;
+    font-size: 11px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sf-download-bar__item-progress,
+.sf-download-bar__item-progress-bg {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    height: 1px;
+}
+
+.sf-download-bar__item-progress-bg {
+    width: 100%;
+    background-color: #E7E8EC;
+    z-index: 1;
+}
+
+.sf-download-bar__item-progress {
+    width: 0;
+    background-color: #5181B8;
+    z-index: 2;
+}
+
+.sf-download-bar__cancel {
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    color: #5181B8;
+    font-size: 9px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #fff;
+}
+
+.sf-download-bar_opened_yes .sf-download-bar__cancel {
+    display: block;
+}
+
+.sf-download-bar__cancel:hover {
+    text-decoration: none;
+    background-color: #5181B8;
+    color: #fff;
+}
+</style><div class="sf-download-bar sf-download-bar_hide_yes"><a href="http://127.0.0.1:5500/left-sidebar.html#" class="sf-download-bar__head"><div class="sf-download-bar__ticker">1</div><div class="sf-download-bar__content"><div class="sf-download-bar__text">Downloading</div><div class="sf-download-bar__circle" data-progress="0"><div class="sf-download-bar__ticker-big">1</div><svg width="16" height="16" viewBox="0 0 16 16"><path d="M0 13.3623H11.0043V11.7903H0V13.3623ZM11.0043 4.71611H7.86018V0H3.14407V4.71611H0L5.50213 10.2182L11.0043 4.71611Z" fill="#fff"></path></svg><div class="sf-download-bar__circle-slice sf-download-bar__circle-slice_view_full"><div class="sf-download-bar__circle-fill"></div></div><div class="sf-download-bar__circle-slice"><div class="sf-download-bar__circle-fill"></div><div class="sf-download-bar__circle-fill sf-download-bar__circle-bar"></div></div><div class="sf-download-bar__circle-overlay"></div></div></div></a><div class="sf-download-bar__footer"><div class="sf-download-bar__list"></div></div><a href="http://127.0.0.1:5500/left-sidebar.html#" class="sf-download-bar__cancel">Cancel all downloads</a></div></body></html>

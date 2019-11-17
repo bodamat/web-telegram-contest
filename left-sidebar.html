@@ -9,898 +9,1271 @@
 	<title>LeftSidebar</title>
 </head>
 <body>
-	<div id="left-sidebar">
-		<div id="settings">
-			<div class="header header-3-column">
-				<div class="header-content">
-					<button class="btn ripple btn-white btn-round header-back">
-						<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
-					</button>
-					<h2 class="header-title">Settings</h2>
-					<button class="btn ripple btn-white btn-round header-more">
-						<img src="assets/icons/more_svg.svg" class="icon icon-gray"/>
-					</button>
-				</div>
-			</div>
-			<div class="account">
-					<div class="img-container">
-						<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
+	<div class="app">
+		<div id="left-sidebar">
+				<div id="settings">
+					<div class="header header-create">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
+							</button>
+							<h2 class="header-title">Settings</h2>
+							<button class="btn ripple btn-white btn-round header-more">
+								<img src="assets/icons/more_svg.svg" class="icon icon-gray"/>
+							</button>
+						</div>
 					</div>
-				<h3 class="account-name">Doge Dogenson</h3>
-				<p class="account-number">+33 1 23 45 67 89</p>
-			</div>
-			<div class="menu-btns">
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/edit_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/edit_svg.svg" /> <!-- For search engine -->
-					</object>
 					<div class="content">
-						<span class="name">Edit profile</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/settings_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/settings_svg.svg" />
-					</object>
-					<div class="content">
-						<span class="name">General Settings</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/unmute_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/unmute_svg.svg" />
-					</object>
-					<div class="content">
-						<span class="name">Notifications</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/lock_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/lock_svg.svg" />
-					</object>
-					<div class="content">
-						<span class="name">Privacy and Security</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/language_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/language_svg.svg" />
-					</object>
-					<div class="content">
-						<span class="name">Language</span>
-					</div>
-				</button>
-			</div>
-		</div>
-		<div class="edit-profile">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<object type="image/svg+xml" data="assets/icons/back_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/back_svg.svg" />
-					</object>
-				</button>
-				<h2 class="header-title">Edit profile</h2>
-			</div>
-			<div class="account">
-				<div class="img-container darkened">
-					<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
-					<div class="img-content">
-						<object type="image/svg+xml" data="assets/icons/cameraadd_svg.svg" class="icon icon-white">
-							<img src="assets/icons/cameraadd_svg.svg" /> <!-- For search engine -->
-						</object>
-					</div>
-				</div>
-			</div>
-			<div class="vertical-input-group container">
-				<div class="input-group">
-					<input type="name" id="name" required class="input-area">
-					<label for="name" class="label">Name</label>
-				</div>
-				<div class="input-group">
-					<input type="lastName" id="lastName" required class="input-area">
-					<label for="lastName" class="label">Last name</label>
-				</div>
-				<div class="input-group">
-					<input type="bio" id="bio" required class="input-area">
-					<label for="bio" class="label">Bio (optional)</label>
-				</div>
-				<p class="text-tooltip">Any details such as age? occupation or city. Example: 23 y.o. designer from San Francisco.</p>
-			</div>
-			<hr class="hr m-t-5">
-			<div class="username container">
-				<h3 class="h3-title">Username</h3>
-				<div class="input-group"> <!-- class input-error and input-valid -->
-					<input type="username" id="username" required class="input-area">
-					<label for="username" class="label">Username</label>
-				</div>
-				<p class="text-tooltip">You can choose a username on Telegram. If you do, other people will be able to find you by this username and contact you without knowing your phone number.</p>
-				<p class="text-tooltip">You can use a-z, 0-9 and underscores. Minimum length is 5 characters</p>
-			</div>
-		</div>
-		<div class="security">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<object type="image/svg+xml" data="assets/icons/back_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/back_svg.svg" />
-					</object>
-				</button>
-				<h2 class="header-title">Privacy and Security</h2>
-			</div>
-			<hr class="hr hr-small-top">
-			<div class="menu-btns">
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/deleteuser_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/deleteuser_svg.svg" /> <!-- For search engine -->
-					</object>
-					<div class="content">
-						<span class="name title">Blocked Users</span>
-						<span class="info">6 users</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img">
-					<object type="image/svg+xml" data="assets/icons/activesessions_svg.svg" class="icon icon-gray">
-						<img src="assets/icons/activesessions_svg.svg" />
-					</object>
-					<div class="content">
-						<span class="name title">Active Sessions</span>
-						<span class="info">3 devices</span>
-					</div>
-				</button>
-			</div>
-			<hr class="hr hr-small-top">
-			<h3 class="h3-title p-l-20">Privacy</h3>
-			<div class="menu-btns">
-				<button class="btn ripple btn-white btn-img btn-faq">
-					<div class="content">
-						<span class="name title">Who can see my phone number?</span>
-						<span class="info">My Contacts</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img btn-faq">
-					<div class="content">
-						<span class="name title">Who can see your Last Seen time?</span>
-						<span class="info">Everybody</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img btn-faq">
-					<div class="content">
-						<span class="name title">Who can see my profile photo?</span>
-						<span class="info">Everybody</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img btn-faq">
-					<div class="content">
-						<span class="name title">Who can add a link to my account when forwarding my messages?</span>
-						<span class="info">Everybody</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img btn-faq">
-					<div class="content">
-						<span class="name title">Who can add me to group chats?</span>
-						<span class="info">Everybody</span>
-					</div>
-				</button>
-	
-			</div>
-		</div>
-		<div id="last-seen">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<img src="assets/icons/back_svg.svg" />
-				</button>
-				<h2 class="header-title">Last Seen & Online</h2>
-			</div>
-			<hr class="hr hr-small-top">
-			<h3 class="h3-title p-l-20">Who can see your Last Seen time?</h3>
-			<div class="container" id="last-seen-radio">
-				<div class="radio-group">
-					<input type="radio" id="email"
-						name="contact" value="email">
-					<label for="email" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Everybody</span>
-						</div>
-					</label>
-				</div>
-		
-				<div class="radio-group">
-					<input type="radio" id="phone"
-						name="contact" value="phone" checked>
-					<label for="phone" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">My Contacts</span>
-						</div>
-					</label>
-				</div>
-		
-				<div class="radio-group">
-					<input type="radio" id="contact"
-						name="contact" value="email">
-					<label for="contact" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">No body</span>
-						</div>
-					</label>
-				</div>
-				<p class="text-tooltip">
-					You won't see Last Seen and online statuses for people with whom you don't share yours. Approximate last seen will be shown instead (recently, within a week, within a month)
-				</p>
-			</div>		
-			<hr class="hr">
-			<h3 class="h3-title p-l-20">Exceptions</h3>
-			<div class="menu-btns">
-				<button class="btn ripple btn-white btn-img">
-					<img src="assets/icons/deleteuser_svg.svg" class="icon icon-gray"/>
-					<div class="content">
-						<span class="name title">Never Share With</span>
-						<span class="info">Add Users</span>
-					</div>
-				</button>
-	
-				<button class="btn ripple btn-white btn-img">
-					<img src="assets/icons/adduser_svg.svg" class="icon icon-gray"/>
-					<div class="content">
-						<span class="name title">Always Share With</span>
-						<span class="info">Add Users</span>
-					</div>
-				</button>
-			</div>
-		</div>
-		<div id="notifications">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<img src="assets/icons/back_svg.svg" />
-				</button>
-				<h2 class="header-title">Notifications</h2>
-			</div>
-			<hr class="hr hr-small-top">
-			<div class="container" id="private-chat">
-				<h3 class="h3-title">Private Chats</h3>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="chatsNotify" checked>
-					<label for="chatsNotify" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Notifications for private chats</span>
-							<span class="text-tooltip">Enabled</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="chatsMessage" checked>
-					<label for="chatsMessage" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Message preview</span>
-							<span class="text-tooltip">Enabled</span>
-						</div>
-					</label>
-				</div>
-			</div>
-			<hr class="hr hr-small-top">
-			<div class="container" id="groups">
-				<h3 class="h3-title">Groups</h3>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="groupNotify" checked>
-					<label for="groupNotify" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Notifications for groups</span>
-							<span class="text-tooltip">Enabled</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="groupMessage">
-					<label for="groupMessage" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Message preview</span>
-							<span class="text-tooltip">Disabled</span>
-						</div>
-					</label>
-				</div>
-			</div>
-			<hr class="hr hr-small-top">
-			<div class="container" id="channels">
-				<h3 class="h3-title">Channels</h3>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="channelsChat" checked>
-					<label for="channelsChat" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Notifications for private chats</span>
-							<span class="text-tooltip">Enabled</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="channelsMessage" checked>
-					<label for="channelsMessage" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Message preview</span>
-							<span class="text-tooltip">Enabled</span>
-						</div>
-					</label>
-				</div>
-			</div>
-			<hr class="hr hr-small-top">
-			<div id="other" class="container">
-				<h3 class="h3-title">Other</h3>
-
-				<div class="checkbox-group">
-					<input type="checkbox" id="contactTelegram" checked>
-					<label for="contactTelegram" class="checkbox-content">
-						<img alt="" class="icon checkbox-img">
-						<div class="input-text-content">
-							<span class="input-name">Contacts joined Telegram</span>
-						</div>
-					</label>
-				</div>
-			</div>
-
-		</div>
-		<div id="language">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<img src="assets/icons/back_svg.svg" />
-				</button>
-				<h2 class="header-title">Language</h2>
-			</div>
-
-			<div class="container">
-		
-				<div class="radio-group">
-					<input type="radio" id="english"
-						name="language" value="email" checked>
-					<label for="english" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">English</span>
-							<span class="text-tooltip">English</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="french"
-						name="language" value="email">
-					<label for="french" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Francais</span>
-							<span class="text-tooltip">French</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="german"
-						name="language" value="email">
-					<label for="german" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Deutsch</span>
-							<span class="text-tooltip">German</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="italian"
-						name="language" value="email">
-					<label for="italian" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Italiano</span>
-							<span class="text-tooltip">Italian</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="portuguese"
-						name="language" value="email">
-					<label for="portuguese" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Portugues</span>
-							<span class="text-tooltip">Portuguese</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="russian"
-						name="language" value="email">
-					<label for="russian" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Русский</span>
-							<span class="text-tooltip">Russian</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="spanish"
-						name="language" value="email">
-					<label for="spanish" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Espanol</span>
-							<span class="text-tooltip">Spanish</span>
-						</div>
-					</label>
-				</div>
-
-				<div class="radio-group">
-					<input type="radio" id="ukrainian"
-						name="language" value="email">
-					<label for="ukrainian" class="radio-content">
-						<img alt="" class="icon radio-img">
-						<div class="input-text-content">
-							<span class="input-name">Українська</span>
-							<span class="text-tooltip">Ukrainian</span>
-						</div>
-					</label>
-				</div>
-
-			</div>	
-		</div>
-		<div id="chat-background">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<img src="assets/icons/back_svg.svg" />
-				</button>
-				<h2 class="header-title">Chat Background</h2>
-			</div>
-			<div class="content">
-				<div class="section color-list-section">
-					<div class="color-list">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="blocked-users">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round header-back">
-					<img src="assets/icons/back_svg.svg" />
-				</button>
-				<h2 class="header-title">Blocked Users</h2>
-			</div>
-			<div class="content">
-				<div class="section">
-					<div class="subsection">
-						<p class="text-tooltip p-l-smd">
-							Blocked users will not be able to contact you and will not see your Last Seen time
-						</p>
-					</div>
-
-					<div class="subsection">
-						<button class="btn ripple btn-white btn-account">
-							<img src="assets/imgs/account1.jpg" class="account-img"/>
-							<div class="content">
-								<span class="name">Raaid El Syed</span>
-								<span class="info">+1 234 567891</span>
-							</div>
-						</button>
-			
-						<button class="btn ripple btn-white btn-account">
-							<img src="assets/imgs/account2.jpg" class="account-img"/>
-							<div class="content">
-								<span class="name">Chinaza Akachi</span>
-								<span class="info">+1 234 567892</span>
-							</div>
-						</button>
-					</div>
-				</div>
-			</div>
-			<button class="btn ripple btn-blue btn-add">
-				<img src="assets/icons/add_svg.svg" class="icon icon-white"/> 
-			</button>
-		</div>
-		<div id="active-session">
-			<div class="header header-2-column">
-				<button class="btn ripple btn-white btn-round">
-					<img src="assets/icons/back_svg.svg" class="icon"/>
-				</button>
-				<h2 class="header-title">Active Session</h2>
-			</div>
-			<div class="content">
-				<div class="section">
-					<div class="subsection">
-						<h3 class="h3-title">Current Session</h3>
-					</div>
-	
-					<div class="subsection btns-list">
-						<button class="btn btn-text ripple btn-white">
-							<div class="content">
-								<span class="name">Telegram Web 1.0</span>
-								<span class="device">Safari, macOS</span>
-								<span class="info">216.3.128.12 - Paris, France</span>
-							</div>
-						</button>
-
-						<button class="btn ripple btn-white color-red">
-							<img src="assets/icons/stop_svg.svg" class="icon icon-red"/>
-							<div class="content">
-								<span class="name">Terminate all other sessions</span>
-							</div>
-						</button>
-					</div>
-				</div>
-				<div class="section">
-					<div class="subsection">
-						<h3 class="h3-title">Other Sessions</h3>
-					</div>
-					<div class="subsection btns-list">
-						<button class="btn ripple btn-white btn-text">
-							<div class="content">
-								<span class="name">Telegram IOS 5.12</span>
-								<span class="device">Iphone X, IOS 13.2</span>
-								<span class="info">216.3.128.12 - Paris, France</span>
-							</div>
-							<span class="date info">19:25</span>
-						</button>
-						
-						<button class="btn ripple btn-white btn-text">
-							<div class="content">
-								<span class="name">Telegram Android 5.11</span>
-								<span class="device">Samsung Galaxy S9, Android 9P</span>
-								<span class="info">216.3.128.12 - Paris, France</span>
-							</div>
-							<span class="date info">16:34</span>
-						</button>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="add-member">
-			<div class="header">
-				<div class="header-content">
-					<button class="btn ripple btn-white btn-round">
-						<img src="assets/icons/back_svg.svg" class="icon"/>
-					</button>
-					<h2 class="header-title">Add Member</h2>
-				</div>
-				<div class="chips">
-					<div class="chip">
-						<div class="img-relative">
-							<img src="assets/imgs/account1.jpg" alt="person" class="img">
-							<div class="img-hover">
-								<img src="assets/icons/close_svg.svg" alt="" class="icon-white">
-							</div>
-						</div>
-						<span class="text">John</span>
-					</div>
-				</div>
-			</div>
-			<div class="content">
-				<section class="section-messages">
-					<div class="subsection btns-list">
-						<button class="btn ripple btn-white btn-account btn-checkbox">
-							<input type="checkbox" id="contact1">
-							<label for="contact1" class="checkbox-content">
-								<img alt="" class="icon checkbox-img">
-								<div class="btn-input-content">
-									<img src="assets/imgs/account1.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Raaid El Syed</span>
-										<span class="info">last seen just now</span>
+						<section>
+							<div class="subsection account">
+									<div class="img-container">
+										<img class="account-img" src="assets/imgs/doge.jpg" alt="Account image">
 									</div>
-								</div>
-							</label>
-						</button>
-
-						<button class="btn ripple btn-white btn-account btn-checkbox">
-							<input type="checkbox" id="contact2">
-							<label for="contact2" class="checkbox-content">
-								<img alt="" class="icon checkbox-img">
-								<div class="btn-input-content">
-									<img src="assets/imgs/account2.jpg" class="account-img"/>
+								<h3 class="account-name">Doge Dogenson</h3>
+								<p class="account-number">+33 1 23 45 67 89</p>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/edit_svg.svg" class="icon icon-gray"/>
 									<div class="content">
-										<span class="name">Raaid El Syed</span>
-										<span class="info">last seen just now</span>
+										<span class="name">Edit profile</span>
 									</div>
-								</div>
-							</label>
-						</button>
-					</div>
-				</section>
-			</div>
-		</div>
-		
-		<div id="search-sidebar">
-			<div class="header header-2-column header-search">
-				<button class="btn ripple btn-white btn-round">
-					<img src="assets/icons/menu_svg.svg" class="icon"/>
-				</button>
-				<div class="search-input-group test"> <!-- class input-error and input-valid -->
-					<input type="searcher" id="sarch" class="input-area" placeholder="Search" onfocus="styleSearch(this, 'add')" onblur="styleSearch(this, 'remove')">
-					<label for="search">
-						<img src="assets/icons/search_svg.svg" alt="" class="icon icon-light-gray">
-					</label>
-				</div>
-			</div>
-			<div class="search-sidebar-content">
-				<div id="search">
-					<div class="content">
-						<div class="section">
-							<div class="subsection">
-								<h3 class="h3-title">Contacts and Chats</h3>
-							</div>
-							<div class="subsection">
-								<button class="btn ripple btn-white btn-account">
-									<img src="assets/imgs/account1.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Campus Party</span>
-										<span class="info">2,500 members</span>
-									</div>
-								</button>
-							</div>
-						</div>
-						<div class="section">
-							<div class="subsection">
-								<h3 class="h3-title">Global Search</h3>
-							</div>
-							<div class="subsection">
-								<button class="btn ripple btn-white btn-account">
-									<img src="assets/imgs/account1.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Super Party</span>
-										<span class="info">@party</span>
-									</div>
-								</button>
-							</div>
-						</div>
-						<div class="section">
-							<div class="subsection">
-								<h3 class="h3-title">Global Search</h3>
-							</div>
-							<div class="subsection">
-								<button class="btn ripple btn-white btn-account">
-									<img src="assets/imgs/account1.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Little Sister</span>
-										<span class="info">Party in the Park will now be an action !(...)!</span>
-									</div>
-									<span class="date">Feb 8</span>
 								</button>
 					
-								<button class="btn ripple btn-white btn-account">
-									<img src="assets/imgs/account2.jpg" class="account-img"/>
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/settings_svg.svg" class="icon icon-gray"/>
 									<div class="content">
-										<span class="name">Monika Parker</span>
-										<span class="info">Party!</span>
+										<span class="name">General Settings</span>
 									</div>
-									<span class="date">Jan 24</span>
+								</button>
+					
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/unmute_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name">Notifications</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/lock_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name">Privacy and Security</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/language_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name">Language</span>
+									</div>
 								</button>
 							</div>
-						</div>
+						</section>
 					</div>
 				</div>
-				<div id="calls">
-					<div class="content">
-						<div class="section">
-							<div class="subsection">
-								<h3 class="h3-title">People</h3>
-							</div>
-							<div class="subsection btns-vertical-list vertical-scroll">
-								<button class="btn btn-vertical ripple btn-white">
-									<img src="assets/imgs/account1.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Abayo</span>
-									</div>
-								</button>
-								
-								<button class="btn btn-vertical ripple btn-white">
-									<img src="assets/imgs/account2.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Shen</span>
-									</div>
-								</button>
-		
-								<button class="btn btn-vertical ripple btn-white">
-									<img src="assets/imgs/account3.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Masood</span>
-									</div>
-								</button>
-		
-								<button class="btn btn-vertical ripple btn-white">
-									<img src="assets/imgs/account4.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Rutherford</span>
-									</div>
-								</button>
-		
-								<button class="btn btn-vertical ripple btn-white">
-									<img src="assets/imgs/account5.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Gabriel</span>
-									</div>
-								</button>
-		
-								<button class="btn btn-vertical ripple btn-white">
-									<img src="assets/imgs/account6.jpg" class="account-img"/>
-									<div class="content">
-										<span class="name">Campus</span>
-									</div>
-								</button>
-							</div>
+				<div id="edit-profile">
+					<div class="header header-create">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<object type="image/svg+xml" data="assets/icons/back_svg.svg" class="icon icon-gray">
+									<img src="assets/icons/back_svg.svg" />
+								</object>
+							</button>
+							<h2 class="header-title">Edit profile</h2>
 						</div>
-						<div class="section">
-							<div class="subsection">
-								<h3 class="h3-title">Recent</h3>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection account-section">
+								<div class="img-container darkened">
+									<img class="account-img" src="assets/imgs/doge.jpg" alt="Group image">
+									<div class="img-content">
+										<img src="assets/icons/cameraadd_svg.svg" class="icon icon-white"/>
+									</div>
+								</div>
 							</div>
+							<div class="subsection vertical-input-group">
+								<div class="input-group">
+									<input type="name" id="name" required class="input-area">
+									<label for="name" class="label">Name</label>
+								</div>
+								<div class="input-group">
+									<input type="lastName" id="lastName" required class="input-area">
+									<label for="lastName" class="label">Last name</label>
+								</div>
+								<div class="input-group">
+									<input type="bio" id="bio" required class="input-area">
+									<label for="bio" class="label">Bio (optional)</label>
+								</div>
+							</div>
+							<div class="subsection">
+								<p class="text-tooltip">Any details such as age? occupation or city. Example: 23 y.o. designer from San Francisco.</p>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Username</h3>
+							</div>
+							<div class="subsection">
+								<div class="input-group input-valid"> <!-- class input-error and input-valid -->
+									<input type="username" id="username" class="input-area" value="doge" required>
+									<label for="username" class="label">Username is available</label>
+								</div>
+							</div>
+							<div class="subsection">
+								<p class="text-tooltip">
+									You can choose a username on Telegram. If you do, other people will be able to find you by this username and contact you without knowing your phone number.
+								</p>
+								<p class="text-tooltip">
+									You can use a-z, 0-9 and underscores. Minimum length is 5 characters
+								</p>
+								<p class="text-tooltip">
+									This links opens a chat with you: 
+									<br>
+									<a href="https://t.me/doge">https://t.me/doge</a>
+								</p>
+							</div>
+							<button class="btn ripple btn-blue btn-add">
+								<img src="assets/icons/check_svg.svg" class="icon icon-white"/> 
+							</button>
+						</section>
+					</div>
+				</div>
+				<div id="security">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
+							</button>
+							<h2 class="header-title">Privacy and Security</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-img">
+										<img src="assets/icons/deleteuser_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name title">Blocked Users</span>
+										<span class="info">6 users</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/activesessions_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name title">Active Sessions</span>
+										<span class="info">3 devices</span>
+									</div>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Privacy</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name title">Who can see my phone number?</span>
+										<span class="info">My Contacts</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name title">Who can see your Last Seen time?</span>
+										<span class="info">Everybody</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name title">Who can see my profile photo?</span>
+										<span class="info">Everybody</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name title">Who can add a link to my account when forwarding my messages?</span>
+										<span class="info">Everybody</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name title">Who can add me to group chats?</span>
+										<span class="info">Everybody</span>
+									</div>
+								</button>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div id="last-seen">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" />
+							</button>
+							<h2 class="header-title">Last Seen & Online</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Who can see your Last Seen time?</h3>
+							</div>
+							<div class="subsection" id="last-seen-radio">
+								<div class="radio-group">
+									<input type="radio" id="email"
+										name="contact" value="email">
+									<label for="email" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Everybody</span>
+										</div>
+									</label>
+								</div>
+						
+								<div class="radio-group">
+									<input type="radio" id="phone"
+										name="contact" value="phone" checked>
+									<label for="phone" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">My Contacts</span>
+										</div>
+									</label>
+								</div>
+						
+								<div class="radio-group">
+									<input type="radio" id="contact"
+										name="contact" value="email">
+									<label for="contact" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">No body</span>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="subsection">
+								<p class="text-tooltip">
+									You won't see Last Seen and online statuses for people with whom you don't share yours. Approximate last seen will be shown instead (recently, within a week, within a month)
+								</p>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title p-l-20">Exceptions</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/deleteuser_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name title">Never Share With</span>
+										<span class="info">Add Users</span>
+									</div>
+								</button>
+					
+								<button class="btn ripple btn-white btn-img">
+									<img src="assets/icons/adduser_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name title">Always Share With</span>
+										<span class="info">Add Users</span>
+									</div>
+								</button>
+							</div>
+						</section>
+					</div>		
+				</div>
+				<div id="notifications">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" />
+							</button>
+							<h2 class="header-title">Notifications</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section id="private-chat">
+							<div class="subsection">
+								<h3 class="h3-title">Private Chats</h3>
+							</div>
+							<div class="subsection">
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="chatsNotify" checked>
+									<label for="chatsNotify" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Notifications for private chats</span>
+											<span class="text-tooltip status">Enabled</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="chatsMessage" checked>
+									<label for="chatsMessage" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Message preview</span>
+											<span class="text-tooltip status">Enabled</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Groups</h3>
+							</div>
+							<div class="subsection" id="groups">
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="groupNotify" checked>
+									<label for="groupNotify" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Notifications for groups</span>
+											<span class="text-tooltip status">Enabled</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="groupMessage">
+									<label for="groupMessage" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Message preview</span>
+											<span class="text-tooltip status">Disabled</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Channels</h3>
+							</div>
+							<div class="subsection" id="channels">
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="channelsChat" checked>
+									<label for="channelsChat" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Notifications for private chats</span>
+											<span class="text-tooltip status">Enabled</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="channelsMessage" checked>
+									<label for="channelsMessage" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Message preview</span>
+											<span class="text-tooltip status">Enabled</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Other</h3>
+							</div>
+							<div id="other" class="subsection">
+								<div class="btn btn-white ripple btn-checkbox">
+									<input type="checkbox" id="contactTelegram" checked>
+									<label for="contactTelegram" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="input-text-content">
+											<span class="input-name">Contacts joined Telegram</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+					</div>
+		
+				</div>
+				<div id="language">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" />
+							</button>
+							<h2 class="header-title">Language</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection">
+								<div class="radio-group">
+									<input type="radio" id="english"
+										name="language" value="email" checked>
+									<label for="english" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">English</span>
+											<span class="text-tooltip">English</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="french"
+										name="language" value="email">
+									<label for="french" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Francais</span>
+											<span class="text-tooltip">French</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="german"
+										name="language" value="email">
+									<label for="german" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Deutsch</span>
+											<span class="text-tooltip">German</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="italian"
+										name="language" value="email">
+									<label for="italian" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Italiano</span>
+											<span class="text-tooltip">Italian</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="portuguese"
+										name="language" value="email">
+									<label for="portuguese" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Portugues</span>
+											<span class="text-tooltip">Portuguese</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="russian"
+										name="language" value="email">
+									<label for="russian" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Русский</span>
+											<span class="text-tooltip">Russian</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="spanish"
+										name="language" value="email">
+									<label for="spanish" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Espanol</span>
+											<span class="text-tooltip">Spanish</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="ukrainian"
+										name="language" value="email">
+									<label for="ukrainian" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Українська</span>
+											<span class="text-tooltip">Ukrainian</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+					</div>	
+				</div>
+				<div id="chat-background">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" />
+							</button>
+							<h2 class="header-title">Chat Background</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section class="color-list-section">
+							<div id="color-list">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div id="blocked-users">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" />
+							</button>
+							<h2 class="header-title">Blocked Users</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection">
+								<p class="text-tooltip text-tooltip-margin">
+									Blocked users will not be able to contact you and will not see your Last Seen time
+								</p>
+							</div>
+		
 							<div class="subsection">
 								<button class="btn ripple btn-white btn-account">
-									<img src="assets/imgs/account1.jpg" class="account-img"/>
+									<img src="assets/imgs/accounts/account1.jpg" class="account-img"/>
 									<div class="content">
 										<span class="name">Raaid El Syed</span>
-										<span class="info">last seen just now</span>
+										<span class="info">+1 234 567891</span>
 									</div>
 								</button>
 					
 								<button class="btn ripple btn-white btn-account">
-									<img src="assets/imgs/account2.jpg" class="account-img"/>
+									<img src="assets/imgs/accounts/account2.jpg" class="account-img"/>
 									<div class="content">
 										<span class="name">Chinaza Akachi</span>
-										<span class="info">last seen just now</span>
+										<span class="info">+1 234 567892</span>
 									</div>
 								</button>
 							</div>
+						</section>
+					</div>
+					<button class="btn ripple btn-blue btn-add">
+						<img src="assets/icons/add_svg.svg" class="icon icon-white"/> 
+					</button>
+				</div>
+				<div id="active-session">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round">
+								<img src="assets/icons/back_svg.svg" class="icon"/>
+							</button>
+							<h2 class="header-title">Active Session</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Current Session</h3>
+							</div>
+			
+							<div class="subsection btns-list">
+								<button class="btn btn-text ripple btn-white">
+									<div class="content">
+										<span class="name">Telegram Web 1.0</span>
+										<span class="device">Safari, macOS</span>
+										<span class="info">216.3.128.12 - Paris, France</span>
+									</div>
+								</button>
+		
+								<button class="btn ripple btn-white color-red">
+									<img src="assets/icons/stop_svg.svg" class="icon icon-red"/>
+									<div class="content">
+										<span class="name">Terminate all other sessions</span>
+									</div>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Other Sessions</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name">Telegram IOS 5.12</span>
+										<span class="device">Iphone X, IOS 13.2</span>
+										<span class="info">216.3.128.12 - Paris, France</span>
+									</div>
+									<span class="date info">19:25</span>
+								</button>
+								
+								<button class="btn ripple btn-white btn-text">
+									<div class="content">
+										<span class="name">Telegram Android 5.11</span>
+										<span class="device">Samsung Galaxy S9, Android 9P</span>
+										<span class="info">216.3.128.12 - Paris, France</span>
+									</div>
+									<span class="date info">16:34</span>
+								</button>
+								
+							</div>
+						</section>
+					</div>
+				</div>
+				<div id="add-member">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round">
+								<img src="assets/icons/back_svg.svg" class="icon"/>
+							</button>
+							<h2 class="header-title">Add Member</h2>
+						</div>
+						<div class="chips">
+		
+							<div class="autocomplete">
+								<input id="memberInput" type="person" class="input" placeholder="Add People...">
+							</div>
+		
+						</div>
+					</div>
+					<div class="content">
+						<section class="section-messages">
+							<div class="subsection btns-list" id="member-list"></div>
+						</section>
+					</div>
+				</div>
+				<div id="new-group">
+					<div class="header header-create">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
+							</button>
+							<h2 class="header-title">New Group</h2>
+						</div>
+					</div>
+					<section class="section-messages">
+						<div class="subsection account-section">
+							<div class="img-container darkened create">
+								<img class="account-img" src="assets/imgs/doge.jpg" alt="Group image">
+								<div class="img-content">
+									<img src="assets/icons/cameraadd_svg.svg" class="icon icon-white"/>
+								</div>
+							</div>
+						</div>
+						<div class="subsection input-section">
+							<div class="input-group">
+								<input type="name" id="groupName" class="input-area" required>
+								<label for="groupName" class="label">Group Name</label>
+							</div>
+						</div>
+						<div class="subsection h3-title-section">
+							<h3 class="h3-title">6 Members</h3>
+						</div>
+						<div class="subsection">
+							<button class="btn ripple btn-white btn-account">
+								<img src="assets/imgs/accounts/account1.jpg" class="account-icon"/>
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info online">Online</span>
+								</div>
+							</button>
+				
+							<button class="btn ripple btn-white btn-account">
+								<img src="assets/imgs/accounts/account2.jpg" class="account-icon"/>
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info online">Online</span>
+								</div>
+							</button>
+		
+							<button class="btn ripple btn-white btn-account">
+								<img src="assets/imgs/accounts/account3.jpg" class="account-icon"/>
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info">last seen just now</span>
+								</div>
+							</button>
+		
+							<button class="btn ripple btn-white btn-account">
+								<img src="assets/imgs/accounts/account4.jpg" class="account-icon"/>
+								<div class="content">
+									<span class="name">Little Sister</span>
+									<span class="info">last seen just now</span>
+								</div>
+							</button>
+						</div>
+						<button class="btn ripple btn-blue btn-add">
+							<img src="assets/icons/next_svg.svg" class="icon icon-white"/> 
+						</button>
+					</section>
+				</div>
+				<div id="new-channel">
+					<div class="header header-create">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
+							</button>
+							<h2 class="header-title">New Channel</h2>
+						</div>
+					</div>
+					<section class="section-messages">
+						<div class="subsection account-section">
+							<div class="img-container darkened create">
+								<img class="account-img" src="assets/imgs/doge.jpg" alt="Channel image">
+								<div class="img-content">
+									<img src="assets/icons/cameraadd_svg.svg" class="icon icon-white"/>
+								</div>
+							</div>
+						</div>
+						<div class="subsection input-section">
+							<div class="input-group">
+								<input type="name" id="groupName" class="input-area" required>
+								<label for="groupName" class="label">Channel Name</label>
+							</div>
+						</div>
+						<div class="subsection input-section">
+							<div class="input-group">
+								<input type="name" id="groupName" class="input-area" required>
+								<label for="groupName" class="label">Description (optional)</label>
+							</div>
+						</div>
+						<div class="subsection">
+							<p class="text-tooltip">
+								You can provide an optional description for your channel.
+							</p>
+						</div>
+						<button class="btn ripple btn-blue btn-add">
+							<img src="assets/icons/next_svg.svg" class="icon icon-white"/> 
+						</button>
+					</section>
+				</div>
+				<div id="general-settings">
+					<div class="header">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round header-back">
+								<img src="assets/icons/back_svg.svg" class="icon icon-gray"/>
+							</button>
+							<h2 class="header-title">General</h2>
+						</div>
+					</div>
+					<div class="content">
+						<section>
+							<div class="subsection h3-title-section m-b-md">
+								<h3 class="h3-title">Settings</h3>
+							</div>
+							<div class="subsection">
+								<div class="range">
+									<div class="content">
+										<span class="text">Message Text Size</span>
+										<span class="value">16</span>
+									</div>
+									<input type="range" min="1" max="30" step="1" value="16">
+									<style></style>
+								</div>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white">
+									<img src="assets/icons/photo_svg.svg" class="icon icon-gray"/>
+									<div class="content">
+										<span class="name">Chat Background</span>
+									</div>
+								</button>
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="enableAnimation" checked>
+									<label for="enableAnimation" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Enable Animation</span>
+										</div>
+									</label>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Keyboard</h3>
+							</div>
+							<div class="subsection">
+								<div class="radio-group">
+									<input type="radio" id="enter"
+										name="sendBy" value="email" checked>
+									<label for="enter" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Send by Enter</span>
+											<span class="text-tooltip">New line by Shift + Enter</span>
+										</div>
+									</label>
+								</div>
+				
+								<div class="radio-group">
+									<input type="radio" id="ctrlEnter"
+										name="sendBy" value="email">
+									<label for="ctrlEnter" class="radio-content">
+										<img alt="" class="icon radio-img">
+										<div class="input-text-content">
+											<span class="input-name">Send by Ctrl + Enter</span>
+											<span class="text-tooltip">New line by Enter</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Auto-Download Media</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="contacts" checked>
+									<label for="contacts" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Contacts</span>
+										</div>
+									</label>
+								</button>
+								
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="privateChats" checked>
+									<label for="privateChats" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Private Chats</span>
+										</div>
+									</label>
+								</button>
+		
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="groupChats" checked>
+									<label for="groupChats" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Group Chats</span>
+										</div>
+									</label>
+								</button>
+		
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="channels" checked>
+									<label for="channels" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Channels</span>
+										</div>
+									</label>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Auto-Play Media</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="gifs" checked>
+									<label for="gifs" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">GIFs</span>
+										</div>
+									</label>
+								</button>
+								
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="videos" checked>
+									<label for="videos" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Videos</span>
+										</div>
+									</label>
+								</button>
+							</div>
+						</section>
+						<section>
+							<div class="subsection">
+								<h3 class="h3-title">Stickers</h3>
+							</div>
+							<div class="subsection btns-list">
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="suggestStickers" checked>
+									<label for="suggestStickers" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Suggest Stickers by Emoji</span>
+										</div>
+									</label>
+								</button>
+								
+								<button class="btn ripple btn-white btn-checkbox">
+									<input type="checkbox" id="loopAnimated" checked>
+									<label for="loopAnimated" class="checkbox-content">
+										<img alt="" class="icon checkbox-img">
+										<div class="content">
+											<span class="name">Loop Animated Stickers</span>
+										</div>
+									</label>
+								</button>
+								<div class="stickers">
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/stickers/sheep.png" class="account-icon sticker"/>
+											<div class="content">
+												<span class="name">Sheep</span>
+												<span class="info">16 Stickers</span>
+											</div>
+										</button>
+							
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/stickers/kangaroo.png" class="account-icon sticker"/>
+											<div class="content">
+												<span class="name">Kangaroo Fighter</span>
+												<span class="info">25 Stickers</span>
+											</div>
+										</button>
+					
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/stickers/tiger.png" class="account-icon sticker"/>
+											<div class="content">
+												<span class="name">Amur Tiger</span>
+												<span class="info">25 Stickers</span>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					
+				</div>
+				
+				<div id="search-sidebar">
+					<div class="header header-search">
+						<div class="header-content">
+							<button class="btn ripple btn-white btn-round">
+								<img src="assets/icons/menu_svg.svg" class="icon icon-gray"/>
+							</button>
+							<div class="search-input-group header-title">
+								<input type="searcher" id="sarch" class="input-area" placeholder="Search" onfocus="styleSearch(this, 'add')" onblur="styleSearch(this, 'remove')">
+								<label for="search">
+									<img src="assets/icons/search_svg.svg" alt="" class="icon icon-light-gray">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="search-sidebar-content">
+						<div id="search">
+							<div class="content">
+								<div class="section">
+									<div class="subsection">
+										<h3 class="h3-title">Contacts and Chats</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/accounts/account1.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Campus Party</span>
+												<span class="info">2,500 members</span>
+											</div>
+										</button>
+									</div>
+								</div>
+								<section>
+									<div class="subsection">
+										<h3 class="h3-title">Global Search</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/accounts/account1.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Super Party</span>
+												<span class="info">@party</span>
+											</div>
+										</button>
+									</div>
+								</section>
+								<section>
+									<div class="subsection">
+										<h3 class="h3-title">Global Search</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/accounts/account1.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Little Sister</span>
+												<span class="info">Party in the Park will now be an action !(...)!</span>
+											</div>
+											<span class="date">Feb 8</span>
+										</button>
+							
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/accounts/account2.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Monika Parker</span>
+												<span class="info">Party!</span>
+											</div>
+											<span class="date">Jan 24</span>
+										</button>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div id="calls">
+							<div class="content">
+								<div class="section">
+									<div class="subsection">
+										<h3 class="h3-title">People</h3>
+									</div>
+									<div class="subsection btns-vertical-list vertical-scroll">
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="assets/imgs/accounts/account1.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Abayo</span>
+											</div>
+										</button>
+										
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="assets/imgs/accounts/account2.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Shen</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="assets/imgs/accounts/account3.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Masood</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="assets/imgs/accounts/account4.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Rutherford</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="assets/imgs/accounts/account5.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Gabriel</span>
+											</div>
+										</button>
+				
+										<button class="btn btn-vertical ripple btn-white">
+											<img src="assets/imgs/accounts/account6.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Campus</span>
+											</div>
+										</button>
+									</div>
+								</div>
+								<div class="section">
+									<div class="subsection">
+										<h3 class="h3-title">Recent</h3>
+									</div>
+									<div class="subsection">
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/accounts/account1.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Raaid El Syed</span>
+												<span class="info">last seen just now</span>
+											</div>
+										</button>
+							
+										<button class="btn ripple btn-white btn-account">
+											<img src="assets/imgs/accounts/account2.jpg" class="account-img"/>
+											<div class="content">
+												<span class="name">Chinaza Akachi</span>
+												<span class="info">last seen just now</span>
+											</div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="contacts">
+							<section class="section-messages">
+								<div class="subsection">
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account1.jpg" class="account-icon"/>
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info online">Online</span>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account2.jpg" class="account-icon"/>
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info online">Online</span>
+										</div>
+									</button>
+		
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account3.jpg" class="account-icon"/>
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">last seen just now</span>
+										</div>
+									</button>
+		
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account4.jpg" class="account-icon"/>
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">last seen just now</span>
+										</div>
+									</button>
+								</div>
+							</section>
+						</div>
+						<div id="messages">
+							<section class="section-messages">
+								<div class="subsection">
+									<button class="btn ripple btn-white btn-account">
+										<div class="account-icon">
+											<img src="assets/icons/avatar_savedmessages_svg.svg" class="icon icon-white"/>
+										</div>
+										<div class="content">
+											<span class="name">Saved messages</span>
+											<span class="info">Eat something!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="assets/icons/2checks_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message img bg-muteoff">
+												<img src="assets/icons/pinnedchat_svg.svg" alt="" class="icon icon-white">
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account2.jpg" class="account-img"/>
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info">Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteon">
+												<span>12</span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</section>
+							<section class="section-messages">
+								<div class="subsection">
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account1.jpg" class="account-icon"/>
+										<div class="content">
+											<span class="name">Little Sister</span>
+											<span class="info">Eat something!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="assets/icons/2checks_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message img bg-muteoff">
+												<span>1</span>
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account2.jpg" class="account-img"/>
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info">Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteon">
+												<span>99+</span>
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account3.jpg" class="account-img"/>
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info">Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteoff">
+												<span></span>
+											</div>
+										</div>
+									</button>
+						
+									<button class="btn ripple btn-white btn-account">
+										<img src="assets/imgs/accounts/account4.jpg" class="account-img"/>
+										<div class="content">
+											<span class="name">Monika Parker</span>
+											<span class="info"><span class="text-bold">Danny:</span> Party!</span>
+										</div>
+										<div class="content content-right">
+											<div class="content-top">
+												<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
+												<span class="date">Feb 8</span>
+											</div>
+											<div class="number-message bg-muteon">
+												<span></span>
+											</div>
+										</div>
+									</button>
+								</div>
+							</section>
 						</div>
 					</div>
 				</div>
-				<div id="messages">
-					<section class="section-messages">
-						<div class="subsection">
-							<button class="btn ripple btn-white btn-account">
-								<div class="account-icon">
-									<img src="assets/icons/avatar_savedmessages_svg.svg" class="icon icon-white"/>
-								</div>
-								<div class="content">
-									<span class="name">Little Sister</span>
-									<span class="info">Eat something!</span>
-								</div>
-								<div class="content content-right">
-									<div class="content-top">
-										<img src="assets/icons/2checks_svg.svg" alt="" class="icon-green">
-										<span class="date">Feb 8</span>
-									</div>
-									<div class="number-message img bg-muteoff">
-										<img src="assets/icons/pinnedchat_svg.svg" alt="" class="icon icon-white">
-									</div>
-								</div>
-							</button>
-				
-							<button class="btn ripple btn-white btn-account">
-								<img src="assets/imgs/account2.jpg" class="account-img"/>
-								<div class="content">
-									<span class="name">Monika Parker</span>
-									<span class="info">Party!</span>
-								</div>
-								<div class="content content-right">
-									<div class="content-top">
-										<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
-										<span class="date">Feb 8</span>
-									</div>
-									<div class="number-message bg-muteon">
-										<span>12</span>
-									</div>
-								</div>
-							</button>
-						</div>
-					</section>
-					<section class="section-messages">
-						<div class="subsection">
-							<button class="btn ripple btn-white btn-account">
-								<img src="assets/imgs/account1.jpg" class="account-icon"/>
-								<div class="content">
-									<span class="name">Little Sister</span>
-									<span class="info">Eat something!</span>
-								</div>
-								<div class="content content-right">
-									<div class="content-top">
-										<img src="assets/icons/2checks_svg.svg" alt="" class="icon-green">
-										<span class="date">Feb 8</span>
-									</div>
-									<div class="number-message img bg-muteoff">
-										<span>1</span>
-									</div>
-								</div>
-							</button>
-				
-							<button class="btn ripple btn-white btn-account">
-								<img src="assets/imgs/account2.jpg" class="account-img"/>
-								<div class="content">
-									<span class="name">Monika Parker</span>
-									<span class="info">Party!</span>
-								</div>
-								<div class="content content-right">
-									<div class="content-top">
-										<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
-										<span class="date">Feb 8</span>
-									</div>
-									<div class="number-message bg-muteon">
-										<span>99+</span>
-									</div>
-								</div>
-							</button>
-				
-							<button class="btn ripple btn-white btn-account">
-								<img src="assets/imgs/account3.jpg" class="account-img"/>
-								<div class="content">
-									<span class="name">Monika Parker</span>
-									<span class="info">Party!</span>
-								</div>
-								<div class="content content-right">
-									<div class="content-top">
-										<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
-										<span class="date">Feb 8</span>
-									</div>
-									<div class="number-message bg-muteoff">
-										<span></span>
-									</div>
-								</div>
-							</button>
-				
-							<button class="btn ripple btn-white btn-account">
-								<img src="assets/imgs/account4.jpg" class="account-img"/>
-								<div class="content">
-									<span class="name">Monika Parker</span>
-									<span class="info"><span class="text-bold">Danny:</span> Party!</span>
-								</div>
-								<div class="content content-right">
-									<div class="content-top">
-										<img src="assets/icons/1check_svg.svg" alt="" class="icon-green">
-										<span class="date">Feb 8</span>
-									</div>
-									<div class="number-message bg-muteon">
-										<span></span>
-									</div>
-								</div>
-							</button>
-						</div>
-					</section>
+		</div>
+		<div id="right-sidebar">
+			<div id="info">
+				<div class="header">
+					<div class="header-content">
+						
+					</div>
 				</div>
 			</div>
-			
 		</div>
-		
+		<div class="dialog"></div>
 	</div>
 	
 	<!-- <div class="container">
-		<div class="checkbox-group">
-			<input type="checkbox" id="cb1" onclick="indeterminateInput(this)">
+		<div class="btn btn-white ripple btn-checkbox">
+			<input type="checkbox" id="cb1" onclick="inputs.indeterminateInput(this)">
 			<label for="cb1" class="checkbox-content">
 				<img alt="" class="icon checkbox-img">
 				<div class="input-text-content">
@@ -910,7 +1283,10 @@
 		</div>	
 	</div> -->
 
+	<script src="js/mainFunctions.js"></script>
+	<script src="js/globalVars.js"></script>
+	<script src="js/DOMs.js"></script>
 	<script src="js/allFunctions.js"></script>
-	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

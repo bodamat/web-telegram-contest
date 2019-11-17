@@ -1,16 +1,18 @@
-var rippleBtns = document.querySelectorAll('.ripple')
+// Ripple effect init
+function rippleInit() {
+	var rippleBtns = document.querySelectorAll('.ripple')
+	rippleBtns.forEach(function(rippleBtn){
+		addRipleEffect(rippleBtn)
+	})
+}
 
-rippleBtns.forEach(function(rippleBtn){
-
+function addRipleEffect(rippleBtn) {
 	rippleBtn.addEventListener('mousedown', function(e){
-
 		//get the button's width and height
 		var width = this.offsetWidth
 		var height = this.offsetHeight
 		
 		//get the cursor's x and y position within the button
-		// var posX = e.pageX - this.offsetLeft
-		// var posY = e.pageY - this.offsetTop
 		var posX = e.offsetX
 		var posY = e.offsetY
 		
@@ -21,71 +23,93 @@ rippleBtns.forEach(function(rippleBtn){
 		var rippleEl = e.target
 		rippleEl.parentNode.removeChild(rippleEl);
 	})
-})
-
-var radioInputs = document.querySelectorAll('input[type=radio]')
-imgRadio()
-radioInputs.forEach(input => {
-	input.addEventListener('click', function() {
-		imgRadio()
-	})
-})
-
-function imgRadio() {
-	var radioImgs = document.querySelectorAll('.radio-img')
-	var checkedRadioImgs = document.querySelectorAll('input[type=radio]:checked + .radio-content .radio-img')
-
-	radioImgs.forEach(item => item.src = "assets/icons/radiooff_svg.svg")
-	checkedRadioImgs.forEach(item => item.src = "assets/icons/radioon_svg.svg")
 }
 
-var checkboxInputs = document.querySelectorAll('input[type="checkbox"]')
-imgCheckbox()
-console.log(checkboxInputs)
-checkboxInputs.forEach(input => {
-  input.addEventListener('click', function() {
-		console.log(input)
-    imgCheckbox()
-  })
-})
+// allInputs init
+function inputsInit() {
+	var radioInputs = document.querySelectorAll('input[type=radio]')
+	inputs.imgRadio()
+	radioInputs.forEach(input => {
+		input.addEventListener('click', function() {
+			inputs.imgRadio()
+		})
+	})
 
-function imgCheckbox() {
-  var checkboxImgs = document.querySelectorAll('.checkbox-img')
-  var checkedCheckboxImgs = document.querySelectorAll('input[type=checkbox]:checked + .checkbox-content .checkbox-img')
-  var indeterminateCheckboxImgs = document.querySelectorAll('input[type=checkbox]:indeterminate + .checkbox-content .checkbox-img')
+	inputs.imgCheckbox()
+	var checkboxBtns = getEls('.btn.btn-checkbox')
+	checkboxBtns.forEach(el => {
+		el.addEventListener('click', () => {
+			inputs.updateCheckedBtn(el)
+		})
+	})
+
+	// input[type="range"] change value
+
+	let ranges = getEls('.range')
+		ranges.forEach(function(range, key) {
+		range.id = "range" + key
+		let input = getEl('input', range)
+		let styleEl = getEl('style', range)
+		let valueEl = getEl('.value', range)
+		let value = input.value
+		let n = (value / input.max) * 100
+
+		valueEl.innerText = value
+		styleEl.innerHTML = "#" + range.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, var(--input-border-color-focus) 0%, var(--input-border-color-focus) " + n + "%, #eee " + n + "%)}"
+
+		range.addEventListener('input', function() {
+			value = input.value
+			n = (value / input.max) * 100
+			
+			valueEl.innerText = value
+			styleEl.innerHTML = "#" + range.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, var(--input-border-color-focus) 0%, var(--input-border-color-focus) " + n + "%, #eee " + n + "%)}"
+		})
+	})
+}
+
+// autocomplete init
+function autocompleteInit(){
+	autocomplete(document.getElementById("memberInput"), vars.memberList);
+}
+
+// sidebar init
+function sidebarInit() {
+	sidebar.hideAllLeftSidebar()
+	hideEl(doms.dialog)
+	sidebar.openSidebar(null ,'#messages')
+}
+
+// dialog init
+function dialogInit () {
+	window.addEventListener("click", e => {
+		if (!doms.dialog.classList.contains('left-click') && vars.openDialog) 
+			dialog.toggleMenu("hide")
+	});
 	
-  checkboxImgs.forEach(item => item.src = "assets/icons/checkboxempty_svg.svg")
-  checkedCheckboxImgs.forEach(item => item.src = "assets/icons/checkboxon_svg.svg")
-  indeterminateCheckboxImgs.forEach(item => item.src = "assets/icons/checkboxblock_svg.svg")
-}
-
-function indeterminateInput(input) {
-  if (input.readOnly) input.checked=input.readOnly=false;
-  else if (!input.checked) input.readOnly=input.indeterminate=true;
-}
-
-function styleSearch(input, action) {
-	let parentDiv = input.parentElement
-	let classes = parentDiv.classList
-	if( classes.contains("search-input-group") ) {
-		if (action === 'add') parentDiv.classList.add("focusSearch")
-		else {
-			if (!input.value) parentDiv.classList.remove("focusSearch");
-		}	
-	}
-	else {
-		styleSearch(parentDiv, action)
-	}
-}
-
-var checkboxBtns = getEls('.btn.btn-checkbox')
-checkboxBtns.forEach(el => {
-	el.addEventListener('click', function() {
-		var input = this.querySelector('input')
-		input.checked = !input.checked
-		imgCheckbox()
-		if (input.checked) el.classList.add('btn-checked')
-		else el.classList.remove('btn-checked')
-		console.log('input: ', input.checked)
+	window.addEventListener('keydown', e => {
+		if (e.keyCode == 27) {
+			dialog.toggleMenu("hide")
+		}
 	})
-})
+	
+	window.oncontextmenu = function(e) {
+		e.preventDefault()
+	}
+	
+	doms.messageBtns.forEach(btn => {
+		dialog.rightClickDialog(btn, vars.messageBtnDialog)
+	})
+	
+	dialog.leftClickDialog(doms.headerSearchBtn, vars.menuDialog)
+}
+
+function init() {
+	inputsInit()
+	sidebarInit()
+	dialogInit()
+	rippleInit()
+	autocompleteInit()
+}
+
+init()
+generate.generateCheckedMembers(doms.memberList, vars.memberList)

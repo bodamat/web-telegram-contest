@@ -3,7 +3,7 @@
 	--title-color-gray: #858585;
 }
 
-#left-sidebar, #right-sidebar {
+#left-sidebar {
 	width: 400px;
 	height: 100vh;
 }
@@ -91,7 +91,6 @@ section:last-child {
 	font-size: 16px;
 	font-weight: 500;
 	margin-top: 15px;
-	margin-bottom: 5px;
 }
 
 .h3-title-section {
@@ -134,7 +133,8 @@ section:last-child {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .account-img {
@@ -189,14 +189,12 @@ section:last-child {
 }
 
 .account-name {
-	font-size: 20px;
-	margin-top: 10px;
-	margin-bottom: 5px;
-	font-weight: 500;
+	font-size: 24px;
+	margin-top: 35px;
+	margin-bottom: 10px;
 }
 
 .account-number {
-	font-size: 14px;
 	color: #707579;
 }
 
@@ -205,11 +203,12 @@ section:last-child {
 }
 
 .vertical-input-group {
-	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
-.vertical-input-group .input-group:not(:first-child) {
-	margin-top: 20px;
+.vertical-input-group .input-group {
+	margin-bottom: 20px;
 }
 
 .input-section {
@@ -247,17 +246,10 @@ input[type="radio"]:checked + .radio-content .radio-img, input[type="checkbox"]:
 	color: #707579;
 	margin-top: 5px;
 	font-weight: 400;
-	margin-left: 10px;
-	margin-bottom: 10px;
-}
-
-.input-text-content .text-tooltip {
-	margin: 0;
-	margin-top: 5px;
 }
 
 .text-tooltip-margin {
-	/* margin-left: 10px; */
+	margin-left: 10px;
 	margin-top: 15px;
 }
 
@@ -276,13 +268,13 @@ input[type="checkbox"]:indeterminate + .checkbox-content .checkbox-img {
 	flex-direction: column;
 }
 
-#color-list {
+.color-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-#color-list div {
+.color-list div {
 	background: #000;
 	width: 110px;
 	height: 110px;
