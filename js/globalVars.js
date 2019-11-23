@@ -69,7 +69,7 @@ vars = {
 		{
 			img: "assets/icons/newprivate_svg.svg",
 			text: "New Private Chat",
-			do: "sidebar.openSidebar('#search-sidebar', '#new-group')"
+			do: ""
 		}
 	]
 }

@@ -8,6 +8,14 @@
 	height: 100vh;
 }
 
+#left-sidebar {
+	border-right: 1px solid var(--border-color-gray)
+}
+
+#right-sidebar {
+	border-left: 1px solid var(--border-color-gray)
+}
+
 #left-sidebar > div, #right-sidebar > div {
 	display: flex;
 	flex-direction: column;
@@ -122,6 +130,46 @@ section:last-child {
 	width: 100%;
 	font-size: 20px;
 	font-weight: 500;
+}
+
+.header-chat .btn {
+	margin-left: 10px;
+}
+
+.header-chat .btn-account {
+	background: transparent;
+	padding: 0;
+}
+
+.header-chat .btn-account:hover::after {
+	background: transparent;
+}
+
+.header-chat .text-content {
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.header-chat .btn-account {
+	width: 100%;
+}
+
+.header-chat .btn .name {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.header-chat .btn .status {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--title-color-gray)
+}
+
+.header-chat .btn .status.online{
+	color: #4ea4f6;
 }
 
 .header-search {

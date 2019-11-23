@@ -70,74 +70,18 @@ function inputsInit() {
 
 // autocomplete init
 function autocompleteInit(){
-	autocomplete(document.getElementById("memberInput"), vars.memberList);
-}
-
-// sidebar init
-function sidebarInit() {
-	sidebar.hideAllLeftSidebar()
-	hideEl(doms.dialog)
-	sidebar.openSidebar(null ,'#messages')
-}
-
-// dialog init
-function dialogInit () {
-	window.addEventListener("click", e => {
-		if (!doms.dialog.classList.contains('left-click') && vars.openDialog) 
-			dialog.toggleMenu("hide")
-	});
-	
-	window.addEventListener('keydown', e => {
-		if (e.keyCode == 27) {
-			dialog.toggleMenu("hide")
-		}
-	})
-	
-	window.oncontextmenu = function(e) {
-		e.preventDefault()
+	let memberInput = getEl("#memberInput")
+	if (memberInput) {
+		autocomplete(memberInput, vars.memberList);
 	}
-	
-	doms.messageBtns.forEach(btn => {
-		dialog.rightClickDialog(btn, vars.messageBtnDialog)
-	})
-	
-	dialog.leftClickDialog(doms.headerSearchBtn, vars.menuDialog)
 }
+
+
 
 function init() {
 	inputsInit()
-	sidebarInit()
-	dialogInit()
 	rippleInit()
 	autocompleteInit()
 }
 
 init()
-generate.generateCheckedMembers(doms.memberList, vars.memberList)
-
-// Tabs
-let tabMenu = getEl('.tabs .tab-menu')
-let tabContent = getEl('.tabs .tab-content')
-let tabMenusItems = getEls('.tab-index', tabMenu)
-
-tabMenusItems.forEach(tabMenuItem => {
-	tabMenuItem.addEventListener('click', e => {
-		let tabMenuItemSelect = getEl('.tab-index.selected', tabMenu)
-		tabMenuItemSelect.classList.remove('selected')
-		tabMenuItem.classList.add('selected')
-
-		getEl(tabMenuItemSelect.dataset.clickSwitch, tabContent).classList.remove('selected')
-		getEl(tabMenuItem.dataset.clickSwitch, tabContent).classList.add('selected')
-	})
-})
-
-function openTab(tabMenuItemId) {
-	getEl('[data-click-switch="' + tabMenuItemId + '"]').classList.add('selected')
-	getEl(tabMenuItemId, tabContent).classList.add('selected')
-}
-
-openTab('#audio')
-
-function openLink(btn) {
-	window.open(getEl('.link', btn).href, '_blank')
-}

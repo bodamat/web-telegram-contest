@@ -7,9 +7,13 @@
   --btn-background-hover: rgba(0, 0, 0, 0.08);
 }
 
-.app {
+#app {
   position: relative;
-  display: flex;
+	display: flex;
+	max-width: 1920px;
+	border-right: 1px solid var(--btn-background-hover);
+	border-left: 1px solid var(--btn-background-hover);
+	margin: 0 auto;
 }
 
 *, :after, :before {
@@ -21,11 +25,11 @@
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+	-ms-user-select: none;
 }
 
 span, label, input {
@@ -437,13 +441,12 @@ a:hover {
 	}
 }
 
+/* Chats */
+
 .chat__body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/art/bg_initial.jpg");
-  background-position-y: -54px;
-  background-attachment: fixed;
 }
 
 .messages {
@@ -451,34 +454,30 @@ a:hover {
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-end;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 6px;
+  margin: 0 40px;
 }
 
 .message {
   align-self: flex-start;
   display: flex;
   align-items: center;
-    
-  position: relative;
   
-  min-height: 30px;
+  position: relative;
   max-width: 420px;
   
   background-color: #fff;
   margin-bottom: 8px;
-  border-radius: 6px;
+  border-radius: 10px;
   
   z-index: 2;
-  
-  box-shadow: 0 2px 1px 0 rgba(160,172,182,.5);
+	box-shadow: 0 1px 1px 0 rgba(160,172,182,.5);
+	padding-bottom: 10px;
 }
 
 .message.my-message {
   align-self: flex-end;
   background-color: #effdde;
-  box-shadow: 0 2px 1px 0 rgba(93,196,82,.5);
+  box-shadow: 0 1px 1px 0 rgba(160,172,182,.5);
 }
 
 .message.droplet:before {
@@ -490,7 +489,7 @@ a:hover {
   height: 1px;
   background-color: inherit;
   z-index: 1;
-  box-shadow: 0px 1px 1px 1px rgba(160,172,182,.5);
+  box-shadow: 0px 1px 1px 0px rgba(160,172,182,.5);
 }
 .message.droplet:after {
   position: absolute;
@@ -508,7 +507,7 @@ a:hover {
 .message.my-message.droplet:before {
   right: -8px;
   left: initial;
-  box-shadow: 0px 1px 1px 1px rgba(93,196,82,.5);
+  box-shadow: 0px 1px 1px 0px rgba(160,172,182,.5);
 }
 .message.my-message.droplet:after {
   right: -10px;
@@ -518,31 +517,14 @@ a:hover {
 
 .message__text,
 .message__image__text .message__text__content {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   z-index: 2;
-}
-
-.message__image,
-.message__image__text {
-  position: relative;
-  z-index: 2;
-}
-.message__image {
-  border-radius: 6px;
-}
-.message__image__content {
-  border-radius: 6px;
-  margin-bottom: -3px;
-  max-width: 100%;
 }
 
 .message__time {
-  display: inline-block;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 14px;
+	position: absolute;
+	bottom: 3px;
+	right: 5px;
   text-align: right;
   font-size: 12px;
   color: #a0acb6;
@@ -566,7 +548,6 @@ a:hover {
 .message__image:hover .message__time {
   opacity: 1;
 }
-
 
 .autocomplete {
   position: relative;
@@ -941,7 +922,6 @@ input[type="range"]::-ms-fill-upper {
   position: relative;
   width: 50px;
   height: 50px;
-  background: var(--input-border-color-focus);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1004,7 +984,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .info .subsection {
-  padding: 0 10px;
+  padding: 10px 20px;
 }
 
 .info .subsection.tabs-section {
@@ -1015,4 +995,70 @@ input[type="range"]::-ms-fill-upper {
 #chat {
   flex: 1;
   background: #eee;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/art/bg_initial.jpg");
+  background-position-y: -54px;
+  background-attachment: fixed;
+}
+
+.footer {
+	padding: 10px 50px 20px 50px;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+}
+
+.footer-content .message-block {
+	position: relative;
+  display: flex;
+  padding: 5px;
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px rgba(160,172,182,.5)
+}
+
+.footer-content .message-block.droplet:after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  background-color: inherit;
+  z-index: 2;
+  box-shadow: 0 2px 1px 0 rgba(160,172,182,.5);
+  right: -10px;
+  bottom: 0;
+  clip-path: url(#right-droplet);
+}
+
+.voice-btn {
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0px 0px 3px 1px rgba(160,172,182,.5)
+}
+
+.footer-content .message-block .btn {
+  background: transparent;
+}
+
+.footer-content .message-input {
+	flex: 1;
+	margin: 10px;
+	border: none;
+	outline: none;
+	height: 18px;
+	max-height: 40vh;
+	width: 100%;
+	resize: vertical;
 }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/left-sidebar.css">
+
+	<style>
+		.container {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.content {
+			max-width: 30vw;
+			height: max-content;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.subsection {
+			align-items: center;
+		}
+
+		.text-tooltip {
+			max-width: 50%;
+		}
+
+		.input-group {
+			margin: 0;
+			width: 70%;
+		}
+
+		.btn {
+			width: 70%;
+		}
+
+		.btn-signin {
+			display: block; 
+			text-transform: uppercase; 
+			text-align: center; 
+			margin-top: 10px; 
+			border-radius: 10px;
+			font-size: 14px;
+			padding: 15px;
+		}
+
+		#create-account {
+			display: none;
+		}
+	</style>
+
+	<title>Web Telegram Contest Design</title>
+</head>
+<body style="overflow: visible;">
+
+	<div class="container">
+		<div class="content">
+			<div id="sign">
+				<div class="subsection account-section">
+					<div class="img-container">
+						<img class="account-img" src="assets/telegram.png" alt="Telegram">
+					</div>
+				</div>
+				<div class="subsection title">
+					<h1>Sign in to Telegram</h1>
+				</div>
+				<div class="subsection">
+					<p class="text-tooltip" style="margin-left: 0;">
+						Please confirm your country and enter your phone number
+					</p>
+				</div>
+				<form action="" autocomplete="false">
+					<div class="subsection">
+						<div class="input-group" style="margin: 0">
+							<input type="country" id="country" required class="input-area">
+							<label for="country" class="label">Country</label>
+						</div>
+						<div class="input-group" style="margin: 0; margin-top: 20px;">
+							<input type="phone" id="phone" required class="input-area">
+							<label for="phone" class="label">Phone Number</label>
+						</div>
+					</div>
+					<div class="subsection">
+						<button class="btn ripple btn-white btn-checkbox">
+							<input type="checkbox" id="gifs" checked>
+							<label for="gifs" class="checkbox-content">
+								<img alt="" class="icon checkbox-img">
+								<div class="content">
+									<span class="name">GIFs</span>
+								</div>
+							</label>
+						</button>
+						<button class="btn ripple btn-blue btn-signin" type="submit">
+							Sign in
+						</button>
+					</div>
+				</form>
+			</div>
+			<div id="create-account">
+				<div class="subsection account-section">
+					<div class="img-container darkened">
+						<img class="account-img" src="assets/imgs/doge.jpg" alt="Group image">
+						<div class="img-content">
+							<img src="assets/icons/cameraadd_svg.svg" class="icon icon-white"/>
+						</div>
+					</div>
+				</div>
+				<div class="subsection title">
+					<h1>Sign in to Telegram</h1>
+				</div>
+				<div class="subsection">
+					<p class="text-tooltip" style="margin-left: 0;">
+						Please confirm your country and enter your phone number
+					</p>
+				</div>
+				<div class="subsection">
+					<div class="input-group" style="margin: 0">
+						<input type="lastName" id="lastName" required class="input-area">
+						<label for="lastName" class="label">Country</label>
+					</div>
+					<div class="input-group" style="margin: 0; margin-top: 20px;">
+						<input type="bio" id="bio" required class="input-area">
+						<label for="bio" class="label">Phone Number</label>
+					</div>
+				</div>
+				<div class="subsection">
+					<button class="btn ripple btn-white btn-checkbox">
+						<input type="checkbox" id="gifs" checked>
+						<label for="gifs" class="checkbox-content">
+							<img alt="" class="icon checkbox-img">
+							<div class="content">
+								<span class="name">GIFs</span>
+							</div>
+						</label>
+					</button>
+					<button class="btn ripple btn-blue btn-signin">
+						Sign in
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/mainFunctions.js"></script>
+	<script src="js/globalVars.js"></script>
+	<script src="js/DOMs.js"></script>
+	<script src="js/allFunctions.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
