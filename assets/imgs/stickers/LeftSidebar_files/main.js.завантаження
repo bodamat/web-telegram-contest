@@ -1,0 +1,192 @@
+var rippleBtns = document.querySelectorAll('.ripple')
+
+rippleBtns.forEach(function(rippleBtn){
+
+	rippleBtn.addEventListener('mousedown', function(e){
+
+		//get the button's width and height
+		var width = this.offsetWidth
+		var height = this.offsetHeight
+		
+		//get the cursor's x and y position within the button
+		var posX = e.offsetX
+		var posY = e.offsetY
+		
+		spawnRipple(width, height, posX, posY, this)
+	});
+
+	rippleBtn.addEventListener('animationend', function(e){
+		var rippleEl = e.target
+		rippleEl.parentNode.removeChild(rippleEl);
+	})
+})
+
+var radioInputs = document.querySelectorAll('input[type=radio]')
+imgRadio()
+radioInputs.forEach(input => {
+	input.addEventListener('click', function() {
+		imgRadio()
+	})
+})
+
+function imgRadio() {
+	var radioImgs = document.querySelectorAll('.radio-img')
+	var checkedRadioImgs = document.querySelectorAll('input[type=radio]:checked + .radio-content .radio-img')
+
+	radioImgs.forEach(item => item.src = "assets/icons/radiooff_svg.svg")
+	checkedRadioImgs.forEach(item => item.src = "assets/icons/radioon_svg.svg")
+}
+
+function generateCheckedMembers(domMemberList, memberList) {
+	memberList.forEach(member => {
+		domMemberList.insertAdjacentHTML("beforeEnd",
+			'<button class="btn ripple btn-white btn-account btn-checkbox" data-id="' + member.id + '">' +
+				'<input type="checkbox" id="contact' + member.id + '">' +
+				'<label for="contact' + member.id + '" class="checkbox-content">' +
+					'<img alt="" class="icon checkbox-img">' +
+					'<div class="btn-input-content">' +
+						'<img src="' + member.img + '" class="account-img"/>' +
+						'<div class="content">' +
+							'<span class="name">' + member.text + '</span>' +
+							'<span class="info">' + member.info + '</span>' +
+						'</div>' +
+					'</div>' +
+				'</label>' +
+			'</button>'
+		)
+	})
+}
+
+generateCheckedMembers(doms.memberList, vars.memberList)
+
+var checkboxInputs = document.querySelectorAll('input[type="checkbox"]')
+imgCheckbox()
+
+function imgCheckbox() {
+  var checkboxImgs = document.querySelectorAll('.checkbox-img')
+  var checkedCheckboxImgs = document.querySelectorAll('input[type=checkbox]:checked + .checkbox-content .checkbox-img')
+  var indeterminateCheckboxImgs = document.querySelectorAll('input[type=checkbox]:indeterminate + .checkbox-content .checkbox-img')
+	
+  checkboxImgs.forEach(item => item.src = "assets/icons/checkboxempty_svg.svg")
+  checkedCheckboxImgs.forEach(item => item.src = "assets/icons/checkboxon_svg.svg")
+  indeterminateCheckboxImgs.forEach(item => item.src = "assets/icons/checkboxblock_svg.svg")
+}
+
+function indeterminateInput(input) {
+  if (input.readOnly) input.checked=input.readOnly=false;
+  else if (!input.checked) input.readOnly=input.indeterminate=true;
+}
+
+function styleSearch(input, action) {
+	let parentDiv = input.parentElement
+	let classes = parentDiv.classList
+	if( classes.contains("search-input-group") ) {
+		if (action === 'add') parentDiv.classList.add("focusSearch")
+		else {
+			if (!input.value) parentDiv.classList.remove("focusSearch");
+		}	
+	}
+	else {
+		styleSearch(parentDiv, action)
+	}
+}
+
+var checkboxBtns = getEls('.btn.btn-checkbox')
+checkboxBtns.forEach(el => {
+	el.addEventListener('click', () => {
+		updateCheckedBtn(el)
+	})
+})
+
+function updateCheckedBtn(btn) {
+	let input = getEl('input', btn)
+	input.checked = !input.checked
+	imgCheckbox()
+
+	if(btn.dataset.id) {
+		if (input.checked) {
+			btn.classList.add('btn-checked')
+			addChip(btn)
+		}	
+		else {
+			btn.classList.remove('btn-checked')
+			deleteChip(btn, false)
+		}
+	}
+}
+
+let chips = getEl('.chips')
+let chipsAutocompleteInput = getEl('.chips .autocomplete')
+
+function addChip(btn, isChip = false) {
+	let btnId = btn.dataset.id
+	let chipImgSrc = getEl('.account-img', btn).src
+	let chipNameText = getEl('.name', btn).innerText
+
+	
+	let chipNames = splitString(chipNameText, ' ')
+	let chipName = chipNames[0]
+	
+	vars.chipList.push({
+		id: btnId,
+		img: chipImgSrc,
+		name: chipName
+	})
+	
+	if (isChip) updateCheckedBtn(btn)
+
+	updateChips()
+}
+
+function deleteChip(chipButton, isChip = true) {
+	vars.chipList.forEach((el, key) => {
+		if (el.id == chipButton.dataset.id) {
+			vars.chipList.splice(key, 1)
+			if (isChip) {
+				let btn = getEl('.btn[data-id="' + el.id + '"]', doms.memberList)
+				updateCheckedBtn(btn)
+			}
+		}
+	})
+	updateChips()
+}
+
+function updateChips() {
+	let chipEls = getEls('.chip', chips)
+	chipEls.forEach(el => {
+		el.remove()
+	})
+	vars.chipList.forEach((chipData) => {
+		chipsAutocompleteInput.insertAdjacentHTML("beforeBegin", '<div class="chip">' +
+				'<div class="img-relative">' +
+					'<img src="' + chipData.img + '" alt="person" class="img">' +
+					'<div class="img-hover">' +
+						'<img src="assets/icons/close_svg.svg" alt="" class="icon-white" onclick="deleteChip(this)" data-id="' + chipData.id + '">' +
+					'</div>' +
+				'</div>' +
+				'<span class="text">' + chipData.name +'</span>' +
+			'</div>')
+	})
+}
+
+let ranges = getEls('.range')
+ranges.forEach(function(range, key) {
+	range.id = "range" + key
+	let input = getEl('input', range)
+	let styleEl = getEl('style', range)
+	let valueEl = getEl('.value', range)
+	let value = input.value
+	let n = (value / input.max) * 100
+	
+	valueEl.innerText = value
+	styleEl.innerHTML = "#" + range.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, var(--input-border-color-focus) 0%, var(--input-border-color-focus) " + n + "%, #eee " + n + "%)}"
+
+	range.addEventListener('input', function() {
+		value = input.value
+		n = (value / input.max) * 100
+		
+		valueEl.innerText = value
+		styleEl.innerHTML = "#" + range.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, var(--input-border-color-focus) 0%, var(--input-border-color-focus) " + n + "%, #eee " + n + "%)}"
+	})
+})
+

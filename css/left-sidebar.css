@@ -1,0 +1,433 @@
+:root {
+	--border-color-gray: #d1d0d0;
+	--title-color-gray: #858585;
+}
+
+#left-sidebar, #right-sidebar {
+	width: 400px;
+	height: 100vh;
+}
+
+#left-sidebar {
+	border-right: 1px solid var(--border-color-gray)
+}
+
+#right-sidebar {
+	border-left: 1px solid var(--border-color-gray)
+}
+
+#left-sidebar > div, #right-sidebar > div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+}
+
+.container {
+	padding: 0 20px;
+}
+
+.content {
+	overflow: hidden;
+	overflow-y: auto;
+	height: 100%;
+	flex: 1;
+}
+
+section {
+	padding: 0 10px 10px 10px;
+	border-bottom: 1px solid var(--border-color-gray);
+}
+
+.section-messages {
+	padding-top: 5px;
+}
+
+section:last-child {
+	border: none;
+}
+
+.big-section {
+	padding: 20px;
+}
+
+.subsection {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+}
+
+.subsection:first-child {
+	padding-top: 5px;
+}
+
+.btns-list > button:not(:last-child){
+	margin-bottom: 5px;
+}
+
+.vertical-scroll {
+	overflow: hidden;
+	overflow-x: auto;
+	padding-bottom: 5px;
+}
+
+.horizontal-scroll {
+	overflow: hidden;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.btns-vertical-list {
+	flex-direction: row;
+}
+
+.color-list-section {
+	padding: 10px 0;
+}
+
+.p-l-smd {
+	padding-left: 10px;
+}
+
+.m-b-md {
+	margin-bottom: 10px;
+}
+
+.h3-title {
+	color: var(--title-color-gray);
+	padding-left: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.h3-title-section {
+	padding-top: 15px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px 20px;
+	border-bottom: 1px solid var(--border-color-gray);
+	background: #fff;
+}
+
+.header-create {
+	border: none;
+}
+
+.header-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header-content .header-title {
+	margin-left: 20px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.header-chat .btn {
+	margin-left: 10px;
+}
+
+.header-chat .btn-account {
+	background: transparent;
+	padding: 0;
+}
+
+.header-chat .btn-account:hover::after {
+	background: transparent;
+}
+
+.header-chat .text-content {
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.header-chat .btn-account {
+	width: 100%;
+}
+
+.header-chat .btn .name {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.header-chat .btn .status {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--title-color-gray)
+}
+
+.header-chat .btn .status.online{
+	color: #4ea4f6;
+}
+
+.header-search {
+	border: none;
+	padding-bottom: 0;
+}
+
+.account {
+	align-items: center;
+}
+
+.account-img {
+	height: 100%;
+	border-radius: 50%;
+}
+
+.account-section {
+	padding: 0;
+	align-items: center;
+}
+
+.img-container {
+	position: relative;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-container .account-img {
+	width: 100%;
+}
+
+/* Контент "поміняти зображення" в Edit Profile */
+
+.img-content {
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.img-content .icon {
+	width: 40px;
+}
+
+.darkened::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);  
+	z-index: 1;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.darkened.create::before {
+	background: #4ea4f6;
+}
+
+.account-name {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+
+.account-number, .account .status {
+	font-size: 14px;
+	color: #707579;
+}
+
+.edit-profile {
+	display: none;
+}
+
+.vertical-input-group {
+	padding-top: 30px;
+}
+
+.vertical-input-group .input-group:not(:first-child) {
+	margin-top: 20px;
+}
+
+.input-section {
+	margin-top: 10px;
+}
+
+.security {
+	display: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	display: none;
+}
+
+.radio-group, .checkbox-group {
+	margin: 10px;
+}
+
+.radio-content, .checkbox-content {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.radio-img, .checkbox-img {
+	filter: invert(66%) sepia(3%) saturate(19%) hue-rotate(4deg) brightness(85%) contrast(86%);
+}
+
+input[type="radio"]:checked + .radio-content .radio-img, input[type="checkbox"]:checked + .checkbox-content .checkbox-img {
+	filter: invert(73%) sepia(57%) saturate(6003%) hue-rotate(191deg) brightness(108%) contrast(93%);
+}
+
+.text-tooltip {
+  font-size: 13px;
+	color: #707579;
+	margin-top: 5px;
+	font-weight: 400;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.input-text-content .text-tooltip {
+	margin: 0;
+	margin-top: 5px;
+}
+
+.text-tooltip-margin {
+	/* margin-left: 10px; */
+	margin-top: 15px;
+}
+
+.text-bold {
+	color: #000;
+	font-weight: 600;
+}
+
+input[type="checkbox"]:indeterminate + .checkbox-content .checkbox-img {
+  filter: invert(32%) sepia(25%) saturate(5168%) hue-rotate(341deg) brightness(86%) contrast(100%);
+}
+
+.input-text-content {
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#color-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+#color-list div {
+	background: var(--border-color-gray);
+	min-width: 123px;
+	min-height: 123px;
+	margin: 2px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	flex: 1;
+}
+
+#color-list img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#color-list .time {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: #0000005d;
+	color: #fff;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: 10px;
+}
+
+/* Chips */
+
+.chips, .chip-list {
+	padding: 0 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.chips .chip {
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.chips .input {
+	border: none;
+	outline: none;
+	caret-color: #4ea4f6;
+	width: 100%;
+	font-weight: 500;
+}
+
+.chips .autocomplete {
+	display: flex;
+	margin-top: 10px;
+	min-width: 100px;
+	flex: 1;
+}
+
+.chip {
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+	border-radius: 50px;
+  background-color: #f1f1f1;
+}
+
+.chip:hover {
+	background: #da000025;
+}
+
+.chip .img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.img-relative {
+	position: relative;
+	height: 30px;
+}
+
+.img-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: #da0000;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.chip:hover .img-hover {
+	opacity: 1;
+}
+
+.chip .text {
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: 500;
+}

@@ -1,0 +1,25 @@
+vars = {
+	chipList: [
+
+	],
+	memberList: [
+		{
+			id: 1,
+			img: "assets/imgs/accounts/account1.jpg",
+			text: "Raaid El Syed",
+			info: "last seen jus now"
+		},
+		{
+			id: 2,
+			img: "assets/imgs/accounts/account2.jpg",
+			text: "John Smitt",
+			info: "last seen just now"
+		}
+	],
+	countries: {
+		id: 1,
+		img: "assets/icons/back_svg.svg",
+		text: "Ukraine",
+		tooltip: "+38"
+	}
+}
